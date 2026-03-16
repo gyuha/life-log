@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:59194/post/2026/2026-03-16-init/</loc>
+    <loc>https://life-log.gyuha.com/post/2026/2026-03-16-init/</loc>
     <lastmod>2026-03-16T19:16:14+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:59194/</loc>
+    <loc>https://life-log.gyuha.com/</loc>
     <lastmod>2026-03-16T19:16:14+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:59194/post/</loc>
+    <loc>https://life-log.gyuha.com/post/</loc>
     <lastmod>2026-03-16T19:16:14+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:59194/categories/</loc>
+    <loc>https://life-log.gyuha.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:59194/tags/</loc>
+    <loc>https://life-log.gyuha.com/tags/</loc>
   </url>
 </urlset>
