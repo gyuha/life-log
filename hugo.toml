@@ -1,8 +1,11 @@
 baseURL = 'https://life-log.gyuha.com/'
 languageCode = 'ko-kr'
 title = 'Life Log'
+theme = 'github-style'
 enableRobotsTXT = true
 enableEmoji = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [build]
   [build.cachebusters]
@@ -18,7 +21,15 @@ enableEmoji = true
     lineNos = true
 
 [params]
+  author = "Gyuha"
   description = "Life Log - 일상과 기술을 기록하는 블로그"
+  github = "gyuha"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "🚀"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
