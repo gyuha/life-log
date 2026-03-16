@@ -27,6 +27,7 @@ pygmentsUseClasses = true
   github = "gyuha"
   rss = true
   lastmod = true
+  enableSearch = true
   userStatusEmoji = "🚀"
 
 [frontmatter]
