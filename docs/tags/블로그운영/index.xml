@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>블로그운영 on Life Log</title>
+    <link>https://life-log.gyuha.com/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9A%B4%EC%98%81/</link>
+    <description>Recent content in 블로그운영 on Life Log</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 16 Mar 2026 22:51:42 +0900</lastBuildDate>
+    <atom:link href="https://life-log.gyuha.com/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%9A%B4%EC%98%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gyuha/life-log 저장소 뜯어보기 - Hugo 블로그를 운영형 지식 시스템으로 만드는 구조</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-03-16-life-log-github-repository-walkthrough/</link>
+      <pubDate>Mon, 16 Mar 2026 22:30:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-03-16-life-log-github-repository-walkthrough/</guid>
+      <description>&lt;p&gt;&lt;code&gt;gyuha/life-log&lt;/code&gt; 는 겉으로 보면 개인 블로그 저장소이지만, 실제로는 &lt;strong&gt;콘텐츠 작성 경로&lt;/strong&gt;, &lt;strong&gt;정적 사이트 빌드 경로&lt;/strong&gt;, &lt;strong&gt;배포 경로&lt;/strong&gt;, &lt;strong&gt;AI 에이전트용 작업 규칙&lt;/strong&gt;이 한곳에 겹쳐 있는 운영 저장소에 가깝습니다. &lt;code&gt;README.md&lt;/code&gt;, &lt;code&gt;Taskfile.yml&lt;/code&gt;, &lt;code&gt;hugo.toml&lt;/code&gt;, &lt;code&gt;.github/workflows/hugo.yml&lt;/code&gt;, &lt;code&gt;.agents/skills/&lt;/code&gt; 를 함께 보면 이 저장소가 단순한 &amp;ldquo;글 보관소&amp;quot;가 아니라, 블로그를 계속 굴리기 위한 실행 시스템이라는 점이 분명해집니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
