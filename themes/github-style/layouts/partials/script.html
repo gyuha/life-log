@@ -52,3 +52,7 @@
 <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
 <script type="application/javascript" src='{{ "js/search.js" | absURL }}'></script>
 {{ end }}
+
+{{ if or (.Page.Store.Get "hasMermaid") (and .IsPage (findRE "```mermaid" .RawContent 1)) }}
+<script type="module" src='{{ "js/mermaid.js" | absURL }}'></script>
+{{ end }}

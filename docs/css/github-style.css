@@ -189,3 +189,15 @@ body {
 .pinned-item-desc img {
   max-width: 100%;
 }
+
+pre.mermaid {
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+pre.mermaid svg {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
