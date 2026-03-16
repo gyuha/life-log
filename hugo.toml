@@ -2,6 +2,7 @@ baseURL = 'https://life-log.gyuha.com/'
 languageCode = 'ko-kr'
 title = 'Life Log'
 theme = 'github-style'
+publishDir = 'docs'
 enableRobotsTXT = true
 enableEmoji = true
 pygmentsCodeFences = true
