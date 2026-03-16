@@ -1,3 +1,24 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://life-log.gyuha.com/'
+languageCode = 'ko-kr'
+title = 'Life Log'
+enableRobotsTXT = true
+enableEmoji = true
+
+[build]
+  [build.cachebusters]
+    source = "assets/.*"
+    target = "(css|js|json)"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+
+[params]
+  description = "Life Log - 일상과 기술을 기록하는 블로그"
+
+[outputs]
+  home = ["HTML", "RSS"]
