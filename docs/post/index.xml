@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Life Log</title><link>https://life-log.gyuha.com/post/</link><description>Recent content in Posts on Life Log</description><generator>Hugo</generator><language>ko-kr</language><lastBuildDate/><atom:link href="https://life-log.gyuha.com/post/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Life Log</title>
+    <link>http://localhost:59194/post/</link>
+    <description>Recent content in Posts on Life Log</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 16 Mar 2026 19:16:14 +0900</lastBuildDate>
+    <atom:link href="http://localhost:59194/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026 03 16 Init</title>
+      <link>http://localhost:59194/post/2026/2026-03-16-init/</link>
+      <pubDate>Mon, 16 Mar 2026 19:16:14 +0900</pubDate>
+      <guid>http://localhost:59194/post/2026/2026-03-16-init/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
