@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>프롬프트엔지니어링 on Life Log</title>
+    <link>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81/</link>
+    <description>Recent content in 프롬프트엔지니어링 on Life Log</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 17 Mar 2026 08:37:44 +0900</lastBuildDate>
+    <atom:link href="https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VIDMUSE AI로 음악에서 뮤직비디오까지 - 레퍼런스 이미지, 에이전트형 제작 흐름, 크레딧 운영법</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-03-17-vidmuse-ai-music-video-agent-workflow/</link>
+      <pubDate>Tue, 17 Mar 2026 08:30:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-03-17-vidmuse-ai-music-video-agent-workflow/</guid>
+      <description>&lt;p&gt;이 영상이 흥미로운 이유는 단순히 &amp;ldquo;뮤직비디오를 만들어 주는 AI&amp;quot;를 소개해서가 아닙니다. 발표자가 강조하는 핵심은, VidMuse가 텍스트 한 줄을 던지고 결과물을 기다리는 도구라기보다 &lt;code&gt;음악 분석 -&amp;gt; 스타일 정리 -&amp;gt; 장면 설계 -&amp;gt; 이미지 생성 -&amp;gt; 영상 생성&lt;/code&gt;을 순서대로 끌고 가는 &lt;strong&gt;에이전트형 제작 동반자&lt;/strong&gt; 에 가깝다는 점입니다. 그래서 이 툴의 가치는 결과물 한 장면보다도, 제작 과정을 얼마나 세분화해 안내해 주느냐에서 드러납니다. &lt;a href=&#34;https://youtu.be/eZNtweZ0EjA?t=10&#34;&gt;(0:10)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/eZNtweZ0EjA?t=44&#34;&gt;(0:44)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/eZNtweZ0EjA?t=340&#34;&gt;(5:40)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다만 영상을 그대로 따라 적으면 &amp;ldquo;무료 크레딧을 주는 새 툴 소개&amp;rdquo; 정도로 끝나기 쉽습니다. 이 글에서는 내용을 &lt;code&gt;사전 준비물&lt;/code&gt;, &lt;code&gt;VidMuse 내부 워크플로우&lt;/code&gt;, &lt;code&gt;품질과 비용의 교환관계&lt;/code&gt;, &lt;code&gt;실전 적용 순서&lt;/code&gt;로 다시 묶어서, 왜 이런 방식이 기존 이미지/영상 생성기와 다르게 느껴지는지를 중심으로 정리해 보겠습니다. &lt;a href=&#34;https://youtu.be/eZNtweZ0EjA?t=24&#34;&gt;(0:24)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/eZNtweZ0EjA?t=102&#34;&gt;(1:42)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/eZNtweZ0EjA?t=437&#34;&gt;(7:17)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
