@@ -13,13 +13,6 @@ Guide for coding agents in `/Users/gyuha/workspace/blog`.
   - `themes/hago/package.json`
   - `themes/hago/AGENTS.md`
 
-## Cursor / Copilot Rule Files
-Checked in this repository:
-- `.cursorrules`: not found
-- `.cursor/rules/`: not found
-- `.github/copilot-instructions.md`: not found
-No extra Cursor/Copilot instruction file is active.
-
 ## Build / Lint / Test Commands
 Run from repository root unless otherwise noted.
 
@@ -62,7 +55,6 @@ From `themes/hago/package.json`:
 - No lint task in root `Taskfile.yml`.
 - No test runner configured in root.
 - No `npm test` script in `themes/hago/package.json`.
-- No CI workflow under `.github/workflows/` in this repo.
 
 ## Single-Test Execution
 There is no true single-test command because no test framework is configured.
