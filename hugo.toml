@@ -24,6 +24,7 @@ pygmentsUseClasses = true
 [params]
   author = "Gyuha"
   description = "Life Log - 일상과 기술을 기록하는 블로그"
+  favicon = "/images/favicon.svg"
   github = "gyuha"
   rss = true
   lastmod = true
