@@ -63,6 +63,8 @@ task build
 task deploy
 ```
 
+에이전트 프롬프트에 `배포`라고 입력하면, 쉘에서 `task deploy`를 실행합니다.
+
 사이트를 빌드하고 GitHub에 푸시합니다.
 
 ## 프로젝트 구조
