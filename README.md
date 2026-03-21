@@ -47,7 +47,7 @@ task dev
 task new -- my-post-title
 ```
 
-`content/post/YYYY/YYYY-MM-DD-my-post-title.md` 형식으로 파일이 생성됩니다.
+`content/post/YYYY/MM/YYYY-MM-DD-my-post-title.md` 형식으로 파일이 생성됩니다.
 
 ### 빌드
 
@@ -74,6 +74,9 @@ life-log/
 ├── archetypes/      # 새 콘텐츠 템플릿
 ├── content/         # 블로그 콘텐츠
 │   └── post/        # 블로그 포스트
+│       └── YYYY/
+│           └── MM/
+│               └── YYYY-MM-DD-my-post-title.md
 ├── docs/            # 빌드 출력 (GitHub Pages)
 ├── layouts/         # 커스텀 레이아웃
 ├── static/          # 정적 파일

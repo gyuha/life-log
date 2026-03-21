@@ -30,7 +30,7 @@ From `Taskfile.yml`:
 - `task run` -> `hugo server -D --bind=0.0.0.0`
 - `task dev` -> `hugo server -D --bind=0.0.0.0 --disableFastRender`
 - `task build` -> `hugo -D`
-- `task new -- <slug>` -> `hugo new post/YYYY/YYYY-MM-DD-<slug>.md`
+- `task new -- <slug>` -> `hugo new post/YYYY/MM/YYYY-MM-DD-<slug>.md`
 - `task deploy` -> build + commit/push `public` + commit/push source repo
 
 ### Theme asset commands (`themes/hago`)
@@ -105,7 +105,7 @@ Prefer local patterns over global rewrites.
 ### Types and naming
 - This repo is mostly Hugo/SCSS/JS/Markdown; no project-wide TypeScript policy is defined.
 - If touching typed code in future, prefer strict explicit types and no `any` escapes.
-- Use existing naming/file conventions: partials use lowercase underscores (for example `side_recent.html`), post files use `content/post/YYYY/YYYY-MM-DD-slug.md`.
+- Use existing naming/file conventions: partials use lowercase underscores (for example `side_recent.html`), post files use `content/post/YYYY/MM/YYYY-MM-DD-slug.md`.
 
 ### Markdown and frontmatter (`content/post/**/*.md`)
 - Frontmatter format is YAML (`metaDataFormat = "yaml"` in `config.toml`).
@@ -170,7 +170,7 @@ Delegation contract:
 1. Follow the skill workflow and quality checklist as the source of truth.
 2. Accept `youtube.com/watch`, `youtu.be`, and `youtube.com/shorts` formats.
 3. If multiple YouTube URLs are provided, keep input order and produce one unified post by default.
-4. Preserve core output guarantees: `content/post/YYYY/YYYY-MM-DD-slug.md`, required YAML frontmatter, `<!--more-->`, source URL(s) near top, and Mermaid-first structure.
+4. Preserve core output guarantees: `content/post/YYYY/MM/YYYY-MM-DD-slug.md`, required YAML frontmatter, `<!--more-->`, source URL(s) near top, and Mermaid-first structure.
 5. Enforce timestamped evidence links for transcript-backed claims (`https://youtu.be/<id>?t=<seconds>`; `&t=` or `?t=` accepted).
 6. Enforce accuracy gates from the skill: no invented details, explicit uncertainty handling, and `task build` before handoff.
 

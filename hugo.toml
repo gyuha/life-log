@@ -34,5 +34,8 @@ pygmentsUseClasses = true
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
+[permalinks]
+  post = "/post/:year/:contentbasename/"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
