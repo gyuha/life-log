@@ -6,27 +6,34 @@
     <description>Recent content in Categories on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 21 Mar 2026 10:44:37 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 20:01:01 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>심리학</title>
-      <link>https://life-log.gyuha.com/categories/%EC%8B%AC%EB%A6%AC%ED%95%99/</link>
-      <pubDate>Wed, 18 Mar 2026 17:30:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/categories/%EC%8B%AC%EB%A6%AC%ED%95%99/</guid>
+      <title>AI</title>
+      <link>https://life-log.gyuha.com/categories/ai/</link>
+      <pubDate>Mon, 23 Mar 2026 18:10:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>https://life-log.gyuha.com/categories/productivity/</link>
+      <pubDate>Mon, 23 Mar 2026 18:10:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/categories/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>건강</title>
       <link>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</link>
-      <pubDate>Tue, 17 Mar 2026 23:30:00 +0900</pubDate>
+      <pubDate>Sun, 22 Mar 2026 23:10:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</guid>
       <description></description>
     </item>
     <item>
-      <title>AI</title>
-      <link>https://life-log.gyuha.com/categories/ai/</link>
-      <pubDate>Tue, 17 Mar 2026 08:30:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/categories/ai/</guid>
+      <title>심리학</title>
+      <link>https://life-log.gyuha.com/categories/%EC%8B%AC%EB%A6%AC%ED%95%99/</link>
+      <pubDate>Wed, 18 Mar 2026 17:30:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/categories/%EC%8B%AC%EB%A6%AC%ED%95%99/</guid>
       <description></description>
     </item>
     <item>
