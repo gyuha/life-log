@@ -49,6 +49,8 @@ task new -- my-post-title
 
 `content/post/YYYY/MM/YYYY-MM-DD-my-post-title.md` 형식으로 파일이 생성됩니다.
 
+마크다운 헤더의 `date`는 `YYYY-MM-DD` 형식으로 날짜만 넣습니다. 시간은 넣지 않습니다.
+
 ### 빌드
 
 ```bash
