@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://life-log.gyuha.com/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github-style.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/light.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/dark.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/syntax.css' />
+    <title>듀오링고는 이제 그만: 90일 안에 어떤 언어든 말할 수 있게 해주는 ChatGPT 프롬프트 7가지 - Life Log</title>
+    
+    <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="요약 2026년, 언어 학습의 패러다임이 바뀌고 있습니다. 듀오링고 같은 앱에만 의존하지 않고, ChatGPT를 활용하면 맞춤형 1:1 언어 튜터 를 무료로 가질 수 있습니다. Threads에서 @easygpt2526 님이 공유한 &ldquo;90일 안에 어떤 언어든 말할 수 있게 도와주는 ChatGPT 프롬프트 7가지&quot;를 정리하고, 실전에서 바로 복사해 쓸 수 있도록 구성했습니다.
+" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://life-log.gyuha.com/post/2026/2026-03-26-chatgpt-language-learning-prompts/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="듀오링고는 이제 그만: 90일 안에 어떤 언어든 말할 수 있게 해주는 ChatGPT 프롬프트 7가지 - Life Log" />
+<meta name="twitter:description"
+  content="요약 2026년, 언어 학습의 패러다임이 바뀌고 있습니다. 듀오링고 같은 앱에만 의존하지 않고, ChatGPT를 활용하면 맞춤형 1:1 언어 튜터 를 무료로 가질 수 있습니다. Threads에서 @easygpt2526 님이 공유한 &ldquo;90일 안에 어떤 언어든 말할 수 있게 도와주는 ChatGPT 프롬프트 7가지&quot;를 정리하고, 실전에서 바로 복사해 쓸 수 있도록 구성했습니다.
+" />
+<meta name="twitter:site" content="https://life-log.gyuha.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://life-log.gyuha.com/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="듀오링고는 이제 그만: 90일 안에 어떤 언어든 말할 수 있게 해주는 ChatGPT 프롬프트 7가지 - Life Log">
+<meta property="og:description"
+  content="요약 2026년, 언어 학습의 패러다임이 바뀌고 있습니다. 듀오링고 같은 앱에만 의존하지 않고, ChatGPT를 활용하면 맞춤형 1:1 언어 튜터 를 무료로 가질 수 있습니다. Threads에서 @easygpt2526 님이 공유한 &ldquo;90일 안에 어떤 언어든 말할 수 있게 도와주는 ChatGPT 프롬프트 7가지&quot;를 정리하고, 실전에서 바로 복사해 쓸 수 있도록 구성했습니다.
+" />
+<meta property="og:url" content="https://life-log.gyuha.com/post/2026/2026-03-26-chatgpt-language-learning-prompts/" />
+<meta property="og:site_name" content="듀오링고는 이제 그만: 90일 안에 어떤 언어든 말할 수 있게 해주는 ChatGPT 프롬프트 7가지" />
+<meta property="og:image"
+  content="https://life-log.gyuha.com/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-03-26 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://life-log.gyuha.com/">
+        <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://life-log.gyuha.com/">
+        <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://life-log.gyuha.com/">
+                  <img class=" avatar-user"
+                    src="https://life-log.gyuha.com/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://life-log.gyuha.com/">Gyuha</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
+                    <a href="https://life-log.gyuha.com/post/2026/2026-03-26-chatgpt-language-learning-prompts/">듀오링고는 이제 그만: 90일 안에 어떤 언어든 말할 수 있게 해주는 ChatGPT 프롬프트 7가지</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Thu, 26 Mar 2026 00:00:00 &#43;0000"
+                    class="no-wrap">
+                    Thu, 26 Mar 2026 00:00:00 &#43;0000</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Thu, 26 Mar 2026 08:50:13 &#43;0900"
+                    class="no-wrap">
+                    Thu, 26 Mar 2026 08:50:13 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      2833 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/chatgpt">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      ChatGPT
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      프롬프트
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%96%B8%EC%96%B4%ED%95%99%EC%8A%B5">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      언어학습
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%98%81%EC%96%B4%EA%B3%B5%EB%B6%80">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      영어공부
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/ai%ED%99%9C%EC%9A%A9">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      AI활용
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EB%93%80%EC%98%A4%EB%A7%81%EA%B3%A0">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      듀오링고
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><h2 id="요약">요약</h2>
+<p>2026년, 언어 학습의 패러다임이 바뀌고 있습니다. 듀오링고 같은 앱에만 의존하지 않고, ChatGPT를 활용하면 <strong>맞춤형 1:1 언어 튜터</strong> 를 무료로 가질 수 있습니다. Threads에서 @easygpt2526 님이 공유한 &ldquo;90일 안에 어떤 언어든 말할 수 있게 도와주는 ChatGPT 프롬프트 7가지&quot;를 정리하고, 실전에서 바로 복사해 쓸 수 있도록 구성했습니다.</p>
+<blockquote>
+<p>원본: <a href="https://www.threads.com/@easygpt2526/post/DWSd10ZE0o4">Threads 포스트 (@easygpt2526)</a></p>
+</blockquote>
+<h2 id="왜-chatgpt로-언어를-배워야-하는가">왜 ChatGPT로 언어를 배워야 하는가?</h2>
+<p>기존 언어 학습 앱은 정해진 커리큘럼을 따라가야 합니다. 반면 ChatGPT는 <strong>나의 수준, 관심사, 목표에 맞게 즉석에서 수업을 설계</strong> 해줍니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;기존 학습 앱&lt;br&gt;(듀오링고 등)&#34;] --&gt; B[&#34;고정 커리큘럼&#34;]
+    A --&gt; C[&#34;게임화 의존&#34;]
+    A --&gt; D[&#34;피드백 제한적&#34;]
+
+    E[&#34;ChatGPT 활용 학습&#34;] --&gt; F[&#34;맞춤형 커리큘럼&#34;]
+    E --&gt; G[&#34;실시간 대화 연습&#34;]
+    E --&gt; H[&#34;즉시 교정 + 설명&#34;]
+
+    classDef old fill:#ffc8c4,stroke:#d44,color:#333
+    classDef new fill:#c0ecd3,stroke:#2a9d5c,color:#333
+
+    class A,B,C,D old
+    class E,F,G,H new</pre>
+<p>핵심 차이점을 정리하면 다음과 같습니다.</p>
+<table>
+  <thead>
+      <tr>
+          <th>항목</th>
+          <th>듀오링고</th>
+          <th>ChatGPT</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>커리큘럼</td>
+          <td>고정형</td>
+          <td>맞춤형</td>
+      </tr>
+      <tr>
+          <td>대화 연습</td>
+          <td>제한적</td>
+          <td>무제한 자유 대화</td>
+      </tr>
+      <tr>
+          <td>문법 설명</td>
+          <td>간단한 팁</td>
+          <td>상세 설명 + 예문</td>
+      </tr>
+      <tr>
+          <td>문화 맥락</td>
+          <td>거의 없음</td>
+          <td>풍부한 문화 인사이트</td>
+      </tr>
+      <tr>
+          <td>비용</td>
+          <td>유료 구독</td>
+          <td>무료 (기본 플랜)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="chatgpt-프롬프트-7가지">ChatGPT 프롬프트 7가지</h2>
+<h3 id="1-맞춤형-학습-플랜-생성">1. 맞춤형 학습 플랜 생성</h3>
+<p>90일이라는 기간 안에 목표를 달성하려면, 체계적인 학습 계획이 필수입니다. 이 프롬프트는 <strong>나의 현재 수준과 목표에 맞는 개인화된 학습 로드맵</strong> 을 만들어줍니다.</p>
+<pre tabindex="0"><code>나의 [목표 언어] 학습을 위한 90일 맞춤형 학습 계획을 세워줘.
+
+현재 수준: [초급/중급/고급]
+하루 학습 가능 시간: [시간]
+학습 목표: [여행 회화/비즈니스/시험 준비 등]
+
+주차별로 구체적인 학습 내용, 추천 자료, 마일스톤을 포함해줘.
+진도 확인을 위한 자가 테스트도 포함해줘.
+</code></pre><pre class="mermaid">flowchart TD
+    A[&#34;현재 수준 파악&#34;] --&gt; B[&#34;90일 로드맵 설계&#34;]
+    B --&gt; C[&#34;1-30일&lt;br&gt;기초 어휘 + 발음&#34;]
+    B --&gt; D[&#34;31-60일&lt;br&gt;문법 + 짧은 대화&#34;]
+    B --&gt; E[&#34;61-90일&lt;br&gt;실전 회화 + 뉴스 이해&#34;]
+    C --&gt; F[&#34;마일스톤 체크&#34;]
+    D --&gt; F
+    E --&gt; F
+
+    classDef phase1 fill:#c5dcef,stroke:#4a90d9,color:#333
+    classDef phase2 fill:#fde8c0,stroke:#e6a817,color:#333
+    classDef phase3 fill:#c0ecd3,stroke:#2a9d5c,color:#333
+    classDef check fill:#e0c8ef,stroke:#8b5cf6,color:#333
+
+    class A,B phase1
+    class C phase1
+    class D phase2
+    class E phase3
+    class F check</pre>
+<h3 id="2-실시간-대화-연습">2. 실시간 대화 연습</h3>
+<p>교과서로는 절대 배울 수 없는 <strong>실제 대화 감각</strong> 을 기르는 프롬프트입니다. ChatGPT가 원어민 대화 상대가 되어줍니다.</p>
+<pre tabindex="0"><code>너는 [목표 언어]를 가르치는 대화 전문 튜터야.
+나와 [목표 언어]로 실시간 대화를 해줘.
+
+규칙:
+- 나의 수준에 맞게 대화 난이도를 조절해줘
+- 내가 실수하면 자연스럽게 교정해주고, 올바른 표현을 알려줘
+- 새로운 어휘가 나오면 뜻과 사용 예시를 함께 알려줘
+- 문화적 뉘앙스가 있으면 설명해줘
+- 대화 주제: [일상/여행/비즈니스/자기소개 등]
+</code></pre><h3 id="3-어휘력-확장">3. 어휘력 확장</h3>
+<p>단어장을 외우는 것보다 <strong>맥락 속에서 어휘를 학습</strong> 하는 것이 훨씬 효과적입니다.</p>
+<pre tabindex="0"><code>너는 [목표 언어] 어휘 전문 튜터야.
+내 수준에 맞는 새로운 단어와 표현을 가르쳐줘.
+
+방식:
+1. 오늘의 단어 10개를 주제별로 제시
+2. 각 단어의 정의, 예문, 발음 가이드 제공
+3. 단어를 활용한 짧은 퀴즈 출제
+4. 관용표현과 슬랭도 포함
+5. 내 관심 분야: [IT/음식/여행/영화 등]와 관련된 어휘 우선
+</code></pre><h3 id="4-작문-교정-및-피드백">4. 작문 교정 및 피드백</h3>
+<p>글을 쓰고 피드백을 받는 과정은 언어 실력을 빠르게 끌어올립니다. 이 프롬프트는 <strong>문법 교정뿐 아니라 더 자연스러운 표현까지 제안</strong> 해줍니다.</p>
+<pre tabindex="0"><code>너는 [목표 언어] 작문 교정 전문가야.
+내가 [목표 언어]로 작성한 글을 교정해줘.
+
+피드백 방식:
+1. 문법 오류를 표시하고 수정해줘
+2. 더 자연스러운 표현이 있으면 제안해줘
+3. 문장 구조 개선점을 알려줘
+4. 잘 쓴 부분도 칭찬해줘
+5. 수정 전/후를 비교해서 보여줘
+
+[여기에 교정받을 글을 작성]
+</code></pre><h3 id="5-상황별-롤플레이">5. 상황별 롤플레이</h3>
+<p>실제 상황을 시뮬레이션하면 <strong>실전 감각</strong> 을 기를 수 있습니다. 카페 주문부터 취업 면접까지 원하는 상황을 연습할 수 있습니다.</p>
+<pre tabindex="0"><code>너는 [목표 언어] 원어민이야.
+다음 상황을 [목표 언어]로 롤플레이하자.
+
+상황: [카페 주문 / 호텔 체크인 / 취업 면접 / 병원 방문 / 길 묻기]
+
+규칙:
+- 실제 상황처럼 자연스럽게 대화해줘
+- 내가 막히면 힌트를 줘
+- 대화가 끝나면 내 표현에 대한 피드백을 줘
+- 해당 상황에서 유용한 핵심 표현 5개를 정리해줘
+</code></pre><pre class="mermaid">flowchart TD
+    A[&#34;상황 선택&#34;] --&gt; B[&#34;카페 주문&#34;]
+    A --&gt; C[&#34;호텔 체크인&#34;]
+    A --&gt; D[&#34;취업 면접&#34;]
+    A --&gt; E[&#34;병원 방문&#34;]
+    A --&gt; F[&#34;길 묻기&#34;]
+
+    B --&gt; G[&#34;롤플레이 대화&#34;]
+    C --&gt; G
+    D --&gt; G
+    E --&gt; G
+    F --&gt; G
+
+    G --&gt; H[&#34;피드백 + 핵심 표현 정리&#34;]
+
+    classDef scenario fill:#c5dcef,stroke:#4a90d9,color:#333
+    classDef action fill:#fde8c0,stroke:#e6a817,color:#333
+    classDef result fill:#c0ecd3,stroke:#2a9d5c,color:#333
+
+    class A scenario
+    class B,C,D,E,F scenario
+    class G action
+    class H result</pre>
+<h3 id="6-문법-집중-설명">6. 문법 집중 설명</h3>
+<p>문법이 어렵게 느껴질 때, <strong>쉬운 비유와 퀴즈로 이해하는 문법 튜터</strong> 프롬프트입니다.</p>
+<pre tabindex="0"><code>너는 [목표 언어] 문법 전문 튜터야.
+다음 문법 규칙을 쉽게 설명해줘: [문법 주제]
+
+설명 방식:
+1. 초보자도 이해할 수 있는 쉬운 비유 사용
+2. 일상 대화에서 쓰이는 예문 5개 제시
+3. 자주 하는 실수와 올바른 사용법 비교
+4. 연습용 빈칸 채우기 퀴즈 3개 출제
+5. 이 문법이 실제 대화에서 왜 중요한지 설명
+</code></pre><h3 id="7-문화-인사이트-학습">7. 문화 인사이트 학습</h3>
+<p>언어 뒤에 숨어있는 <strong>문화를 이해하면 진짜 소통</strong> 이 가능합니다. 관용표현의 유래부터 비즈니스 매너까지 깊이 있는 문화 학습이 가능합니다.</p>
+<pre tabindex="0"><code>너는 [목표 언어] 문화와 언어 전문가야.
+[목표 언어]를 사용하는 나라의 문화적 맥락을 가르쳐줘.
+
+다음 내용을 포함해줘:
+1. 자주 쓰이는 관용표현 5개와 그 유래
+2. 비즈니스/일상에서의 예절과 매너
+3. 교과서에서 안 가르치는 실제 표현
+4. 문화적으로 피해야 하는 표현이나 행동
+5. 최근 유행하는 신조어나 인터넷 표현
+</code></pre><h2 id="효과를-극대화하는-활용-팁">효과를 극대화하는 활용 팁</h2>
+<pre class="mermaid">flowchart TD
+    A[&#34;매일 30분 루틴 만들기&#34;] --&gt; B[&#34;10분: 어휘 학습&lt;br&gt;(프롬프트 3)&#34;]
+    A --&gt; C[&#34;10분: 대화 연습&lt;br&gt;(프롬프트 2)&#34;]
+    A --&gt; D[&#34;10분: 작문 + 교정&lt;br&gt;(프롬프트 4)&#34;]
+
+    E[&#34;주 1회 심화 학습&#34;] --&gt; F[&#34;롤플레이&lt;br&gt;(프롬프트 5)&#34;]
+    E --&gt; G[&#34;문법 집중&lt;br&gt;(프롬프트 6)&#34;]
+    E --&gt; H[&#34;문화 학습&lt;br&gt;(프롬프트 7)&#34;]
+
+    classDef daily fill:#c5dcef,stroke:#4a90d9,color:#333
+    classDef weekly fill:#fde8c0,stroke:#e6a817,color:#333
+
+    class A,B,C,D daily
+    class E,F,G,H weekly</pre>
+<ol>
+<li><strong>일관성이 핵심</strong> : 하루 30분이라도 매일 하는 것이 주 1회 3시간보다 효과적입니다</li>
+<li><strong>프롬프트 조합 활용</strong> : 하나의 프롬프트만 쓰지 말고, 매일 다른 프롬프트를 돌아가며 사용하세요</li>
+<li><strong>실수를 두려워하지 마세요</strong> : ChatGPT는 절대 당신을 평가하지 않습니다. 틀려도 괜찮습니다</li>
+<li><strong>음성 기능 활용</strong> : ChatGPT 앱의 음성 대화 기능을 활용하면 스피킹 연습까지 가능합니다</li>
+<li><strong>진도 기록</strong> : ChatGPT 메모리 기능을 활용해 학습 진도를 기억하게 하세요</li>
+</ol>
+<h2 id="마무리">마무리</h2>
+<p>듀오링고 같은 앱이 나쁜 것은 아닙니다. 하지만 <strong>진짜 언어를 구사하고 싶다면</strong>, 맞춤형 1:1 튜터링이 필요합니다. ChatGPT는 그 역할을 무료로, 24시간, 어떤 언어든 해줍니다. 위의 7가지 프롬프트를 복사해서 오늘부터 바로 시작해 보세요.</p>
+<h2 id="참고">참고</h2>
+<ul>
+<li>원본: <a href="https://www.threads.com/@easygpt2526/post/DWSd10ZE0o4">Threads 포스트 (@easygpt2526)</a></li>
+<li>참고: <a href="https://promptadvance.club/blog/chatgpt-prompts-for-language-learning">7 ChatGPT Prompts to Accelerate Language Learning (Prompt Advance)</a></li>
+<li>작성일: 2026년 3월 25일</li>
+</ul></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/toc.js'></script>
+<link rel="stylesheet" href='https://life-log.gyuha.com/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://life-log.gyuha.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://life-log.gyuha.com/js/github-style.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/search.js'></script>
+
+
+
+<script type="module" src='https://life-log.gyuha.com/js/mermaid.js'></script>
+
+
+
+</html>
