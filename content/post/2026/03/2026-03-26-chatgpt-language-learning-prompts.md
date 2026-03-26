@@ -1,6 +1,6 @@
 ---
 title: "듀오링고는 이제 그만: 90일 안에 어떤 언어든 말할 수 있게 해주는 ChatGPT 프롬프트 7가지"
-date: 2026-03-26
+date: 2026-03-26T00:00:00+09:00
 tags: ["ChatGPT", "프롬프트", "언어학습", "영어공부", "AI활용", "듀오링고"]
 category: "AI"
 original_url: "https://www.threads.com/@easygpt2526/post/DWSd10ZE0o4"

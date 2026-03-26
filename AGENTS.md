@@ -48,6 +48,7 @@ From `themes/hago/package.json`:
 
 ### Command caveats
 - `task deploy` has side effects (commits and pushes two repos). Run only when explicitly requested.
+- If the user prompt says `배포` or the typo `베포`, treat that as an explicit request to run `task deploy`.
 - `task clone` removes `public` first (`rm -rf public`) and reclones.
 - README examples are simplified; prefer exact behavior from `Taskfile.yml`.
 
