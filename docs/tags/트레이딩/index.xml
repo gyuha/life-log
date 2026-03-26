@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>트레이딩 on Life Log</title>
+    <link>https://life-log.gyuha.com/tags/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9/</link>
+    <description>Recent content in 트레이딩 on Life Log</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 27 Mar 2026 07:57:09 +0900</lastBuildDate>
+    <atom:link href="https://life-log.gyuha.com/tags/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GROK으로 주식 트레이딩 자동화하는 프롬프트 6가지</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-03-27-grok-stock-trading-prompts/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-03-27-grok-stock-trading-prompts/</guid>
+      <description>&lt;p&gt;xAI의 GROK은 실시간 데이터 접근과 강력한 분석 능력을 바탕으로 주식 트레이딩에서 눈에 띄는 활용 사례가 늘고 있다. SNS 계정 @human__bro가 공유한 &amp;ldquo;주식 트레이딩 자동화를 여는 8가지 프롬프트&amp;quot;가 화제가 됐다. 공개된 6가지 프롬프트를 분석하고, 각각의 활용 맥락과 주의점을 정리했다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

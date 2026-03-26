@@ -6,8 +6,71 @@
     <description>Recent content in Tags on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 26 Mar 2026 22:35:20 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 08:02:02 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://life-log.gyuha.com/tags/ai/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ETF</title>
+      <link>https://life-log.gyuha.com/tags/etf/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/etf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GROK</title>
+      <link>https://life-log.gyuha.com/tags/grok/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/grok/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>장기투자</title>
+      <link>https://life-log.gyuha.com/tags/%EC%9E%A5%EA%B8%B0%ED%88%AC%EC%9E%90/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%9E%A5%EA%B8%B0%ED%88%AC%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>주식</title>
+      <link>https://life-log.gyuha.com/tags/%EC%A3%BC%EC%8B%9D/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%A3%BC%EC%8B%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>투자원칙</title>
+      <link>https://life-log.gyuha.com/tags/%ED%88%AC%EC%9E%90%EC%9B%90%EC%B9%99/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%88%AC%EC%9E%90%EC%9B%90%EC%B9%99/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>트레이딩</title>
+      <link>https://life-log.gyuha.com/tags/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>포트폴리오</title>
+      <link>https://life-log.gyuha.com/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>프롬프트</title>
+      <link>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI활용</title>
       <link>https://life-log.gyuha.com/tags/ai%ED%99%9C%EC%9A%A9/</link>
@@ -125,13 +188,6 @@
       <link>https://life-log.gyuha.com/tags/%EC%B2%B4%EC%A4%91%EC%9C%A0%EC%A7%80/</link>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%B2%B4%EC%A4%91%EC%9C%A0%EC%A7%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>프롬프트</title>
-      <link>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>
@@ -426,13 +482,6 @@
       <link>https://life-log.gyuha.com/tags/%EC%A7%91%EB%8B%A8%EC%8B%AC%EB%A6%AC/</link>
       <pubDate>Mon, 16 Mar 2026 19:55:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%A7%91%EB%8B%A8%EC%8B%AC%EB%A6%AC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ETF</title>
-      <link>https://life-log.gyuha.com/tags/etf/</link>
-      <pubDate>Mon, 16 Mar 2026 19:20:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/etf/</guid>
       <description></description>
     </item>
     <item>

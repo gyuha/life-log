@@ -109,7 +109,7 @@ Prefer local patterns over global rewrites.
 
 ### Markdown and frontmatter (`content/post/**/*.md`)
 - Frontmatter format is YAML (`metaDataFormat = "yaml"` in `config.toml`).
-- For post frontmatter `date`, use date only in `YYYY-MM-DD` format. Do not include time.
+- For post frontmatter `date`, use `YYYY-MM-DDT00:00:00+09:00` format (KST 명시).
 - Archetype baseline fields:
   - `title`
   - `date`
