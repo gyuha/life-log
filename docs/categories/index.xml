@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 27 Mar 2026 08:50:33 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 20:19:49 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://life-log.gyuha.com/categories/ai/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>건강</title>
+      <link>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</guid>
+      <description></description>
+    </item>
     <item>
       <title>생각</title>
       <link>https://life-log.gyuha.com/categories/%EC%83%9D%EA%B0%81/</link>
@@ -20,20 +34,6 @@
       <link>https://life-log.gyuha.com/categories/%ED%88%AC%EC%9E%90/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/categories/%ED%88%AC%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>건강</title>
-      <link>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>https://life-log.gyuha.com/categories/ai/</link>
-      <pubDate>Mon, 23 Mar 2026 18:10:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/categories/ai/</guid>
       <description></description>
     </item>
     <item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>업무자동화 on Life Log</title>
+    <link>https://life-log.gyuha.com/tags/%EC%97%85%EB%AC%B4%EC%9E%90%EB%8F%99%ED%99%94/</link>
+    <description>Recent content in 업무자동화 on Life Log</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 27 Mar 2026 20:11:29 +0900</lastBuildDate>
+    <atom:link href="https://life-log.gyuha.com/tags/%EC%97%85%EB%AC%B4%EC%9E%90%EB%8F%99%ED%99%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>두 명이 500명을 운영한다 — 오픈클로로 100% AI 네이티브가 된 GPTers 사례</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-03-27-ai-native-company-openclaw-gpters/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-03-27-ai-native-company-openclaw-gpters/</guid>
+      <description>&lt;p&gt;기수당 4~500명이 참여하는 AI 스터디 커뮤니티를 단 두 명이 운영한다. 지피터스(GPTers)의 운영 실태다. 죽을 것 같았다는 표현이 과장이 아니었다. 그 병목을 해결한 것이 오픈클로 기반의 AI 에이전트 &amp;lsquo;뽀야&amp;rsquo;와 &amp;lsquo;뽀짝이&amp;rsquo;다. 지피터스·지니파이 김태현 대표와 송다혜 님이 빌더 조쉬 채널에 출연해 회사의 모든 워크플로우를 100% AI로 전환한 과정을 상세히 공개했다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

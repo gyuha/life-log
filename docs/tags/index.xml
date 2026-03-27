@@ -6,13 +6,34 @@
     <description>Recent content in Tags on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 27 Mar 2026 08:50:33 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 20:19:49 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>https://life-log.gyuha.com/tags/ai/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI네이티브</title>
+      <link>https://life-log.gyuha.com/tags/ai%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/ai%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI에이전트</title>
+      <link>https://life-log.gyuha.com/tags/ai%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/ai%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ClaudeCode</title>
+      <link>https://life-log.gyuha.com/tags/claudecode/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/claudecode/</guid>
       <description></description>
     </item>
     <item>
@@ -23,10 +44,24 @@
       <description></description>
     </item>
     <item>
+      <title>GPTers</title>
+      <link>https://life-log.gyuha.com/tags/gpters/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/gpters/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>GROK</title>
       <link>https://life-log.gyuha.com/tags/grok/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/grok/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>간헐적단식</title>
+      <link>https://life-log.gyuha.com/tags/%EA%B0%84%ED%97%90%EC%A0%81%EB%8B%A8%EC%8B%9D/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EA%B0%84%ED%97%90%EC%A0%81%EB%8B%A8%EC%8B%9D/</guid>
       <description></description>
     </item>
     <item>
@@ -37,10 +72,94 @@
       <description></description>
     </item>
     <item>
+      <title>남성그루밍</title>
+      <link>https://life-log.gyuha.com/tags/%EB%82%A8%EC%84%B1%EA%B7%B8%EB%A3%A8%EB%B0%8D/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EB%82%A8%EC%84%B1%EA%B7%B8%EB%A3%A8%EB%B0%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>노화</title>
+      <link>https://life-log.gyuha.com/tags/%EB%85%B8%ED%99%94/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EB%85%B8%ED%99%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>다이어트</title>
+      <link>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>단식</title>
+      <link>https://life-log.gyuha.com/tags/%EB%8B%A8%EC%8B%9D/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EB%8B%A8%EC%8B%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>무노력다이어트</title>
+      <link>https://life-log.gyuha.com/tags/%EB%AC%B4%EB%85%B8%EB%A0%A5%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EB%AC%B4%EB%85%B8%EB%A0%A5%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>생산성</title>
       <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>수면</title>
+      <link>https://life-log.gyuha.com/tags/%EC%88%98%EB%A9%B4/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%88%98%EB%A9%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>시간제한식사</title>
+      <link>https://life-log.gyuha.com/tags/%EC%8B%9C%EA%B0%84%EC%A0%9C%ED%95%9C%EC%8B%9D%EC%82%AC/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%8B%9C%EA%B0%84%EC%A0%9C%ED%95%9C%EC%8B%9D%EC%82%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>얼굴붓기</title>
+      <link>https://life-log.gyuha.com/tags/%EC%96%BC%EA%B5%B4%EB%B6%93%EA%B8%B0/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%96%BC%EA%B5%B4%EB%B6%93%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>업무자동화</title>
+      <link>https://life-log.gyuha.com/tags/%EC%97%85%EB%AC%B4%EC%9E%90%EB%8F%99%ED%99%94/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%97%85%EB%AC%B4%EC%9E%90%EB%8F%99%ED%99%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>오토파지</title>
+      <link>https://life-log.gyuha.com/tags/%EC%98%A4%ED%86%A0%ED%8C%8C%EC%A7%80/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%98%A4%ED%86%A0%ED%8C%8C%EC%A7%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>오픈클로</title>
+      <link>https://life-log.gyuha.com/tags/%EC%98%A4%ED%94%88%ED%81%B4%EB%A1%9C/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%98%A4%ED%94%88%ED%81%B4%EB%A1%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>운동</title>
+      <link>https://life-log.gyuha.com/tags/%EC%9A%B4%EB%8F%99/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%9A%B4%EB%8F%99/</guid>
       <description></description>
     </item>
     <item>
@@ -72,6 +191,20 @@
       <description></description>
     </item>
     <item>
+      <title>체지방감량</title>
+      <link>https://life-log.gyuha.com/tags/%EC%B2%B4%EC%A7%80%EB%B0%A9%EA%B0%90%EB%9F%89/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%B2%B4%EC%A7%80%EB%B0%A9%EA%B0%90%EB%9F%89/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>턱선</title>
+      <link>https://life-log.gyuha.com/tags/%ED%84%B1%EC%84%A0/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%84%B1%EC%84%A0/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>투자원칙</title>
       <link>https://life-log.gyuha.com/tags/%ED%88%AC%EC%9E%90%EC%9B%90%EC%B9%99/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
@@ -100,10 +233,24 @@
       <description></description>
     </item>
     <item>
+      <title>한의학</title>
+      <link>https://life-log.gyuha.com/tags/%ED%95%9C%EC%9D%98%ED%95%99/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%95%9C%EC%9D%98%ED%95%99/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>협업</title>
       <link>https://life-log.gyuha.com/tags/%ED%98%91%EC%97%85/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%ED%98%91%EC%97%85/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>호르몬</title>
+      <link>https://life-log.gyuha.com/tags/%ED%98%B8%EB%A5%B4%EB%AA%AC/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%98%B8%EB%A5%B4%EB%AA%AC/</guid>
       <description></description>
     </item>
     <item>
@@ -132,13 +279,6 @@
       <link>https://life-log.gyuha.com/tags/%EB%82%A8%EC%84%B1%EA%B1%B4%EA%B0%95/</link>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EB%82%A8%EC%84%B1%EA%B1%B4%EA%B0%95/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>다이어트</title>
-      <link>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>
