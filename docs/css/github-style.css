@@ -166,6 +166,15 @@ body {
   margin-left: 0;
 }
 
+.gisthead h1,
+.gisthead h1 strong,
+.gisthead h1 a {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  max-width: none !important;
+}
+
 @media (max-width: 768px) {
   .Header {
     padding-left: 24px!important;

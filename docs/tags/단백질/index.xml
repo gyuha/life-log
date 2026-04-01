@@ -6,7 +6,11 @@
     <description>Recent content in 단백질 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
+<<<<<<< HEAD
     <lastBuildDate>Fri, 27 Mar 2026 21:55:46 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Fri, 27 Mar 2026 19:48:46 +0900</lastBuildDate>
+>>>>>>> 6fd9efd (build: rebuild site 2026-04-02 00:29:29)
     <atom:link href="https://life-log.gyuha.com/tags/%EB%8B%A8%EB%B0%B1%EC%A7%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>칼로리보다 인슐린이 먼저라는 주장, 어떻게 읽어야 할까</title>
