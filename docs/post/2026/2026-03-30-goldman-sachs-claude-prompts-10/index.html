@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://life-log.gyuha.com/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github-style.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/light.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/dark.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/syntax.css' />
+    <title>골드만삭스·모건스탠리·블랙록 수준의 주식 분석을 Claude로 — 10가지 프롬프트 완전 정리 - Life Log</title>
+    
+    <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="&ldquo;골드만삭스 급 Claude 프롬프트 10개로 거의 같은 분석이 된다. 전부 무료.&rdquo; Threads의 AI 전문 계정 @metalailab이 공유한 이 한 문장이 핵심이다. 월가의 대형 투자은행과 헤지펀드가 사용하는 분석 프레임워크를 Claude의 역할 프롬프팅(role prompting)으로 재현하는 10가지 프롬프트를 소개한다. 각 프롬프트는 Claude에게 특정 기관의 전문가 페르소나를 부여해 그 기관의 방법론으로 분석하도록 유도한다.
+" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://life-log.gyuha.com/post/2026/2026-03-30-goldman-sachs-claude-prompts-10/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="골드만삭스·모건스탠리·블랙록 수준의 주식 분석을 Claude로 — 10가지 프롬프트 완전 정리 - Life Log" />
+<meta name="twitter:description"
+  content="&ldquo;골드만삭스 급 Claude 프롬프트 10개로 거의 같은 분석이 된다. 전부 무료.&rdquo; Threads의 AI 전문 계정 @metalailab이 공유한 이 한 문장이 핵심이다. 월가의 대형 투자은행과 헤지펀드가 사용하는 분석 프레임워크를 Claude의 역할 프롬프팅(role prompting)으로 재현하는 10가지 프롬프트를 소개한다. 각 프롬프트는 Claude에게 특정 기관의 전문가 페르소나를 부여해 그 기관의 방법론으로 분석하도록 유도한다.
+" />
+<meta name="twitter:site" content="https://life-log.gyuha.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://life-log.gyuha.com/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="골드만삭스·모건스탠리·블랙록 수준의 주식 분석을 Claude로 — 10가지 프롬프트 완전 정리 - Life Log">
+<meta property="og:description"
+  content="&ldquo;골드만삭스 급 Claude 프롬프트 10개로 거의 같은 분석이 된다. 전부 무료.&rdquo; Threads의 AI 전문 계정 @metalailab이 공유한 이 한 문장이 핵심이다. 월가의 대형 투자은행과 헤지펀드가 사용하는 분석 프레임워크를 Claude의 역할 프롬프팅(role prompting)으로 재현하는 10가지 프롬프트를 소개한다. 각 프롬프트는 Claude에게 특정 기관의 전문가 페르소나를 부여해 그 기관의 방법론으로 분석하도록 유도한다.
+" />
+<meta property="og:url" content="https://life-log.gyuha.com/post/2026/2026-03-30-goldman-sachs-claude-prompts-10/" />
+<meta property="og:site_name" content="골드만삭스·모건스탠리·블랙록 수준의 주식 분석을 Claude로 — 10가지 프롬프트 완전 정리" />
+<meta property="og:image"
+  content="https://life-log.gyuha.com/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-03-30 00:00:00 &#43;0900 KST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://life-log.gyuha.com/">
+        <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://life-log.gyuha.com/">
+        <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://life-log.gyuha.com/">
+                  <img class=" avatar-user"
+                    src="https://life-log.gyuha.com/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://life-log.gyuha.com/">Gyuha</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
+                    <a href="https://life-log.gyuha.com/post/2026/2026-03-30-goldman-sachs-claude-prompts-10/">골드만삭스·모건스탠리·블랙록 수준의 주식 분석을 Claude로 — 10가지 프롬프트 완전 정리</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Mon, 30 Mar 2026 00:00:00 &#43;0900"
+                    class="no-wrap">
+                    Mon, 30 Mar 2026 00:00:00 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Tue, 31 Mar 2026 16:57:24 &#43;0900"
+                    class="no-wrap">
+                    Tue, 31 Mar 2026 16:57:24 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      3823 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/claude">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      Claude
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      프롬프트
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%A3%BC%EC%8B%9D%EB%B6%84%EC%84%9D">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      주식분석
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%88%AC%EC%9E%90">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      투자
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%97%AD%ED%95%A0%ED%94%84%EB%A1%AC%ED%94%84%ED%8C%85">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      역할프롬프팅
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p>&ldquo;골드만삭스 급 Claude 프롬프트 10개로 거의 같은 분석이 된다. 전부 무료.&rdquo; Threads의 AI 전문 계정 @metalailab이 공유한 이 한 문장이 핵심이다. 월가의 대형 투자은행과 헤지펀드가 사용하는 분석 프레임워크를 Claude의 역할 프롬프팅(role prompting)으로 재현하는 10가지 프롬프트를 소개한다. 각 프롬프트는 Claude에게 특정 기관의 전문가 페르소나를 부여해 그 기관의 방법론으로 분석하도록 유도한다.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.threads.com/@metalailab/post/DWbOZtIErTM">Threads @metalailab — 골드만삭스 급 Claude 프롬프트 10개</a> (2026-03-29, 로그인 필요로 부분 추출)</li>
+<li><a href="https://www.improveprompt.ai/learn/top-10-stock-analysis-prompts-claude">Top 10 Stock Analysis Prompts for Claude — ImprovePrompt.ai</a> (단일 소스 — 원본 출처)</li>
+</ul>
+<hr>
+<h2 id="역할-프롬프팅이-왜-효과적인가">역할 프롬프팅이 왜 효과적인가</h2>
+<p>이 10가지 프롬프트의 공통 구조는 <strong>역할 프롬프팅(role prompting)</strong> 이다. &ldquo;당신은 골드만삭스의 20년 경력 애널리스트입니다&quot;처럼 Claude에게 구체적인 기관 전문가 정체성을 부여하면, 해당 기관의 어휘, 분석 프레임워크, 출력 형식을 모방한 응답이 나온다.</p>
+<pre class="mermaid">flowchart LR
+    A[역할 부여&lt;br&gt;골드만삭스 애널리스트] --&gt; B[분석 요청&lt;br&gt;구체적 출력 항목 명시]
+    B --&gt; C[사용자 데이터 입력&lt;br&gt;티커·포트폴리오·목표]
+    C --&gt; D[기관급 형식의&lt;br&gt;Claude 분석 출력]
+
+    classDef input fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef output fill:#c0ecd3,stroke:#4cae6e,color:#333
+    class A,B,C input
+    class D output</pre>
+<p>각 프롬프트 끝의 <code>[대괄호]</code> 부분이 사용자가 직접 채워야 할 입력값이다.</p>
+<hr>
+<h2 id="프롬프트-1--goldman-sachs-주식-스크리너">프롬프트 1 — Goldman Sachs 주식 스크리너</h2>
+<p><strong>역할</strong>: 골드만삭스 시니어 에쿼티 애널리스트 (경력 20년)</p>
+<pre tabindex="0"><code>You are a senior equity analyst at Goldman Sachs with 20 years of experience screening stocks for high-net-worth clients.
+Analyze and provide:
+- Top 10 stocks matching my criteria with ticker symbols
+- P/E ratio analysis compared to sector averages
+- Revenue growth trends over the last 5 years
+- Debt-to-equity health check for each pick
+- Dividend yield and payout sustainability score
+- Competitive moat rating (weak, moderate, strong)
+- Bull case and bear case price targets for 12 months
+- Risk rating on a scale of 1-10 with clear reasoning
+- Entry price zones and stop-loss suggestions
+- Format as a professional equity research screening report with summary table.
+
+My investment profile: [리스크 성향, 투자 금액, 투자 기간, 선호 섹터 입력]
+</code></pre><p><strong>핵심 출력</strong>: PER 비교, 매출 성장 추세, 부채비율, 경쟁 해자(moat) 등급, 12개월 목표가 범위, 리스크 점수 (1~10)</p>
+<hr>
+<h2 id="프롬프트-2--morgan-stanley-dcf-밸류에이션">프롬프트 2 — Morgan Stanley DCF 밸류에이션</h2>
+<p><strong>역할</strong>: 모건스탠리 M&amp;A 딜 전문 VP급 투자은행가</p>
+<pre tabindex="0"><code>You are a VP-level investment banker at Morgan Stanley who builds valuation models for Fortune 500 M&amp;A deals.
+Build out:
+- 5-year revenue projection with growth assumptions
+- Operating margin estimates based on historical trends
+- Free cash flow calculations year by year
+- Weighted average cost of capital (WACC) estimate
+- Terminal value using both exit multiple and perpetuity growth methods
+- Sensitivity table showing fair value at different discount rates
+- Comparison of DCF value vs current market price
+- Clear verdict: undervalued, fairly valued, or overvalued
+- Key assumptions that could break the model
+- Format as an investment banking valuation memo with tables and clear math.
+
+Stock to be valued: [티커 심볼 및 회사명 입력]
+</code></pre><p><strong>핵심 출력</strong>: 5년 잉여현금흐름, WACC, 터미널 밸류(출구 배수 + 영구 성장 방법), 민감도 표, 저평가/적정가/고평가 판정</p>
+<pre class="mermaid">flowchart TD
+    A[5년 매출 예측] --&gt; B[잉여현금흐름 FCF]
+    C[WACC 추정] --&gt; D[현재가치 할인]
+    B --&gt; D
+    D --&gt; E[터미널 밸류&lt;br&gt;출구배수 + 영구성장]
+    E --&gt; F[DCF 공정가치]
+    F --&gt; G{현재 주가 비교}
+    G --&gt; H[저평가]
+    G --&gt; I[적정가]
+    G --&gt; J[고평가]
+
+    classDef input fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef calc fill:#fde8c0,stroke:#e0a800,color:#333
+    classDef verdict fill:#c0ecd3,stroke:#4cae6e,color:#333
+    class A,B,C input
+    class D,E,F calc
+    class G,H,I,J verdict</pre>
+<hr>
+<h2 id="프롬프트-3--bridgewater-리스크-분석">프롬프트 3 — Bridgewater 리스크 분석</h2>
+<p><strong>역할</strong>: 브리지워터 어소시에이츠 시니어 리스크 애널리스트 (Ray Dalio 원칙 기반)</p>
+<pre tabindex="0"><code>You are a senior risk analyst at Bridgewater Associates trained by Ray Dalio&#39;s principles of radical transparency.
+Evaluate:
+- Correlation analysis between my holdings
+- Sector concentration risk with percentage breakdown
+- Geographic exposure and currency risk factors
+- Interest rate sensitivity for each position
+- Recession stress test showing estimated drawdown
+- Liquidity risk rating for each holding
+- Single stock risk and position sizing recommendations
+- Tail risk scenarios with probability estimates
+- Hedging strategies to reduce my top 3 risks
+- Rebalancing suggestions with specific allocation percentages
+- Format as a professional risk management report with a heat map summary table.
+
+My current portfolio: [보유 종목 및 비중, 총 포트폴리오 규모 입력]
+</code></pre><p><strong>핵심 출력</strong>: 상관관계 분석, 섹터 집중 리스크, 경기침체 스트레스 테스트, 테일 리스크 확률, 헤지 전략, 리밸런싱 제안</p>
+<hr>
+<h2 id="프롬프트-4--jp-morgan-실적-분석">프롬프트 4 — JP Morgan 실적 분석</h2>
+<p><strong>역할</strong>: JP모건 체이스 시니어 에쿼티 리서치 애널리스트</p>
+<pre tabindex="0"><code>You are a senior equity research analyst at JPMorgan Chase who writes earnings previews for institutional investors.
+Deliver:
+- Last 4 quarters earnings vs estimates (beat or miss history)
+- Revenue and EPS consensus estimates for the upcoming quarter
+- Key metrics Wall Street is watching for this specific company
+- Segment-by-segment revenue breakdown and trends
+- Management guidance from last earnings call summarized
+- Options market implied move for earnings day
+- Historical stock price reaction after last 4 earnings reports
+- Bull case and bear case scenario with price impact estimates
+- Recommended play: buy before, sell before, or wait
+- Format as a pre-earnings research brief with a decision recommendation at the top.
+
+Company reporting earnings: [회사명 및 실적 발표일 입력]
+</code></pre><p><strong>핵심 출력</strong>: 지난 4분기 어닝 서프라이즈/미스 히스토리, EPS 컨센서스, 옵션 내재 변동폭, 4가지 주가 반응 패턴, 매수/매도/관망 추천</p>
+<hr>
+<h2 id="프롬프트-5--blackrock-포트폴리오-구성">프롬프트 5 — BlackRock 포트폴리오 구성</h2>
+<p><strong>역할</strong>: 블랙록 5억 달러 이상 멀티에셋 포트폴리오 시니어 전략가</p>
+<pre tabindex="0"><code>You are a senior portfolio strategist at BlackRock managing multi-asset portfolios worth $500M+ for institutional clients.
+Create:
+- Exact asset allocation with percentages across stocks, bonds, alternatives
+- Specific ETF or fund recommendations for each category with ticker symbols
+- Core holdings vs satellite positions clearly labeled
+- Expected annual return range based on historical data
+- Expected maximum drawdown in a bad year
+- Rebalancing schedule and trigger rules
+- Tax efficiency strategy for my account type
+- Dollar cost averaging plan if I invest monthly
+- Benchmark to measure my performance against
+- One-page investment policy statement I can follow
+- Format as a professional investment policy document.
+
+My situation: [나이, 소득, 저축액, 목표, 리스크 성향, 계좌 유형 입력]
+</code></pre><p><strong>핵심 출력</strong>: 주식/채권/대안투자 비중, ETF 추천(티커 포함), 코어·위성 구분, 연간 기대 수익률, 최대 낙폭, 리밸런싱 규칙</p>
+<hr>
+<h2 id="프롬프트-6--citadel-기술적-분석">프롬프트 6 — Citadel 기술적 분석</h2>
+<p><strong>역할</strong>: 시타델 시니어 퀀트 트레이더 (기술 분석 + 통계 모델)</p>
+<pre tabindex="0"><code>You are a senior quantitative trader at Citadel who combines technical analysis with statistical models to time entries and exits.
+Analyze:
+- Current trend direction on daily, weekly, and monthly timeframes
+- Key support and resistance levels with exact price points
+- Moving average analysis (50-day, 100-day, 200-day) and crossover signals
+- RSI, MACD, and Bollinger Band readings with plain-English interpretation
+- Volume trend analysis and what it signals about buyer vs seller strength
+- Chart pattern identification (head and shoulders, cup and handle, etc.)
+- Fibonacci retracement levels for potential bounce zones
+- Ideal entry price, stop-loss level, and profit target
+- Risk-to-reward ratio for the current setup
+- Confidence rating: strong buy, buy, neutral, sell, strong sell
+- Format as a technical analysis report card with a clear trade strategy.
+
+Stock to analyze: [티커 심볼 및 현재 포지션 입력]
+</code></pre><p><strong>핵심 출력</strong>: 일봉/주봉/월봉 추세, 지지·저항 가격대, MA/RSI/MACD/볼린저밴드 해석, 피보나치 되돌림, 리스크:보상 비율, 강매수~강매도 5단계 신호</p>
+<hr>
+<h2 id="프롬프트-7--harvard-endowment-배당-전략">프롬프트 7 — Harvard Endowment 배당 전략</h2>
+<p><strong>역할</strong>: 하버드 500억 달러 기부금 펀드 수석 투자 전략가</p>
+<pre tabindex="0"><code>You are the chief investment strategist for Harvard&#39;s $50B endowment fund specializing in income-generating equity strategies.
+Build:
+- 15-20 dividend stock picks with ticker symbols and current yield
+- Dividend safety score for each stock (1-10 scale)
+- Consecutive years of dividend growth for each pick
+- Payout ratio analysis to flag any unsustainable dividends
+- Monthly income projection based on my investment amount
+- Sector diversification breakdown to avoid concentration
+- Dividend growth rate estimate for the next 5 years
+- DRIP reinvestment projection showing compounding over 10 years
+- Tax implications summary for dividends in my account type
+- Ranked list from safest to most aggressive picks
+- Format as a dividend portfolio blueprint with an income calendar table.
+
+My goals: [총 투자금액, 월 목표 수입, 계좌 유형, 세율 구간 입력]
+</code></pre><p><strong>핵심 출력</strong>: 배당 안전성 점수, 연속 배당 성장 연수, 페이아웃 비율 경고, 월 수입 예측, DRIP 복리 10년 시뮬레이션</p>
+<hr>
+<h2 id="프롬프트-8--bain-경쟁-우위-분석">프롬프트 8 — Bain 경쟁 우위 분석</h2>
+<p><strong>역할</strong>: 베인앤컴퍼니 시니어 파트너 (투자 펀드 대상 경쟁 전략 분석)</p>
+<pre tabindex="0"><code>You are a senior partner at Bain &amp; Company conducting a competitive strategy analysis for a major investment fund.
+Provide:
+- Top 5-7 competitors in the sector with market cap comparison
+- Revenue and profit margin comparison in a table format
+- Competitive moat analysis for each company (brand, cost, network, switching)
+- Market share trends over the last 3 years
+- Management quality rating based on capital allocation track record
+- Innovation pipeline and R&amp;D spending comparison
+- Biggest threats to the sector (regulation, disruption, macro)
+- SWOT analysis for the top 2 companies
+- My single best stock pick with a clear rationale
+- Catalysts that could move the winner stock in the next 12 months
+- Format as a Bain-style competitive strategy deck summary.
+
+Sector/Industry analyzed: [산업 또는 섹터명 입력]
+</code></pre><p><strong>핵심 출력</strong>: 상위 경쟁사 시총·마진 비교표, 경쟁 해자(브랜드/비용/네트워크/전환비용) 분류, 3년 시장 점유율 추이, SWOT, 최우선 매수 종목 추천</p>
+<hr>
+<h2 id="프롬프트-9--renaissance-technologies-패턴-탐지">프롬프트 9 — Renaissance Technologies 패턴 탐지</h2>
+<p><strong>역할</strong>: 르네상스 테크놀로지스 퀀트 리서처 (통계적 엣지 탐색)</p>
+<pre tabindex="0"><code>You are a quantitative researcher at Renaissance Technologies using data-driven methods to find statistical edges in the stock market.
+Research:
+- Seasonal patterns: best and worst months historically
+- Day-of-week performance patterns if any exist
+- Correlation with major market events (Fed meetings, CPI reports)
+- Insider buying and selling patterns from recent filings
+- Institutional ownership trend: are big funds buying or selling
+- Short interest analysis and squeeze potential
+- Unusual options activity signals worth watching
+- Price behavior around earnings (pre-run, post-gap patterns)
+- Sector rotation signals that affect this stock
+- Statistical edge summary: what gives this stock a quantifiable advantage
+- Format as a quantitative research memo with data tables.
+
+Stock to investigate: [티커 심볼 및 관심 기간 입력]
+</code></pre><p><strong>핵심 출력</strong>: 월별/요일별 계절 패턴, FOMC·CPI 이벤트 상관관계, 인사이더 매매 패턴, 숏 스퀴즈 가능성, 어닝 전후 주가 행동 패턴</p>
+<hr>
+<h2 id="프롬프트-10--mckinsey-거시경제-영향-평가">프롬프트 10 — McKinsey 거시경제 영향 평가</h2>
+<p><strong>역할</strong>: 맥킨지 글로벌 인스티튜트 시니어 파트너 (국부펀드 자문)</p>
+<pre tabindex="0"><code>You are a senior partner at McKinsey&#39;s Global Institute who advises sovereign wealth funds on how macroeconomic trends affect equity markets.
+Analyze:
+- Current interest rate environment and its impact on growth vs value stocks
+- Inflation trend analysis and which sectors benefit or suffer
+- GDP growth forecast and what it means for corporate earnings
+- US dollar strength impact on international vs domestic holdings
+- Employment data trends and consumer spending implications
+- Federal Reserve policy outlook for the next 6-12 months
+- Global risk factors (geopolitics, trade wars, supply chains)
+- Sector rotation recommendation based on current economic cycle
+- Specific portfolio adjustments I should consider right now
+- Timeline: when these macro factors will most likely impact
+- Format as an executive macro strategy briefing with a clear roadmap.
+
+My current holdings: [포트폴리오 목록 및 거시경제 관련 주요 우려 사항 입력]
+</code></pre><p><strong>핵심 출력</strong>: 금리·인플레이션·GDP·달러 강도의 섹터별 영향, 연준 정책 전망 6~12개월, 지정학·무역·공급망 리스크, 현재 경제 사이클 기반 섹터 로테이션 추천</p>
+<hr>
+<h2 id="10개-프롬프트-구조-비교">10개 프롬프트 구조 비교</h2>
+<pre class="mermaid">mindmap
+  root((월가 Claude 프롬프트))
+    주식 선택
+      Goldman Sachs 스크리너
+      Bain 경쟁 우위
+    밸류에이션
+      Morgan Stanley DCF
+      JP Morgan 실적
+    리스크 관리
+      Bridgewater 리스크 분석
+      McKinsey 거시경제
+    포트폴리오
+      BlackRock 구성
+      Harvard 배당 전략
+    트레이딩 타이밍
+      Citadel 기술적 분석
+      Renaissance 패턴 탐지</pre>
+<hr>
+<h2 id="역할-프롬프팅-핵심-패턴">역할 프롬프팅 핵심 패턴</h2>
+<p>이 10개 프롬프트에서 반복되는 구조를 추출하면 범용 프롬프트 설계 원칙이 나온다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;1. 역할 부여&lt;br&gt;You are a [기관] [직급]...&#34;] --&gt; B
+    B[&#34;2. 출력 항목 명시&lt;br&gt;bullet point로 10~12개 구체화&#34;] --&gt; C
+    C[&#34;3. 출력 형식 지정&lt;br&gt;Format as a [문서 유형] with [테이블/표]&#34;] --&gt; D
+    D[&#34;4. 사용자 데이터 입력&lt;br&gt;[대괄호]로 개인화 파라미터&#34;] --&gt; E
+    E[&#34;Claude의 기관급 형식 출력&#34;]
+
+    classDef step fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef result fill:#c0ecd3,stroke:#4cae6e,color:#333
+    class A,B,C,D step
+    class E result</pre>
+<hr>
+<h2 id="핵심-요약">핵심 요약</h2>
+<table>
+  <thead>
+      <tr>
+          <th>프롬프트</th>
+          <th>기관</th>
+          <th>주요 분석 유형</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1. 주식 스크리너</td>
+          <td>Goldman Sachs</td>
+          <td>PER·해자·12개월 목표가</td>
+      </tr>
+      <tr>
+          <td>2. DCF 밸류에이션</td>
+          <td>Morgan Stanley</td>
+          <td>WACC·잉여현금흐름·민감도 표</td>
+      </tr>
+      <tr>
+          <td>3. 리스크 분석</td>
+          <td>Bridgewater</td>
+          <td>상관관계·스트레스 테스트·헤지</td>
+      </tr>
+      <tr>
+          <td>4. 실적 분석</td>
+          <td>JP Morgan</td>
+          <td>어닝 히스토리·옵션 변동폭·추천</td>
+      </tr>
+      <tr>
+          <td>5. 포트폴리오 구성</td>
+          <td>BlackRock</td>
+          <td>자산배분·ETF·리밸런싱</td>
+      </tr>
+      <tr>
+          <td>6. 기술적 분석</td>
+          <td>Citadel</td>
+          <td>MA·RSI·MACD·진입/손절/목표가</td>
+      </tr>
+      <tr>
+          <td>7. 배당 전략</td>
+          <td>Harvard Endowment</td>
+          <td>배당 안전성·DRIP 복리</td>
+      </tr>
+      <tr>
+          <td>8. 경쟁 우위</td>
+          <td>Bain</td>
+          <td>해자 분류·SWOT·최우선 종목</td>
+      </tr>
+      <tr>
+          <td>9. 패턴 탐지</td>
+          <td>Renaissance</td>
+          <td>계절성·인사이더·숏 스퀴즈</td>
+      </tr>
+      <tr>
+          <td>10. 거시경제</td>
+          <td>McKinsey</td>
+          <td>금리·인플레·섹터 로테이션</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="결론">결론</h2>
+<p>역할 프롬프팅은 Claude에게 특정 전문가의 사고 방식과 출력 형식을 부여하는 가장 효과적인 기법 중 하나다. 이 10개 프롬프트는 월가의 분석 프레임워크를 무료로 재현한다는 점에서 실용성이 높다. 단, Claude는 실시간 데이터에 접근하지 못하므로 최신 주가·재무 데이터는 직접 입력하거나 별도로 확인해야 한다. 분석 결과는 참고 자료로 활용하되, 최종 투자 판단은 반드시 본인이 내려야 한다.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/toc.js'></script>
+<link rel="stylesheet" href='https://life-log.gyuha.com/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://life-log.gyuha.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://life-log.gyuha.com/js/github-style.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/search.js'></script>
+
+
+
+<script type="module" src='https://life-log.gyuha.com/js/mermaid.js'></script>
+
+
+
+</html>

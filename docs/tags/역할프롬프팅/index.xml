@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>역할프롬프팅 on Life Log</title>
+    <link>https://life-log.gyuha.com/tags/%EC%97%AD%ED%95%A0%ED%94%84%EB%A1%AC%ED%94%84%ED%8C%85/</link>
+    <description>Recent content in 역할프롬프팅 on Life Log</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 31 Mar 2026 16:57:24 +0900</lastBuildDate>
+    <atom:link href="https://life-log.gyuha.com/tags/%EC%97%AD%ED%95%A0%ED%94%84%EB%A1%AC%ED%94%84%ED%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>골드만삭스·모건스탠리·블랙록 수준의 주식 분석을 Claude로 — 10가지 프롬프트 완전 정리</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-03-30-goldman-sachs-claude-prompts-10/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-03-30-goldman-sachs-claude-prompts-10/</guid>
+      <description>&lt;p&gt;&amp;ldquo;골드만삭스 급 Claude 프롬프트 10개로 거의 같은 분석이 된다. 전부 무료.&amp;rdquo; Threads의 AI 전문 계정 @metalailab이 공유한 이 한 문장이 핵심이다. 월가의 대형 투자은행과 헤지펀드가 사용하는 분석 프레임워크를 Claude의 역할 프롬프팅(role prompting)으로 재현하는 10가지 프롬프트를 소개한다. 각 프롬프트는 Claude에게 특정 기관의 전문가 페르소나를 부여해 그 기관의 방법론으로 분석하도록 유도한다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
