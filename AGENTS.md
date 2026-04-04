@@ -193,6 +193,7 @@ Prefer local patterns over global rewrites.
   - `심리학`
   - `생산성`
   - `제품`
+  - `자기개발`
 - When categorizing a new post, pick the single best-fit canonical category from the list above instead of inventing a new label.
 - Tags are optional. If no canonical tag fits the post well, leave `tags` empty or omit it.
 - When tags are used, keep them to 3 or fewer per post.
