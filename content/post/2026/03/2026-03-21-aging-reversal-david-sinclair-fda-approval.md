@@ -1,8 +1,10 @@
 ---
 title: "노화는 질병이다: 하버드 의대 데이비드 싱클레어의 '노화 역전'과 FDA 임상 승인 소식"
 date: 2026-03-21T00:00:00+09:00
-tags: ["노화역전", "데이비드싱클레어", "에피제네틱스", "장수과학", "FDA임상", "OSK리프로그래밍"]
-category: "AI"
+tags:
+  - 건강
+categories:
+  - 건강
 original_url: "https://www.threads.net/@qjc.ai/post/DWGUldJk6Pm"
 ---
 

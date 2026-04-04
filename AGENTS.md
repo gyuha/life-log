@@ -60,7 +60,6 @@ Do NOT use --session for independent tasks that don't need the current conversat
 ═══════════════════════════════════════
 
 # AGENTS.md
-Guide for coding agents in `/Users/gyuha/workspace/blog`.
 
 ## Repository Overview
 - Project type: Hugo blog source repository.
@@ -73,6 +72,13 @@ Guide for coding agents in `/Users/gyuha/workspace/blog`.
   - `README.md`
   - `themes/hago/package.json`
   - `themes/hago/AGENTS.md`
+
+## Cursor / Copilot Rule Files
+Checked in this repository:
+- `.cursorrules`: not found
+- `.cursor/rules/`: not found
+- `.github/copilot-instructions.md`: not found
+No extra Cursor/Copilot instruction file is active.
 
 ## Build / Lint / Test Commands
 Run from repository root unless otherwise noted.
@@ -91,7 +97,7 @@ From `Taskfile.yml`:
 - `task run` -> `hugo server -D --bind=0.0.0.0`
 - `task dev` -> `hugo server -D --bind=0.0.0.0 --disableFastRender`
 - `task build` -> `hugo -D`
-- `task new -- <slug>` -> `hugo new post/YYYY/MM/YYYY-MM-DD-<slug>.md`
+- `task new -- <slug>` -> `hugo new post/YYYY/YYYY-MM-DD-<slug>.md`
 - `task deploy` -> build + commit/push `public` + commit/push source repo
 
 ### Theme asset commands (`themes/hago`)
@@ -109,7 +115,6 @@ From `themes/hago/package.json`:
 
 ### Command caveats
 - `task deploy` has side effects (commits and pushes two repos). Run only when explicitly requested.
-- If the user prompt says `배포` or the typo `베포`, treat that as an explicit request to run `task deploy`.
 - `task clone` removes `public` first (`rm -rf public`) and reclones.
 - README examples are simplified; prefer exact behavior from `Taskfile.yml`.
 
@@ -117,6 +122,7 @@ From `themes/hago/package.json`:
 - No lint task in root `Taskfile.yml`.
 - No test runner configured in root.
 - No `npm test` script in `themes/hago/package.json`.
+- No CI workflow under `.github/workflows/` in this repo.
 
 ## Single-Test Execution
 There is no true single-test command because no test framework is configured.
@@ -171,21 +177,58 @@ Prefer local patterns over global rewrites.
 
 ### Markdown and frontmatter (`content/post/**/*.md`)
 - Frontmatter format is YAML (`metaDataFormat = "yaml"` in `config.toml`).
-- For post frontmatter `date`, use `YYYY-MM-DDT00:00:00+09:00` format (KST 명시).
 - Archetype baseline fields:
   - `title`
   - `date`
   - `draft`
+- For new posts, set `date` to `YYYY-MM-DDT00:00:00+09:00` format (KST timezone). Do NOT use `YYYY-MM-DD` (date-only) format — Hugo interprets that as UTC midnight (`00:00:00Z`), which equals `09:00 KST`, causing posts written before 09:00 KST to be treated as future posts and excluded from the build.
 - Preferred post metadata for new content: `categories` (plural), `tags`, optional `description`.
+- Always use `categories` as a YAML array, even when there is only one category.
+- Assign exactly one category per post. Do not stack multiple categories on a single post.
+- Allowed categories are limited to these 7 canonical values only:
+  - `생활`
+  - `건강`
+  - `요리`
+  - `경제`
+  - `심리학`
+  - `생산성`
+  - `제품`
+- When categorizing a new post, pick the single best-fit canonical category from the list above instead of inventing a new label.
+- Tags are optional. If no canonical tag fits the post well, leave `tags` empty or omit it.
+- When tags are used, keep them to 3 or fewer per post.
+- Allowed tags are limited to this canonical set only:
+  - `생성형ai`
+  - `프롬프트`
+  - `생산성`
+  - `투자`
+  - `은퇴설계`
+  - `다이어트`
+  - `운동`
+  - `수면`
+  - `비만치료제`
+  - `건강`
+- Tag values must use English lowercase kebab-case exactly as listed above.
+- Prefer the smallest useful tag set for each post instead of mirroring every noun in the article.
 - For charts/diagrams in posts, use Mermaid by default.
 - For line breaks in post content, use HTML `<br>` instead of `\n`.
 - When bolding Korean text, separate any trailing particle with a space (for example, `**스킬** 은`, `**훅** 을`) to avoid emphasis rendering issues.
 - When bolding quoted text, use `"**text**"` (quotes outside bold) not `**"text"**` (bold outside quotes) for proper rendering.
 - Use `<!--more-->` for excerpt split in longer posts.
-- Legacy variance exists (`category` singular, occasional underscore filenames). Keep existing posts stable; use current dominant pattern for new posts.
+- Legacy variance exists (`category` singular, occasional underscore filenames). Normalize touched posts to the current dominant pattern.
+
+## Comparison Diagram Vertical Stacking Rule
+When a blog post section includes comparison diagrams (before/after, option A vs option B, old vs new architecture, generic vs specialized, etc.), **always stack them vertically**.
+
+Required guidance:
+1. **Never place comparison diagrams side by side** in a single mermaid code block.
+2. Split each comparison into a separate mermaid code block.
+3. List diagrams vertically (top-to-bottom, one per code block).
+4. Rationale: The blog content area is narrow. Side-by-side layout overflows on narrow screens, requires horizontal scrolling, and makes text labels hard to read.
 
 ## Mermaid-First Blog Writing Rule
 When writing or updating blog posts, prioritize Mermaid diagrams aggressively.
+
+Keep basic Mermaid in standard inline `mermaid` code blocks. For detailed or specialized Mermaid work - especially table-like/information-dense diagrams, `classDiagram`, `sequenceDiagram`, ERD, or C4 - delegate to `.agents/skills/mermaid-diagrams/SKILL.md` as the source of truth.
 
 Required guidance:
 1. Add Mermaid charts wherever structure, flow, architecture, timelines, or comparisons appear.
@@ -201,8 +244,10 @@ Required guidance:
 11. If Mermaid node labels or edge labels include special characters (for example `/`, `@`, `:`, `#`), wrap the label text in double quotes to avoid parser errors.
 12. For `sequenceDiagram`, use double quotes only when needed (for example when labels/messages contain special characters that may break parsing), and keep plain labels unquoted by default.
 13. In Mermaid labels, do not use `\n` for line breaks; use HTML `<br>` instead.
-14. When a section requires two or more comparison diagrams (for example before/after, option A vs option B, old vs new architecture), stack them **vertically** (one diagram per code block, listed top-to-bottom) instead of placing them side by side. Side-by-side layout overflows on narrow screens and is difficult to read in the blog's single-column content area.
-15. Prefer top-to-bottom (`TD`) flow direction over left-to-right (`LR`) for Mermaid flowcharts and graphs. The blog content area is narrow, so wide `LR` diagrams often overflow or require horizontal scrolling. Use `LR` only when the diagram has very few nodes (3 or fewer columns) and clearly fits within the content width.
+14. Never use Mermaid reserved words or Mermaid styling command names as `classDef` names. Forbidden names include `style`, `class`, `click`, `linkStyle`, `end`, `default`, `start`, `stop`, and other Mermaid keywords. Use descriptive alternatives such as `artStyle`, `nodeTone`, `terminal`, `done`, `finish`, or `result` instead.
+15. If a diagram uses `classDef`, sanity-check that every class name is a plain descriptive identifier, not a Mermaid command. Example: use `artStyle` instead of `style`.
+16. To apply a `classDef` class to nodes, always use `class node1,node2 className` syntax. The classDef name is **not** a command — writing `artStyle className node1` is invalid Mermaid and will silently break rendering. Correct form: `class node1,node2 artStyle`. Wrong form: `artStyle node1,node2 artStyle` or `artStyle className node1`.
+17. Prefer top-to-bottom (`TD`) flow direction over left-to-right (`LR`) for Mermaid flowcharts and graphs. The blog content area is narrow, so wide `LR` diagrams often overflow or require horizontal scrolling. Use `LR` only when the diagram has very few nodes (3 or fewer columns) and clearly fits within the content width.
 - Practical expectation: for technical posts, include Mermaid frequently; if a section can be clearer with a chart, add one.
 
 ## URL-Only Auto-Post Delegation Rule
@@ -257,8 +302,3 @@ If deploy was requested:
 1. confirm submodules are initialized
 2. run `task deploy`
 3. verify git state in both source repo and `public`
-
-## Subtree Priority Rule
-- This file is root guidance for the whole blog repository.
-- For `themes/hago/**`, also apply `themes/hago/AGENTS.md`.
-- If guidance conflicts, prefer the more local file for that subtree.

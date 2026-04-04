@@ -6,7 +6,11 @@
     <description>Recent content in Productivity on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
+<<<<<<< HEAD
     <lastBuildDate>Thu, 26 Mar 2026 08:50:12 +0900</lastBuildDate>
+=======
+    <lastBuildDate>Sat, 04 Apr 2026 09:36:12 +0900</lastBuildDate>
+>>>>>>> 09e82b1 (build: rebuild site 2026-04-04 09:42:01)
     <atom:link href="https://life-log.gyuha.com/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ChatGPT로 법률 문서를 바로 쓰지 말고, 8가지 업무를 초안화하라</title>

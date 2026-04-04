@@ -4,12 +4,6 @@ date: 2026-03-27T00:00:00+09:00
 draft: false
 categories:
   - 건강
-tags:
-  - 얼굴붓기
-  - 체지방감량
-  - 턱선
-  - 수면
-  - 남성그루밍
 description: "Titan Mode의 'How to ACTUALLY Lose Face Fat Fast' 영상을 바탕으로, 얼굴 라인을 바꾸는 요인을 붓기 제거·전신 체지방 감량·턱선 시각 보정·생활 습관 리셋으로 나눠 정리했다."
 ---
 
