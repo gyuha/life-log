@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 06 Apr 2026 17:52:15 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 20:43:37 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT</title>
+      <link>https://life-log.gyuha.com/tags/chatgpt/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threads</title>
+      <link>https://life-log.gyuha.com/tags/threads/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/threads/</guid>
+      <description></description>
+    </item>
     <item>
       <title>공부습관</title>
       <link>https://life-log.gyuha.com/tags/%EA%B3%B5%EB%B6%80%EC%8A%B5%EA%B4%80/</link>
@@ -37,10 +51,31 @@
       <description></description>
     </item>
     <item>
+      <title>생산성</title>
+      <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>영어학습</title>
+      <link>https://life-log.gyuha.com/tags/%EC%98%81%EC%96%B4%ED%95%99%EC%8A%B5/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%98%81%EC%96%B4%ED%95%99%EC%8A%B5/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>질문</title>
       <link>https://life-log.gyuha.com/tags/%EC%A7%88%EB%AC%B8/</link>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%A7%88%EB%AC%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>프롬프트</title>
+      <link>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>
@@ -86,13 +121,6 @@
       <description></description>
     </item>
     <item>
-      <title>Threads</title>
-      <link>https://life-log.gyuha.com/tags/threads/</link>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/threads/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>루틴</title>
       <link>https://life-log.gyuha.com/tags/%EB%A3%A8%ED%8B%B4/</link>
       <pubDate>Sat, 04 Apr 2026 00:00:00 +0900</pubDate>
@@ -114,24 +142,10 @@
       <description></description>
     </item>
     <item>
-      <title>생산성</title>
-      <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>생성형ai</title>
       <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</link>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>프롬프트</title>
-      <link>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>

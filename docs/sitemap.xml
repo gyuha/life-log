@@ -2,17 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://life-log.gyuha.com/categories/ai/</loc>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
+  </url><url>
     <loc>https://life-log.gyuha.com/categories/</loc>
-    <lastmod>2026-04-06T17:52:15+09:00</lastmod>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/tags/chatgpt/</loc>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/</loc>
-    <lastmod>2026-04-06T17:52:15+09:00</lastmod>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/post/</loc>
-    <lastmod>2026-04-06T17:52:15+09:00</lastmod>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/tags/</loc>
-    <lastmod>2026-04-06T17:52:15+09:00</lastmod>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/tags/threads/</loc>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/tags/%EA%B3%B5%EB%B6%80%EC%8A%B5%EA%B4%80/</loc>
     <lastmod>2026-04-06T17:52:15+09:00</lastmod>
@@ -29,11 +38,23 @@
     <loc>https://life-log.gyuha.com/tags/%EB%87%8C%EB%B0%9C%EB%8B%AC/</loc>
     <lastmod>2026-04-06T17:52:15+09:00</lastmod>
   </url><url>
+    <loc>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/post/2026/2026-04-06-chatgpt-english-prompts-threads/</loc>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/tags/%EC%98%81%EC%96%B4%ED%95%99%EC%8A%B5/</loc>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
+  </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-04-06-play-observation-study-brain/</loc>
     <lastmod>2026-04-06T17:52:15+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/tags/%EC%A7%88%EB%AC%B8/</loc>
     <lastmod>2026-04-06T17:52:15+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</loc>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</loc>
     <lastmod>2026-04-05T12:20:22+09:00</lastmod>
@@ -60,9 +81,6 @@
     <lastmod>2026-04-04T22:01:47+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-04-04-adhd-study-habit-routine-guide/</loc>
-    <lastmod>2026-04-04T22:01:47+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/threads/</loc>
     <lastmod>2026-04-04T22:01:47+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/tags/%EB%A3%A8%ED%8B%B4/</loc>
@@ -134,13 +152,7 @@
     <loc>https://life-log.gyuha.com/post/2026/2026-03-26-mens-sexual-health-urologist-guide/</loc>
     <lastmod>2026-04-04T22:00:13+09:00</lastmod>
   </url><url>
-    <loc>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
-    <lastmod>2026-04-04T22:00:13+09:00</lastmod>
-  </url><url>
     <loc>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</loc>
-    <lastmod>2026-04-04T22:00:13+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</loc>
     <lastmod>2026-04-04T22:00:13+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-03-23-chatgpt-legal-prompts-eight-workflows/</loc>
