@@ -6,8 +6,15 @@
     <description>Recent content in 경제 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 04 Apr 2026 22:00:13 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 07:44:16 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/categories/%EA%B2%BD%EC%A0%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>14개 주식 규칙은 왜 매력적이고 왜 위험할까</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-04-10-stock-rules-threads-checklist/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-04-10-stock-rules-threads-checklist/</guid>
+      <description>&lt;p&gt;이 Threads 글은 매우 강하다. 시장 상황을 길게 설명하지 않고, &lt;code&gt;아침 폭등이면 전량 매도&lt;/code&gt;, &lt;code&gt;횡보장이면 거래 금지&lt;/code&gt;, &lt;code&gt;지지선이 깨지면 손절 필수&lt;/code&gt;처럼 즉시 실행 가능한 문장만 14개를 던진다. 이런 형식은 기억하기 쉽고, 초보자에게는 혼란을 줄여주는 장점도 있다. 하지만 동시에 &lt;strong&gt;시간 프레임, 종목 특성, 유동성, 뉴스, 주문 방식, 손익비&lt;/strong&gt; 같은 핵심 맥락을 거의 지워 버린다. 금융 의사결정은 손실로 바로 이어질 수 있기 때문에, 이런 규칙은 정답이라기보다 &lt;code&gt;판단 틀&lt;/code&gt;로만 읽는 편이 안전하다. 이 글은 투자 권유가 아니라, 원문 규칙을 어떤 구조로 이해하면 좋은지 정리한 메모에 가깝다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>골드만삭스·모건스탠리·블랙록 수준의 주식 분석을 Claude로 — 10가지 프롬프트 완전 정리</title>
       <link>https://life-log.gyuha.com/post/2026/2026-03-30-goldman-sachs-claude-prompts-10/</link>
