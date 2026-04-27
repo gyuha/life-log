@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 26 Apr 2026 16:20:12 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 04:50:20 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>나보다 뛰어난 사람을 어떻게 뽑을까: 디테일보다 신호를 보라는 채용 원칙</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-04-28-hiring-people-better-than-you/</link>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-04-28-hiring-people-better-than-you/</guid>
+      <description>&lt;p&gt;회사 규모가 커질수록 리더는 자신보다 특정 분야를 더 잘하는 사람을 반드시 뽑아야 한다. 문제는 그게 바로 &lt;strong&gt;내가 잘 모르는 영역&lt;/strong&gt; 이라는 점이다. 엔지니어 출신 CEO가 마케팅 VP를 뽑아야 하거나, 제품 리더가 세일즈 총괄을 뽑아야 하는 순간이 그렇다. Jason Cohen의 이 글은 그 딜레마를 정면으로 다룬다. &lt;code&gt;전문성을 직접 판별할 수 없다면 무엇을 봐야 하는가?&lt;/code&gt; 그의 답은 의외로 단순하다. 디테일을 맞히려 하지 말고, 인터뷰와 레퍼런스 체크에서 드러나는 몇 가지 &lt;strong&gt;강한 신호&lt;/strong&gt; 를 보라는 것이다. 이 글은 그 신호들을 &lt;code&gt;아이디어&lt;/code&gt;, &lt;code&gt;학습 가능성&lt;/code&gt;, &lt;code&gt;조직 파급력&lt;/code&gt;, &lt;code&gt;실전 문제 해결&lt;/code&gt;, &lt;code&gt;레퍼런스 질문&lt;/code&gt;, &lt;code&gt;미스하이어 대응&lt;/code&gt;의 흐름으로 정리한다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>뒷처리 문제의 핵심은 더 세게 닦는 게 아니라 변 상태를 바꾸는 것이다</title>
       <link>https://life-log.gyuha.com/post/2026/2026-04-26-bowel-wiping-anus-health-guide/</link>
