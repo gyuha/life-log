@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 04 May 2026 19:45:07 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 06:55:02 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>생산성</title>
+      <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>생성형ai</title>
+      <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>건강</title>
       <link>https://life-log.gyuha.com/tags/%EA%B1%B4%EA%B0%95/</link>
@@ -34,13 +48,6 @@
       <link>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>생산성</title>
-      <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
       <description></description>
     </item>
     <item>
@@ -307,13 +314,6 @@
       <link>https://life-log.gyuha.com/tags/%ED%95%99%EC%8A%B5%ED%99%98%EA%B2%BD/</link>
       <pubDate>Sat, 04 Apr 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%ED%95%99%EC%8A%B5%ED%99%98%EA%B2%BD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>생성형ai</title>
-      <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</guid>
       <description></description>
     </item>
   </channel>

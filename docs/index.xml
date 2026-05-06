@@ -6,8 +6,29 @@
     <description>Recent content on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 04 May 2026 19:45:07 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 06:55:02 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>모두가 AI를 써도 회사가 아무것도 배우지 못하는 이유</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-05-07-ai-adoption-loop-intelligence/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-05-07-ai-adoption-loop-intelligence/</guid>
+      <description>&lt;p&gt;이 글의 출발점은 꽤 날카롭다. 회사 안에서 모두가 Copilot을 쓰고, ChatGPT Enterprise 계정도 있고, 누군가는 Claude Code나 Cursor로 놀라운 일을 해내고 있는데도 정작 회사는 그 경험에서 아무것도 배우지 못할 수 있다는 것이다. Robert Glaser는 이 시점을 &lt;code&gt;messy middle&lt;/code&gt;이라고 부른다. 접근권한과 도구 배포는 끝났지만, 개별 실험이 조직 학습으로 전환되지 않는 구간이다. 이 글은 왜 그 구간이 그렇게 복잡한지, 그리고 저자가 제안하는 &lt;code&gt;Loop Intelligence&lt;/code&gt;가 어떤 문제를 풀려고 하는지 구조적으로 정리한다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>최고의 실무자가 최악의 관리자가 되는 이유</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-05-07-best-employee-worst-manager/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-05-07-best-employee-worst-manager/</guid>
+      <description>&lt;p&gt;이 글의 핵심은 불편하지만 익숙하다. 회사에서 제일 일을 잘하던 사람이 관리자가 된 뒤, 팀을 망치고 본인도 무너지는 장면은 생각보다 흔하다. Yaniv Preiss는 그 이유를 아주 명확하게 짚는다. 많은 조직이 관리를 &lt;code&gt;성과에 대한 보상&lt;/code&gt;으로 취급하지만, 실제로 관리는 &lt;strong&gt;새 직업&lt;/strong&gt; 이다. 뛰어난 IC를 매니저로 올리는 순간, 우리는 그 사람에게 단지 한 단계 높은 역할을 주는 것이 아니라 전혀 다른 종류의 일로 전직시키고 있는 셈이다. 이 글은 그 전환이 왜 자주 실패하는지, 무엇을 봐야 실패 확률을 낮출 수 있는지를 구조적으로 정리한다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>상속법 개정 뒤에는 효도보다 증거가 더 중요해진다</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-05-05-inheritance-law-forced-share-reform/</link>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-05-05-inheritance-law-forced-share-reform/</guid>
+      <description>&lt;p&gt;이 영상은 &lt;code&gt;효도하면 상속 더 받는다&lt;/code&gt;, &lt;code&gt;형제자매 권리 완전 삭제&lt;/code&gt;, &lt;code&gt;50년 만에 판이 뒤집혔다&lt;/code&gt;는 식으로 강하게 밀어붙인다. 방향 자체는 크게 틀리지 않지만, 실제 제도 변화는 훨씬 더 정교하다. 어떤 것은 2024년 4월 25일 헌법재판소 결정으로 이미 효력을 잃었고, 어떤 것은 2026년 2월 12일 국회 본회의를 통과한 민법 개정안에서 구체화됐다. 그리고 무엇보다 중요한 건 이 변화가 &lt;code&gt;효도한 사람이 자동으로 더 받는다&lt;/code&gt;는 뜻은 아니라는 점이다. 오히려 앞으로 상속분쟁은 &lt;strong&gt;감정 호소보다 부양·기여를 입증할 자료가 있는가&lt;/strong&gt; 로 더 강하게 이동할 가능성이 크다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>췌장암 mRNA 백신 87.5% 생존이라는 숫자는 어떻게 읽어야 할까</title>
       <link>https://life-log.gyuha.com/post/2026/2026-05-04-pancreatic-cancer-mrna-vaccine-trial/</link>

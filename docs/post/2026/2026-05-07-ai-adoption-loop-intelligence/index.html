@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://life-log.gyuha.com/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github-style.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/light.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/dark.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/syntax.css' />
+    <title>모두가 AI를 써도 회사가 아무것도 배우지 못하는 이유 - Life Log</title>
+    
+    <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="이 글의 출발점은 꽤 날카롭다. 회사 안에서 모두가 Copilot을 쓰고, ChatGPT Enterprise 계정도 있고, 누군가는 Claude Code나 Cursor로 놀라운 일을 해내고 있는데도 정작 회사는 그 경험에서 아무것도 배우지 못할 수 있다는 것이다. Robert Glaser는 이 시점을 messy middle이라고 부른다. 접근권한과 도구 배포는 끝났지만, 개별 실험이 조직 학습으로 전환되지 않는 구간이다. 이 글은 왜 그 구간이 그렇게 복잡한지, 그리고 저자가 제안하는 Loop Intelligence가 어떤 문제를 풀려고 하는지 구조적으로 정리한다.
+" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://life-log.gyuha.com/post/2026/2026-05-07-ai-adoption-loop-intelligence/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="모두가 AI를 써도 회사가 아무것도 배우지 못하는 이유 - Life Log" />
+<meta name="twitter:description"
+  content="이 글의 출발점은 꽤 날카롭다. 회사 안에서 모두가 Copilot을 쓰고, ChatGPT Enterprise 계정도 있고, 누군가는 Claude Code나 Cursor로 놀라운 일을 해내고 있는데도 정작 회사는 그 경험에서 아무것도 배우지 못할 수 있다는 것이다. Robert Glaser는 이 시점을 messy middle이라고 부른다. 접근권한과 도구 배포는 끝났지만, 개별 실험이 조직 학습으로 전환되지 않는 구간이다. 이 글은 왜 그 구간이 그렇게 복잡한지, 그리고 저자가 제안하는 Loop Intelligence가 어떤 문제를 풀려고 하는지 구조적으로 정리한다.
+" />
+<meta name="twitter:site" content="https://life-log.gyuha.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://life-log.gyuha.com/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="모두가 AI를 써도 회사가 아무것도 배우지 못하는 이유 - Life Log">
+<meta property="og:description"
+  content="이 글의 출발점은 꽤 날카롭다. 회사 안에서 모두가 Copilot을 쓰고, ChatGPT Enterprise 계정도 있고, 누군가는 Claude Code나 Cursor로 놀라운 일을 해내고 있는데도 정작 회사는 그 경험에서 아무것도 배우지 못할 수 있다는 것이다. Robert Glaser는 이 시점을 messy middle이라고 부른다. 접근권한과 도구 배포는 끝났지만, 개별 실험이 조직 학습으로 전환되지 않는 구간이다. 이 글은 왜 그 구간이 그렇게 복잡한지, 그리고 저자가 제안하는 Loop Intelligence가 어떤 문제를 풀려고 하는지 구조적으로 정리한다.
+" />
+<meta property="og:url" content="https://life-log.gyuha.com/post/2026/2026-05-07-ai-adoption-loop-intelligence/" />
+<meta property="og:site_name" content="모두가 AI를 써도 회사가 아무것도 배우지 못하는 이유" />
+<meta property="og:image"
+  content="https://life-log.gyuha.com/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-05-07 00:00:00 &#43;0900 KST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://life-log.gyuha.com/">
+        <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://life-log.gyuha.com/">
+        <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://life-log.gyuha.com/">
+                  <img class=" avatar-user"
+                    src="https://life-log.gyuha.com/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://life-log.gyuha.com/">Gyuha</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="mr-1 break-word">
+                    <a href="https://life-log.gyuha.com/post/2026/2026-05-07-ai-adoption-loop-intelligence/">모두가 AI를 써도 회사가 아무것도 배우지 못하는 이유</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Thu, 07 May 2026 00:00:00 &#43;0900"
+                    class="no-wrap">
+                    Thu, 07 May 2026 00:00:00 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Thu, 07 May 2026 06:55:02 &#43;0900"
+                    class="no-wrap">
+                    Thu, 07 May 2026 06:55:02 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      <span class="d-none d-md-inline">3621 Words</span>
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      생성형ai
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      생산성
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p>이 글의 출발점은 꽤 날카롭다. 회사 안에서 모두가 Copilot을 쓰고, ChatGPT Enterprise 계정도 있고, 누군가는 Claude Code나 Cursor로 놀라운 일을 해내고 있는데도 정작 회사는 그 경험에서 아무것도 배우지 못할 수 있다는 것이다. Robert Glaser는 이 시점을 <code>messy middle</code>이라고 부른다. 접근권한과 도구 배포는 끝났지만, 개별 실험이 조직 학습으로 전환되지 않는 구간이다. 이 글은 왜 그 구간이 그렇게 복잡한지, 그리고 저자가 제안하는 <code>Loop Intelligence</code>가 어떤 문제를 풀려고 하는지 구조적으로 정리한다.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/">When everyone has AI and the company still learns nothing</a> — Robert Glaser</li>
+</ul>
+<hr>
+<h2 id="도구는-깔렸는데-학습은-퍼지지-않는-순간이-진짜-시작점이다">도구는 깔렸는데 학습은 퍼지지 않는 순간이 진짜 시작점이다</h2>
+<p>원문은 AI 도입의 첫 단계가 오히려 쉽다고 본다. 좌석을 산다, 허용 범위를 정한다, 교육을 한다, 챔피언 네트워크를 만든다. 이런 건 전통적인 엔터프라이즈 롤아웃처럼 보이기 때문이다. 하지만 두 번째 단계는 훨씬 이상하다. 어떤 팀은 Copilot을 단순 자동완성 정도로만 쓰고 끝낸다. 다른 팀은 Claude Code를 테스트·리뷰·지속적 조정과 함께 꽉 조여 돌린다. 어떤 프로덕트 매니저는 더 이상 Figma 화면만 만들지 않고 실제 동작하는 프로토타입을 만든다. 지원팀은 반복 문의를 슬쩍 자동화한다. 문제는 이 모든 일이 같은 회사 안에서 동시에 벌어진다는 점이다. <a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/">원문</a></p>
+<p>그래서 저자는 도입 단위를 더 이상 <code>회사</code>나 <code>팀</code>으로만 볼 수 없다고 말한다. 실제 도입 단위는 <strong>일 안에서 돌아가는 루프</strong> 다. 어떤 사람은 아주 짧고 촘촘한 협업 루프에서 AI를 쓴다. 어떤 사람은 길고 느슨한 위임 루프에서 쓴다. 이 차이를 모르면 경영진은 라이선스 사용량과 토큰 수만 보고 <code>ROI가 어디 있지?</code>를 묻게 되고, 조직은 정작 중요한 학습 경로를 놓친다.</p>
+<pre class="mermaid">flowchart TD
+    A[AI 좌석 배포] --&gt; B[개인별 사용 시작]
+    B --&gt; C[팀마다 다른 방식]
+    C --&gt; D[루프마다 다른 성과]
+    D --&gt; E[조직 학습으로는 미전환]
+
+    classDef root fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef step fill:#fde8c0,stroke:#e0a800,color:#333
+    classDef result fill:#ffc8c4,stroke:#d9534f,color:#333
+    class A root
+    class B,C,D step
+    class E result</pre>
+<hr>
+<h2 id="ai를-쓰는가보다-어떤-루프를-닫았는가가-더-중요하다"><code>AI를 쓰는가</code>보다 <code>어떤 루프를 닫았는가</code>가 더 중요하다</h2>
+<p>글에서 가장 중요한 문장은 이것에 가깝다. 질문은 <code>사람들이 AI를 쓰고 있는가?</code>가 아니라, <strong>그 토큰을 써서 무엇이 바뀌었는가</strong> 여야 한다는 것이다. 어떤 루프가 더 빨리 닫혔는가, 어떤 결정이 더 좋아졌는가, 어떤 root-cause 분석이 더 날카로워졌는가, 어떤 리뷰가 더 많은 결함을 잡아냈는가, 어떤 팀이 재사용 가능한 패턴을 배웠는가를 봐야 한다. 토큰 대비 PR 개수나 출력물 수는 결국 예전 생산성 집착이 다른 옷을 입은 것에 불과하다고 저자는 본다. <a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/">원문</a></p>
+<p>이 문제의식은 AI를 생산성 도구로만 보는 시선과 갈라선다. 출력이 늘어나는 건 중요할 수 있다. 하지만 저자가 진짜 묻는 건 <code>출력</code>이 아니라 <code>학습</code>이다. 같은 100만 토큰이라도 어떤 팀은 더 빨리 틀린 아이디어를 죽였고, 어떤 팀은 더 정확한 테스트 전략을 얻었고, 어떤 팀은 여전히 그럴듯한 산출물만 더 많이 만들었을 수 있다. 그래서 측정의 핵심도 <code>token-to-output</code>이 아니라 <strong>token-to-learning</strong> 이 되어야 한다고 주장한다.</p>
+<pre class="mermaid">flowchart TD
+    A[토큰 사용] --&gt; B[출력 증가]
+    A --&gt; C[학습 증가 여부]
+
+    B --&gt; D[문서·코드·리포트 더 많이 생성]
+    C --&gt; E[더 빠른 루프 종료]
+    C --&gt; F[더 나은 판단]
+    C --&gt; G[재사용 가능한 패턴 발견]
+
+    classDef root fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef output fill:#fde8c0,stroke:#e0a800,color:#333
+    classDef learn fill:#c0ecd3,stroke:#4cae6e,color:#333
+    class A root
+    class B,D output
+    class C,E,F,G learn</pre>
+<hr>
+<h2 id="왜-기존-변화관리-장치는-자꾸-뒤처지는가">왜 기존 변화관리 장치는 자꾸 뒤처지는가</h2>
+<p>원문은 대부분의 회사가 AI 도입도 예전 조직 변화 기계로 처리하려 한다고 말한다. 커뮤니티 오브 프랙티스, 브라운백 세션, 챔피언 네트워크, enablement deck, office hours, 월간 데모, 설문조사, 대시보드 같은 것들이다. 저자는 이런 장치들이 완전히 쓸모없다고 하지는 않는다. 다만 재미있는 AI 작업은 다음 커뮤니티 미팅을 기다리지 않는다고 본다. 진짜 학습은 코드 리뷰 안에서, 세일즈 제안서 안에서, 프로덕트 프로토타입 안에서, 운영 장애 분석 안에서 생긴다. <a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/">원문</a></p>
+<p>그리고 그 학습의 핵심은 완성된 성공사례 슬라이드에 있지 않다. 맥락이 부족했던 순간, 테스트가 깨졌던 지점, 에이전트가 옆길로 샜다가 사람이 다시 잡아당긴 순간, 즉 <strong>마찰</strong> 에 있다. 그런데 조직은 보통 이 마찰을 정제하고 포장해 늦게 공유한다. 그 시점엔 이미 가장 중요한 이빨이 빠져 있다. 그래서 저자는 adoption playbook보다, 실제 일의 흔적을 듣고 루프를 이해하는 장치가 더 중요하다고 본다.</p>
+<pre class="mermaid">flowchart TD
+    A[기존 변화관리 장치] --&gt; B[교육]
+    A --&gt; C[월간 공유]
+    A --&gt; D[대시보드]
+
+    E[실제 AI 학습] --&gt; F[코드 리뷰]
+    E --&gt; G[장애 대응]
+    E --&gt; H[프로토타입]
+    E --&gt; I[테스트 실패]
+
+    B --&gt; J[느린 조직 반응]
+    C --&gt; J
+    D --&gt; J
+
+    classDef root fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef old fill:#fde8c0,stroke:#e0a800,color:#333
+    classDef real fill:#c0ecd3,stroke:#4cae6e,color:#333
+    classDef result fill:#ffc8c4,stroke:#d9534f,color:#333
+    class A,E root
+    class B,C,D old
+    class F,G,H,I real
+    class J result</pre>
+<hr>
+<h2 id="저자가-말하는-세-가지-역량-agent-operations-loop-intelligence-agent-capabilities">저자가 말하는 세 가지 역량: Agent Operations, Loop Intelligence, Agent Capabilities</h2>
+<p>글의 중심 제안은 세 가지 역량 구분이다. 첫째는 <strong>Agent Operations</strong> 다. 어떤 에이전트와 도구가 어디에 붙어 있고, 무엇을 건드릴 수 있고, 어떤 데이터에 접근하고, 어떤 승인과 감사 체계를 거치는지를 다룬다. 둘째는 <strong>Loop Intelligence</strong> 다. 어떤 AI 보조 루프가 실제로 학습을 만들었는지, 어디서 루프가 열려 있는지, 어느 팀은 왜 아직 촘촘한 감독이 필요한지, 어디서 에이전트가 leverage를 만들고 어디서 옆길로 새는지를 본다. 셋째는 <strong>Agent Capabilities</strong> 다. 어느 팀에서 발견한 유용한 능력을 어떻게 조직 전체로 배포할지의 문제다. <a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/">원문</a></p>
+<p>이 세 가지를 따로 보면 이상해진다. Operations만 있으면 통제 관료제가 된다. Loop Intelligence만 있으면 좋은 패턴을 발견해도 실제 일에 다시 넣을 방법이 없다. Capabilities만 있으면 그냥 더 세련된 이름의 tool sprawl이 된다. 그래서 저자는 통제 경로, 학습 경로, 역량 경로가 만나는 지점이 필요하다고 보고, 그걸 내부적으로는 <code>feedback harness</code>, 바깥으로는 <code>Loop Intelligence Hub</code> 같은 개념으로 설명한다.</p>
+<pre class="mermaid">flowchart TD
+    A[조직의 AI 학습 시스템] --&gt; B[Agent Operations]
+    A --&gt; C[Loop Intelligence]
+    A --&gt; D[Agent Capabilities]
+
+    B --&gt; E[권한·감사·가시성]
+    C --&gt; F[어떤 루프가 학습을 만드는가]
+    D --&gt; G[좋은 능력의 조직 내 배포]
+
+    E --&gt; H[통제 경로]
+    F --&gt; I[학습 경로]
+    G --&gt; J[역량 경로]
+
+    H --&gt; K[세 경로가 만나야 함]
+    I --&gt; K
+    J --&gt; K
+
+    classDef root fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef ops fill:#fde8c0,stroke:#e0a800,color:#333
+    classDef loop fill:#c0ecd3,stroke:#4cae6e,color:#333
+    classDef cap fill:#e0c8ef,stroke:#9467bd,color:#333
+    classDef result fill:#ffc8c4,stroke:#d9534f,color:#333
+    class A root
+    class B,E,H ops
+    class C,F,I loop
+    class D,G,J cap
+    class K result</pre>
+<hr>
+<h2 id="feedback-harness와-loop-intelligence-hub는-사람-감시가-아니라-루프-이해를-겨냥해야-한다">Feedback Harness와 Loop Intelligence Hub는 <code>사람 감시</code>가 아니라 <code>루프 이해</code>를 겨냥해야 한다</h2>
+<p>저자는 여기서 중요한 선을 긋는다. 이 시스템이 직원 감시나 AI 사용 점수화로 가는 순간 모든 것이 망가진다고 본다. 사람들이 <code>AI를 충분히 썼는가</code>를 측정한다고 느끼면 신호를 게임화할 것이고, 모든 실험이 생산성 압박으로 돌아온다고 느끼면 실험을 숨길 것이며, 최고의 워크플로가 곧 더 높은 기준선 노동량이 된다고 느끼면 그 워크플로를 조직과 공유하지 않을 것이다. 그러면 조직은 겉으로는 compliance가 보이는데, 실제 학습은 보이지 않는 최악의 상태에 빠진다. <a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/">원문</a></p>
+<p>그래서 feedback harness가 들어야 하는 건 사람 자체가 아니라 <strong>일의 흔적</strong> 이다. 작업, 프롬프트, 명세, 리뷰, accepted/rejected hypothesis, production signal, rework, human intervention 같은 지점들이다. 그리고 Hub의 출력은 멋진 대시보드가 아니라 결정이어야 한다. 예를 들어 이 팀은 더 느슨한 위임으로 가기 전에 테스트와 backpressure가 필요하다, 저 제품 그룹은 좁은 컴포넌트 범위에서 dark-factory 패턴이 반복 가능하다, 다섯 팀이 엉성하게 재발명한 skill은 이제 플랫폼 레이어로 올려야 한다 같은 결론이다.</p>
+<pre class="mermaid">flowchart TD
+    A[Feedback Harness] --&gt; B[실제 작업 흔적 수집]
+    B --&gt; C[프롬프트·명세·리뷰]
+    B --&gt; D[가설 승인/폐기]
+    B --&gt; E[재작업·인간 개입]
+
+    F[Loop Intelligence Hub] --&gt; G[학습 해석]
+    G --&gt; H[팀별 enablement backlog]
+    G --&gt; I[재사용 가능한 capability 식별]
+    G --&gt; J[거버넌스 보완 결정]
+
+    classDef root fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef collect fill:#fde8c0,stroke:#e0a800,color:#333
+    classDef decide fill:#c0ecd3,stroke:#4cae6e,color:#333
+    class A,F root
+    class B,C,D,E collect
+    class G,H,I,J decide</pre>
+<hr>
+<h2 id="진짜-경쟁우위는-더-이상-접근권한이-아니라-학습-속도다">진짜 경쟁우위는 더 이상 접근권한이 아니라 학습 속도다</h2>
+<p>글의 마지막은 꽤 분명하다. 첫 번째 AI 도입 경쟁은 누가 더 빨리 툴 접근권을 확보하느냐였다. 하지만 frontier intelligence는 점점 <code>빌릴 수 있는 것</code>이 된다. 앞으로 차이를 만드는 건 도구 접근권이 아니라, <strong>누가 개인의 발견을 팀의 패턴으로, 팀의 패턴을 조직의 역량으로 더 빨리 전환하느냐</strong> 다. <a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/">원문</a></p>
+<p>그래서 저자는 messy middle을 버텨야 하는 혼란기로 보지 않는다. 오히려 여기서 배우는 속도가 다음 우위를 만든다고 본다. 누가 더 빨리 useful pattern을 찾는가, 누가 agentic loop에 적절한 저항을 걸어 스프롤을 막는가, 누가 유용한 capability를 monolithic enterprise agent로 망치지 않고 잘 분산시키는가가 앞으로의 경쟁 포인트라는 것이다.</p>
+<pre class="mermaid">flowchart TD
+    A[1단계 경쟁] --&gt; B[도구 접근권]
+    C[다음 단계 경쟁] --&gt; D[학습 속도]
+    D --&gt; E[개인 발견]
+    E --&gt; F[팀 패턴]
+    F --&gt; G[조직 역량]
+
+    classDef root fill:#c5dcef,stroke:#5a8fc3,color:#333
+    classDef old fill:#fde8c0,stroke:#e0a800,color:#333
+    classDef new fill:#c0ecd3,stroke:#4cae6e,color:#333
+    class A,C root
+    class B old
+    class D,E,F,G new</pre>
+<hr>
+<h2 id="핵심-요약">핵심 요약</h2>
+<ul>
+<li>AI 도입의 진짜 어려움은 툴 접근이 아니라 개별 사용이 조직 학습으로 바뀌지 않는 <code>messy middle</code>에 있다.</li>
+<li>중요한 질문은 <code>AI를 쓰는가</code>가 아니라 <code>토큰을 써서 무엇이 바뀌었는가</code>다.</li>
+<li>기존 교육·챔피언 네트워크·월간 공유 같은 변화관리 장치는 실제 일 안에서 생기는 빠른 학습을 따라가기 어렵다.</li>
+<li>조직은 Agent Operations, Loop Intelligence, Agent Capabilities라는 세 축을 함께 가져가야 한다.</li>
+<li>feedback harness와 Loop Intelligence Hub는 직원 감시가 아니라, 실제 작업 루프를 이해하고 학습을 다시 일에 넣는 피드백 경로가 되어야 한다.</li>
+<li>앞으로의 경쟁우위는 접근권이 아니라 개인 발견을 조직 역량으로 바꾸는 학습 속도에 있다.</li>
+</ul>
+<hr>
+<h2 id="결론">결론</h2>
+<p>Robert Glaser의 글은 AI 도입을 라이선스 배포 문제에서 조직 학습 문제로 옮겨 놓는다. 모두가 AI를 쓰는 시대에 차이를 만드는 건 <code>누가 더 많이 썼는가</code>가 아니라 <code>누가 더 빨리 배우고 그 배움을 조직의 능력으로 굳히는가</code>다.</p>
+<p>그래서 이 글이 남기는 가장 중요한 문장은 아마 이것일 것이다. 회사가 사야 하는 건 더 많은 좌석만이 아니라, <strong>배움이 개별 실험에서 끝나지 않고 조직 안을 이동하게 만드는 피드백 경로</strong> 다.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/toc.js'></script>
+<link rel="stylesheet" href='https://life-log.gyuha.com/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://life-log.gyuha.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://life-log.gyuha.com/js/github-style.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/search.js'></script>
+
+
+
+<script type="module" src='https://life-log.gyuha.com/js/mermaid.js'></script>
+
+
+
+</html>
