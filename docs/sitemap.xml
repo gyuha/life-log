@@ -2,26 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://life-log.gyuha.com/categories/</loc>
+    <lastmod>2026-05-15T07:14:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/</loc>
+    <lastmod>2026-05-15T07:14:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/post/</loc>
+    <lastmod>2026-05-15T07:14:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/tags/</loc>
+    <lastmod>2026-05-15T07:14:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</loc>
+    <lastmod>2026-05-15T07:12:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/tags/%EA%B1%B4%EA%B0%95/</loc>
+    <lastmod>2026-05-15T07:12:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/post/2026/2026-05-15-assertive-speech-boundaries-respect/</loc>
+    <lastmod>2026-05-15T07:10:25+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/post/2026/2026-05-15-thinking-to-action-environment-design/</loc>
+    <lastmod>2026-05-15T07:14:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/categories/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
+    <lastmod>2026-05-15T07:14:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
+    <lastmod>2026-05-15T07:14:51+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/categories/%EC%8B%AC%EB%A6%AC%ED%95%99/</loc>
+    <lastmod>2026-05-15T07:10:25+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/post/2026/2026-05-15-zombie-cells-rapamycin-aging-economics/</loc>
+    <lastmod>2026-05-15T07:12:51+09:00</lastmod>
+  </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-05-14-ai-use-intelligence-cognitive-debt/</loc>
     <lastmod>2026-05-14T07:55:07+09:00</lastmod>
   </url><url>
-    <loc>https://life-log.gyuha.com/categories/</loc>
-    <lastmod>2026-05-14T11:19:10+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/</loc>
-    <lastmod>2026-05-14T11:19:10+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/post/</loc>
-    <lastmod>2026-05-14T11:19:10+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/</loc>
-    <lastmod>2026-05-14T11:19:10+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</loc>
-    <lastmod>2026-05-14T07:59:10+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/%EA%B1%B4%EA%B0%95/</loc>
-    <lastmod>2026-05-14T07:59:10+09:00</lastmod>
+    <loc>https://life-log.gyuha.com/post/2026/2026-05-14-ai-diet-automation-weight-loss/</loc>
+    <lastmod>2026-05-14T21:51:34+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/categories/%EA%B2%BD%EC%A0%9C/</loc>
     <lastmod>2026-05-14T08:01:03+09:00</lastmod>
@@ -29,11 +50,8 @@
     <loc>https://life-log.gyuha.com/post/2026/2026-05-14-useless-supplements-protein-digestion/</loc>
     <lastmod>2026-05-14T07:59:10+09:00</lastmod>
   </url><url>
-    <loc>https://life-log.gyuha.com/categories/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
-    <lastmod>2026-05-14T07:55:07+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
-    <lastmod>2026-05-14T11:19:10+09:00</lastmod>
+    <loc>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</loc>
+    <lastmod>2026-05-14T21:51:34+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</loc>
     <lastmod>2026-05-14T07:55:07+09:00</lastmod>
@@ -56,9 +74,6 @@
     <loc>https://life-log.gyuha.com/post/2026/2026-05-14-korean-education-dignity-competition/</loc>
     <lastmod>2026-05-14T11:19:10+09:00</lastmod>
   </url><url>
-    <loc>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</loc>
-    <lastmod>2026-05-12T19:13:39+09:00</lastmod>
-  </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-05-12-nonverbal-communication-touch-eye-contact-turn-taking/</loc>
     <lastmod>2026-05-12T07:20:23+09:00</lastmod>
   </url><url>
@@ -70,9 +85,6 @@
   </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</loc>
     <lastmod>2026-05-12T19:13:39+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/categories/%EC%8B%AC%EB%A6%AC%ED%95%99/</loc>
-    <lastmod>2026-05-12T07:20:23+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-05-12-stock-rules-dont-buy-before-10/</loc>
     <lastmod>2026-05-12T19:22:36+09:00</lastmod>
