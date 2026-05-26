@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://life-log.gyuha.com/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github-style.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/light.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/dark.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/syntax.css' />
+    <title>퀀 투자에서 배워야 할 진짜 핵심: AI 종목 추천보다 데이터로 생각하는 법 - Life Log</title>
+    
+    <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="이 영상은 “퀀 투자로 돈 버는 법”을 자극적으로 말하는 콘텐츠가 아닙니다. 오히려 정반대입니다. 개인이 퀀에서 정말 배워야 하는 것은 초고속 매매 기술이 아니라, 데이터를 보고 생각하는 습관과 욕심을 통제하는 투자 태도 라는 점을 계속 강조합니다. AI도 마찬가지입니다. 종목 추천을 받는 용도가 아니라, 산업 구조를 빠르게 이해하고 질문을 정리하는 도구로 써야 한다는 메시지가 선명합니다.
+" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://life-log.gyuha.com/post/2026/2026-05-22-quant-investing-ai-factor-long-term/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="퀀 투자에서 배워야 할 진짜 핵심: AI 종목 추천보다 데이터로 생각하는 법 - Life Log" />
+<meta name="twitter:description"
+  content="이 영상은 “퀀 투자로 돈 버는 법”을 자극적으로 말하는 콘텐츠가 아닙니다. 오히려 정반대입니다. 개인이 퀀에서 정말 배워야 하는 것은 초고속 매매 기술이 아니라, 데이터를 보고 생각하는 습관과 욕심을 통제하는 투자 태도 라는 점을 계속 강조합니다. AI도 마찬가지입니다. 종목 추천을 받는 용도가 아니라, 산업 구조를 빠르게 이해하고 질문을 정리하는 도구로 써야 한다는 메시지가 선명합니다.
+" />
+<meta name="twitter:site" content="https://life-log.gyuha.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://life-log.gyuha.com/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="퀀 투자에서 배워야 할 진짜 핵심: AI 종목 추천보다 데이터로 생각하는 법 - Life Log">
+<meta property="og:description"
+  content="이 영상은 “퀀 투자로 돈 버는 법”을 자극적으로 말하는 콘텐츠가 아닙니다. 오히려 정반대입니다. 개인이 퀀에서 정말 배워야 하는 것은 초고속 매매 기술이 아니라, 데이터를 보고 생각하는 습관과 욕심을 통제하는 투자 태도 라는 점을 계속 강조합니다. AI도 마찬가지입니다. 종목 추천을 받는 용도가 아니라, 산업 구조를 빠르게 이해하고 질문을 정리하는 도구로 써야 한다는 메시지가 선명합니다.
+" />
+<meta property="og:url" content="https://life-log.gyuha.com/post/2026/2026-05-22-quant-investing-ai-factor-long-term/" />
+<meta property="og:site_name" content="퀀 투자에서 배워야 할 진짜 핵심: AI 종목 추천보다 데이터로 생각하는 법" />
+<meta property="og:image"
+  content="https://life-log.gyuha.com/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-05-22 00:00:00 &#43;0900 KST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://life-log.gyuha.com/">
+        <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://life-log.gyuha.com/">
+        <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://life-log.gyuha.com/">
+                  <img class=" avatar-user"
+                    src="https://life-log.gyuha.com/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://life-log.gyuha.com/">Gyuha</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="mr-1 break-word">
+                    <a href="https://life-log.gyuha.com/post/2026/2026-05-22-quant-investing-ai-factor-long-term/">퀀 투자에서 배워야 할 진짜 핵심: AI 종목 추천보다 데이터로 생각하는 법</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Fri, 22 May 2026 00:00:00 &#43;0900"
+                    class="no-wrap">
+                    Fri, 22 May 2026 00:00:00 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Fri, 22 May 2026 21:22:43 &#43;0900"
+                    class="no-wrap">
+                    Fri, 22 May 2026 21:22:43 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      <span class="d-none d-md-inline">3868 Words</span>
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%88%AC%EC%9E%90">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      투자
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      생성형ai
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p>이 영상은 “퀀 투자로 돈 버는 법”을 자극적으로 말하는 콘텐츠가 아닙니다. 오히려 정반대입니다. <strong>개인이 퀀에서 정말 배워야 하는 것은 초고속 매매 기술이 아니라, 데이터를 보고 생각하는 습관과 욕심을 통제하는 투자 태도</strong> 라는 점을 계속 강조합니다. AI도 마찬가지입니다. 종목 추천을 받는 용도가 아니라, 산업 구조를 빠르게 이해하고 질문을 정리하는 도구로 써야 한다는 메시지가 선명합니다.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://youtu.be/Ng8kQtHMY2c">한국인 최초 퀀트 챔피언십 1위의 AI 주식투자 꿀팁과 당장 투자를 시작해야하는 이유 (유니스트 김민겸) | 주식아지트 EP.외전</a></li>
+<li><a href="https://www.investor.gov/introduction-investing/getting-started/assessing-your-risk-tolerance">Investor.gov — Asset Allocation and Diversification</a></li>
+<li><a href="https://www.investor.gov/index.php/introduction-investing/investing-basics/save-and-invest/diversify-your-investments">Investor.gov — Diversify Your Investments</a></li>
+<li><a href="https://www.investor.gov/build-wealth-over-time-through-saving-and-investing">Investor.gov — Build Wealth Over Time Through Saving and Investing</a></li>
+</ul>
+<h2 id="1-퀀-투자의-본질은-수학으로-주식을-맞히는-것보다-데이터를-가지고-투자하는-것이다">1. 퀀 투자의 본질은 “수학으로 주식을 맞히는 것”보다 데이터를 가지고 투자하는 것이다</h2>
+<p>영상 초반에서 김민겸 씨는 퀀을 아주 간단하게 설명합니다. <strong>데이터를 가지고 투자하는 것</strong> 이라는 말입니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=120">영상 2분 부근</a> 여기서 중요한 건 “데이터”입니다. 퀀은 무조건 AI나 복잡한 수식으로 매매하는 것이 아니라, 시장 안에 흩어져 있는 관계와 패턴을 찾아 그것을 검증 가능한 방식으로 다루는 접근입니다.</p>
+<p>영상에서 예로 든 하이일드 스프레드와 한국 레버리지 ETF의 음의 상관관계 같은 사례가 대표적입니다. 언뜻 무관해 보이는 지표들 사이의 관계를 데이터로 그려 보고, 실제로 일정한 패턴이 보이는지 확인하는 것이죠. <a href="https://youtu.be/Ng8kQtHMY2c?t=360">영상 6분~8분 부근</a></p>
+<pre class="mermaid">flowchart TD
+    A[&#34;시장 데이터&#34;] --&gt; B[&#34;관계 가설 설정&#34;]
+    B --&gt; C[&#34;과거 데이터로 검증&#34;]
+    C --&gt; D[&#34;패턴 확인&#34;]
+    D --&gt; E[&#34;투자 판단에 반영&#34;]
+
+    classDef dataTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+    classDef processTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A dataTone
+    class B,C,D,E processTone</pre>
+<p>즉 퀀의 핵심은 “정답을 안다”가 아니라, <strong>감이 아니라 검증 가능한 가설로 시장을 바라보려는 태도</strong> 에 가깝습니다.</p>
+<h2 id="2-개인이-따라-해야-할-퀀은-초단타가-아니라-검증하는-사고법이다">2. 개인이 따라 해야 할 퀀은 초단타가 아니라 ‘검증하는 사고법’이다</h2>
+<p>영상은 퀀 내부에도 종류가 매우 많다고 설명합니다. 초단타 고빈도 매매(HFT), 빅데이터 기반 알파 탐색, 저빈도 장기 전략 등 스펙트럼이 넓습니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=240">영상 4분 부근</a> 하지만 동시에 개인이 그 모든 것을 따라 할 필요는 없다고 말합니다.</p>
+<p>이 부분이 중요합니다. 많은 사람이 퀀을 “천재들만 하는 수학 게임”처럼 생각하지만, 영상은 개인이 바로 배워 쓸 수 있는 부분이 따로 있다고 봅니다. 바로 <strong>투자 아이디어를 검증하는 습관</strong> 입니다. 예를 들어 “5월에는 팔고 떠나라” 같은 시장 격언도 그냥 믿지 말고, 실제로 10년·20년 데이터를 뽑아 확인해 보라는 식입니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=2400">영상 40분 부근</a></p>
+<pre class="mermaid">flowchart TD
+    A[&#34;시장 격언 / 투자 아이디어&#34;] --&gt; B[&#34;그냥 믿고 행동&#34;]
+    B --&gt; C[&#34;확증편향&#34;]
+
+    A --&gt; D[&#34;데이터로 검증&#34;]
+    D --&gt; E[&#34;먹히는 패턴인지 확인&#34;]
+    E --&gt; F[&#34;판단 보정&#34;]
+
+    classDef badTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef goodTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A resultTone
+    class B,C badTone
+    class D,E,F goodTone</pre>
+<p>개인 투자자에게 필요한 퀀은 결국 “내가 들은 이야기를 숫자로 다시 확인해 보는 습관”입니다.</p>
+<h2 id="3-투자의-출발점은-대박이-아니라-인플레이션을-이기는-것이다">3. 투자의 출발점은 대박이 아니라 인플레이션을 이기는 것이다</h2>
+<p>영상에서 가장 인상적인 대목 중 하나는, 김민겸 씨가 투자를 시작한 이유를 “큰 부자가 되기 위해서”가 아니라 <strong>인플레이션으로부터 자산을 지키기 위해서</strong> 라고 설명한 부분입니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=840">영상 14분~16분 부근</a> 이 관점은 굉장히 건강합니다.</p>
+<p>Investor.gov도 장기적으로 부를 쌓는 기본은 지속적인 저축과 투자라고 설명합니다. 특히 장기 목표를 위해서는 월급의 일부를 꾸준히 투자하고, 빈번한 매매보다 오래 보유하는 접근이 일반적으로 더 유리하다고 안내합니다. <a href="https://www.investor.gov/build-wealth-over-time-through-saving-and-investing">Investor.gov Build Wealth Over Time</a></p>
+<pre class="mermaid">flowchart TD
+    A[&#34;돈을 그냥 보유&#34;] --&gt; B[&#34;인플레이션&#34;]
+    B --&gt; C[&#34;실질 구매력 감소&#34;]
+
+    D[&#34;저축 + 장기 투자&#34;] --&gt; E[&#34;인플레이션 방어 시도&#34;]
+    E --&gt; F[&#34;실질 자산 성장 가능성&#34;]
+
+    classDef badTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef goodTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C badTone
+    class D,E,F goodTone</pre>
+<p>이 메시지는 특히 젊은 투자자에게 중요합니다. 투자란 한 번에 인생 역전을 노리는 행동이 아니라, <strong>가만히 있으면 녹는 돈을 장기적으로 방어하는 시스템</strong> 으로 이해할 때 훨씬 지속 가능해집니다.</p>
+<h2 id="4-팩터-투자는-개인이-퀀을-현실적으로-배우는-가장-좋은-입구일-수-있다">4. 팩터 투자는 개인이 퀀을 현실적으로 배우는 가장 좋은 입구일 수 있다</h2>
+<p>영상은 개인이 퀀을 공부하고 싶다면 팩터 투자부터 보는 것이 현실적일 수 있다고 말합니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=1680">영상 28분 부근</a> 팩터 투자란 쉽게 말해, 수익률이 어디에서 나오는지 설명하는 요인을 찾는 방식입니다.</p>
+<p>영상에서는 파마-프렌치의 세 가지 대표 요인도 언급합니다. 시장 전체가 좋아서 오르는 마켓 팩터, 저평가 가치주가 더 오른다는 가치 팩터, 시가총액이 작은 주식이 더 높은 수익을 낸다는 사이즈 팩터입니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=3480">영상 58분 부근</a></p>
+<pre class="mermaid">flowchart TD
+    A[&#34;주식 수익률&#34;] --&gt; B[&#34;마켓 팩터&#34;]
+    A --&gt; C[&#34;가치 팩터&#34;]
+    A --&gt; D[&#34;사이즈 팩터&#34;]
+
+    B --&gt; E[&#34;장이 좋아서 오름&#34;]
+    C --&gt; F[&#34;저평가 주식의 리레이팅&#34;]
+    D --&gt; G[&#34;소형주의 추가 수익 가능성&#34;]
+
+    classDef factorTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+    classDef explainTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C,D factorTone
+    class E,F,G explainTone</pre>
+<p>팩터 투자의 장점은, 종목 하나를 맞히려 하기보다 <strong>수익의 원인을 구조적으로 이해하려는 방향</strong> 으로 생각을 바꿔 준다는 데 있습니다.</p>
+<h2 id="5-ai는-종목-추천기가-아니라-질문-정리와-산업-지도-작성-도구로-써야-한다">5. AI는 종목 추천기가 아니라 ‘질문 정리와 산업 지도 작성 도구’로 써야 한다</h2>
+<p>영상 후반의 AI 활용 조언은 매우 실전적입니다. 김민겸 씨는 AI에게 “이 종목 얼마 갈 것 같냐” “뭐가 좋냐” 같은 질문을 던지는 것은 좋지 않다고 말합니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=3120">영상 52분 부근</a> 이유는 단순합니다. AI는 이미 인터넷에 널린 정보를 가장 그럴듯하게 요약하는 데는 강하지만, 미래 가격을 예언하는 기계는 아니기 때문입니다.</p>
+<p>대신 잘 쓰는 방법은 산업 구조를 파악하는 것입니다. 예를 들어 피지컬 AI 산업을 공부하고 싶다면, AI에게 “밸류체인이 어떻게 되나”, “핵심 부품은 무엇인가”, “서보모터는 왜 중요한가” 같은 질문을 던져서 큰 그림을 빠르게 얻는 식입니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=3120">영상 52분~56분 부근</a></p>
+<pre class="mermaid">flowchart TD
+    A[&#34;AI 활용&#34;] --&gt; B[&#34;종목 추천 요구&#34;]
+    B --&gt; C[&#34;그럴듯한 답변&#34;]
+    C --&gt; D[&#34;투자 판단 왜곡 가능성&#34;]
+
+    A --&gt; E[&#34;산업 구조 질문&#34;]
+    E --&gt; F[&#34;밸류체인 파악&#34;]
+    F --&gt; G[&#34;핵심 변수 정리&#34;]
+    G --&gt; H[&#34;리서치 출발점 확보&#34;]
+
+    classDef badTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef goodTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A resultTone
+    class B,C,D badTone
+    class E,F,G,H goodTone</pre>
+<p>즉 AI의 진짜 효용은 “정답 받기”가 아니라, <strong>내가 무엇을 모르는지 빨리 드러내고 공부의 출발점을 잡는 것</strong> 입니다.</p>
+<h2 id="6-데이터만으로는-부족하고-감만으로도-부족하다-그래서-퀀터멘털이-중요해진다">6. 데이터만으로는 부족하고, 감만으로도 부족하다: 그래서 퀀터멘털이 중요해진다</h2>
+<p>영상은 요즘 투자 현장에서 “퀀터멘털”이라는 개념이 중요해졌다고 설명합니다. 이는 퀀(quant)과 펀더멘털(fundamental)의 결합입니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=2520">영상 42분~44분 부근</a> 데이터만으로 경쟁하던 시대에서, 모두가 같은 데이터를 쓰기 시작하면 사람의 경험과 인사이트가 다시 중요해진다는 뜻입니다.</p>
+<p>이 관점은 매우 현실적입니다. 데이터는 과거를 정리해 주지만, 시장은 늘 미래를 가격에 반영합니다. 그래서 데이터로 근거를 잡되, 그 데이터를 어떤 맥락에서 해석할지는 사람의 몫이 됩니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;좋은 투자 판단&#34;] --&gt; B[&#34;데이터 근거&#34;]
+    A --&gt; C[&#34;산업 이해&#34;]
+    A --&gt; D[&#34;시장 맥락 해석&#34;]
+    B --&gt; E[&#34;퀀&#34;]
+    C --&gt; F[&#34;펀더멘털&#34;]
+    D --&gt; G[&#34;인사이트&#34;]
+    E --&gt; H[&#34;퀀터멘털&#34;]
+    F --&gt; H
+    G --&gt; H
+
+    classDef dataTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+    classDef processTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+    classDef resultTone fill:#fde8c0,stroke:#d9a441,stroke-width:1px,color:#333
+
+    class A resultTone
+    class B,E dataTone
+    class C,D,F,G processTone
+    class H resultTone</pre>
+<p>개인 투자자도 마찬가지입니다. 엑셀만 잘 다룬다고 되는 것도 아니고, 감으로만 버티는 것도 위험합니다. <strong>숫자와 해석이 같이 가야</strong> 합니다.</p>
+<h2 id="7-좋은-개인-투자는-대박보다-총자산-10를-지키는-쪽에-가깝다">7. 좋은 개인 투자는 대박보다 총자산 10%를 지키는 쪽에 가깝다</h2>
+<p>영상에서 김민겸 씨는 개인 투자 목표를 연 10% 정도로 잡는다고 말합니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=2760">영상 46분~48분 부근</a> 듣기에 작아 보일 수 있지만, 그는 투자 수익률과 총자산 수익률을 구분해야 한다고 강조합니다. 실제 삶에서는 모든 돈을 주식에 넣지 못하고, 현금 비중도 조절해야 하기 때문에 총자산 기준 연 10%는 결코 작은 숫자가 아니라는 것입니다.</p>
+<p>Investor.gov 역시 자산배분과 분산이 시간 지평과 위험 감내도에 따라 달라져야 하며, 분산은 한 바구니에 모든 돈을 담지 않게 해 주는 기본 원칙이라고 설명합니다. <a href="https://www.investor.gov/introduction-investing/getting-started/assessing-your-risk-tolerance">Investor.gov Asset Allocation and Diversification</a>, <a href="https://www.investor.gov/index.php/introduction-investing/investing-basics/save-and-invest/diversify-your-investments">Investor.gov Diversify Your Investments</a></p>
+<pre class="mermaid">flowchart TD
+    A[&#34;개인 투자&#34;] --&gt; B[&#34;주식 100% 몰빵&#34;]
+    B --&gt; C[&#34;변동성 과대&#34;]
+
+    A --&gt; D[&#34;현금 비중 조절&#34;]
+    D --&gt; E[&#34;하락장 대응 여력&#34;]
+    E --&gt; F[&#34;총자산 기준 안정적 성장&#34;]
+
+    classDef badTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef goodTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A resultTone
+    class B,C badTone
+    class D,E,F goodTone</pre>
+<p>이건 결국 투자의 기준을 바꾸는 이야기입니다. “얼마를 벌었나”보다 <strong>얼마나 오래 버틸 수 있는 구조를 만들었나</strong> 가 더 중요하다는 뜻입니다.</p>
+<h2 id="핵심-요약">핵심 요약</h2>
+<ul>
+<li>퀀 투자의 핵심은 초단타 기술이 아니라 <strong>데이터로 투자 가설을 검증하는 사고법</strong> 입니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=120">영상 2분~8분 부근</a></li>
+<li>개인이 바로 배울 수 있는 퀀의 출발점은 <strong>팩터 투자와 검증 습관</strong> 입니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=1680">영상 28분 부근</a></li>
+<li>투자의 출발점은 대박이 아니라 <strong>인플레이션을 이기는 장기적인 자산 방어</strong> 여야 합니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=840">영상 14분 부근</a></li>
+<li>AI는 종목 추천 도구보다 <strong>산업 구조와 밸류체인을 이해하는 리서치 도구</strong> 로 쓸 때 훨씬 유용합니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=3120">영상 52분~56분 부근</a></li>
+<li>데이터만으로는 부족하고, 감만으로도 부족합니다. <strong>퀀터멘털</strong>, 즉 데이터와 인사이트의 결합이 중요합니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=2520">영상 42분 부근</a></li>
+<li>개인 투자에서는 수익률보다 <strong>총자산 기준의 생존성과 현금 비중 관리</strong> 가 더 중요할 수 있습니다. <a href="https://youtu.be/Ng8kQtHMY2c?t=2760">영상 46분 부근</a></li>
+</ul>
+<h2 id="결론">결론</h2>
+<p>이 영상이 진짜로 가르쳐 주는 것은 “퀀처럼 돈 버는 비법”이 아닙니다. <strong>잘 모르는 것을 그럴듯하게 믿지 말고, 숫자로 확인하고, AI는 질문 정리 도구로 쓰고, 욕심보다 오래 가는 구조를 먼저 만들라</strong> 는 것입니다. 개인 투자자가 퀀에서 배워야 할 가장 큰 기술은 알고리즘이 아니라, 더 차분하고 더 검증 가능한 방식으로 생각하는 습관입니다.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/toc.js'></script>
+<link rel="stylesheet" href='https://life-log.gyuha.com/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://life-log.gyuha.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://life-log.gyuha.com/js/github-style.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/search.js'></script>
+
+
+
+<script type="module" src='https://life-log.gyuha.com/js/mermaid.js'></script>
+
+
+
+</html>
