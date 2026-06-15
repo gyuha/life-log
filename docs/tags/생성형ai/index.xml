@@ -6,8 +6,22 @@
     <description>Recent content in 생성형ai on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 05 Jun 2026 19:34:05 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 08:18:17 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gemini가 블룸버그 터미널을 대체할 수 있을까: 주식 분석 AI를 써도 안 바뀌는 것들</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-06-11-gemini-stock-analysis-not-bloomberg-replacement/</link>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-06-11-gemini-stock-analysis-not-bloomberg-replacement/</guid>
+      <description>&lt;p&gt;이 X 포스트는 Google Gemini가 이제 어떤 주식이든 월가 애널리스트처럼 분석할 수 있고, 월 4,000달러짜리 블룸버그 터미널을 대체할 수 있다고 주장합니다. 공개적으로 확인되는 원문에는 &lt;code&gt;9개의 프롬프트&lt;/code&gt;가 있다고 적혀 있지만, 현재 확보한 공개 데이터에서는 그 프롬프트 목록 자체는 확인되지 않았습니다. 그래서 이 글은 목록을 추정해서 복원하지 않고, &lt;strong&gt;Gemini가 실제로 잘하는 일과 절대 대신하지 못하는 일을 분리해서&lt;/strong&gt; 정리합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI 시대의 1인 기업은 무엇부터 달라야 하나: 고통, 플랫폼, 벤치마킹의 순서</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-06-09-ai-solopreneur-pain-platform-benchmark/</link>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-06-09-ai-solopreneur-pain-platform-benchmark/</guid>
+      <description>&lt;p&gt;이 영상의 핵심은 &amp;ldquo;AI 덕분에 이제 혼자서도 사업을 할 수 있다&amp;quot;는 선언 그 자체보다, &lt;strong&gt;그 혼자라는 상태가 실제로 무엇을 가능하게 하고 무엇을 대신 요구하는가&lt;/strong&gt; 를 설명하는 데 있습니다. 거대한 팀 없이도 제품을 만들고 콘텐츠를 찍고 판매 페이지를 만들 수는 있지만, 그 대신 문제 선택, 플랫폼 이해, 벤치마킹, 검증을 개인이 직접 해야 합니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>영어회화가 안 풀릴 때는 문법보다 장면을 쪼개라: AI 장면일기 스피킹 루틴</title>
       <link>https://life-log.gyuha.com/post/2026/2026-06-05-ai-english-scene-diary-speaking-system/</link>

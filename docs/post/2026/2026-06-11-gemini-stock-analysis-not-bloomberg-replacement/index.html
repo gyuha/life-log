@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://life-log.gyuha.com/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github-style.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/light.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/dark.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/syntax.css' />
+    <title>Gemini가 블룸버그 터미널을 대체할 수 있을까: 주식 분석 AI를 써도 안 바뀌는 것들 - Life Log</title>
+    
+    <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="이 X 포스트는 Google Gemini가 이제 어떤 주식이든 월가 애널리스트처럼 분석할 수 있고, 월 4,000달러짜리 블룸버그 터미널을 대체할 수 있다고 주장합니다. 공개적으로 확인되는 원문에는 9개의 프롬프트가 있다고 적혀 있지만, 현재 확보한 공개 데이터에서는 그 프롬프트 목록 자체는 확인되지 않았습니다. 그래서 이 글은 목록을 추정해서 복원하지 않고, Gemini가 실제로 잘하는 일과 절대 대신하지 못하는 일을 분리해서 정리합니다.
+" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://life-log.gyuha.com/post/2026/2026-06-11-gemini-stock-analysis-not-bloomberg-replacement/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Gemini가 블룸버그 터미널을 대체할 수 있을까: 주식 분석 AI를 써도 안 바뀌는 것들 - Life Log" />
+<meta name="twitter:description"
+  content="이 X 포스트는 Google Gemini가 이제 어떤 주식이든 월가 애널리스트처럼 분석할 수 있고, 월 4,000달러짜리 블룸버그 터미널을 대체할 수 있다고 주장합니다. 공개적으로 확인되는 원문에는 9개의 프롬프트가 있다고 적혀 있지만, 현재 확보한 공개 데이터에서는 그 프롬프트 목록 자체는 확인되지 않았습니다. 그래서 이 글은 목록을 추정해서 복원하지 않고, Gemini가 실제로 잘하는 일과 절대 대신하지 못하는 일을 분리해서 정리합니다.
+" />
+<meta name="twitter:site" content="https://life-log.gyuha.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://life-log.gyuha.com/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Gemini가 블룸버그 터미널을 대체할 수 있을까: 주식 분석 AI를 써도 안 바뀌는 것들 - Life Log">
+<meta property="og:description"
+  content="이 X 포스트는 Google Gemini가 이제 어떤 주식이든 월가 애널리스트처럼 분석할 수 있고, 월 4,000달러짜리 블룸버그 터미널을 대체할 수 있다고 주장합니다. 공개적으로 확인되는 원문에는 9개의 프롬프트가 있다고 적혀 있지만, 현재 확보한 공개 데이터에서는 그 프롬프트 목록 자체는 확인되지 않았습니다. 그래서 이 글은 목록을 추정해서 복원하지 않고, Gemini가 실제로 잘하는 일과 절대 대신하지 못하는 일을 분리해서 정리합니다.
+" />
+<meta property="og:url" content="https://life-log.gyuha.com/post/2026/2026-06-11-gemini-stock-analysis-not-bloomberg-replacement/" />
+<meta property="og:site_name" content="Gemini가 블룸버그 터미널을 대체할 수 있을까: 주식 분석 AI를 써도 안 바뀌는 것들" />
+<meta property="og:image"
+  content="https://life-log.gyuha.com/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-06-11 00:00:00 &#43;0900 KST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://life-log.gyuha.com/">
+        <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://life-log.gyuha.com/">
+        <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://life-log.gyuha.com/">
+                  <img class=" avatar-user"
+                    src="https://life-log.gyuha.com/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://life-log.gyuha.com/">Gyuha</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="mr-1 break-word">
+                    <a href="https://life-log.gyuha.com/post/2026/2026-06-11-gemini-stock-analysis-not-bloomberg-replacement/">Gemini가 블룸버그 터미널을 대체할 수 있을까: 주식 분석 AI를 써도 안 바뀌는 것들</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Thu, 11 Jun 2026 00:00:00 &#43;0900"
+                    class="no-wrap">
+                    Thu, 11 Jun 2026 00:00:00 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Thu, 11 Jun 2026 08:18:17 &#43;0900"
+                    class="no-wrap">
+                    Thu, 11 Jun 2026 08:18:17 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      <span class="d-none d-md-inline">3978 Words</span>
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      생성형ai
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%88%AC%EC%9E%90">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      투자
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p>이 X 포스트는 Google Gemini가 이제 어떤 주식이든 월가 애널리스트처럼 분석할 수 있고, 월 4,000달러짜리 블룸버그 터미널을 대체할 수 있다고 주장합니다. 공개적으로 확인되는 원문에는 <code>9개의 프롬프트</code>가 있다고 적혀 있지만, 현재 확보한 공개 데이터에서는 그 프롬프트 목록 자체는 확인되지 않았습니다. 그래서 이 글은 목록을 추정해서 복원하지 않고, <strong>Gemini가 실제로 잘하는 일과 절대 대신하지 못하는 일을 분리해서</strong> 정리합니다.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://x.com/i/status/2064424997373026694">X 원문</a></li>
+<li><a href="https://ai.google.dev/gemini-api/docs/interactions/deep-research">Gemini Deep Research Agent | Google AI for Developers</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/use-case-analyze-financial-statements">Use case: Analyze financial statements and calculate ratios | Gemini Enterprise</a></li>
+<li><a href="https://cloud.google.com/gemini-enterprise/resources/prompt-guide">Prompt guide for Gemini Enterprise | Google Cloud</a></li>
+<li><a href="https://www.sec.gov/resources-investors">Resources for Investors | SEC</a></li>
+<li><a href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/investor-41">Investor Alert: Beware of Stock Recommendations on Investment Research Websites | Investor.gov</a></li>
+</ul>
+<h2 id="1-원문에서-확인되는-것은-강한-주장이지-검증된-9개-프롬프트-목록은-아니다">1. 원문에서 확인되는 것은 &ldquo;강한 주장&quot;이지, 검증된 9개 프롬프트 목록은 아니다</h2>
+<p>공개 임베드와 공개 API로 확인되는 원문은 스페인어로 작성된 다음 주장입니다.</p>
+<ul>
+<li>Gemini가 이제 어떤 주식이든 월가 애널리스트처럼 분석할 수 있다</li>
+<li>무료다</li>
+<li>월 4,000달러짜리 블룸버그 터미널을 대체하는 9개 프롬프트가 있다</li>
+</ul>
+<p>하지만 현재 공개적으로 확보되는 자료에는 그 9개 프롬프트의 실제 텍스트가 포함돼 있지 않았습니다. 첨부 이미지는 Gemini 로고만 확인됐고, 프롬프트 목록 자체는 읽히지 않았습니다. 따라서 이 글에서 &ldquo;<code>원문의 9개 프롬프트</code>를 재현한다&quot;고 말하면 정확하지 않습니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;X 원문&#34;] --&gt; B[&#34;확인 가능: 강한 주장&#34;]
+    A --&gt; C[&#34;확인 가능: Gemini / 주식 분석 / 9 prompts 언급&#34;]
+    A --&gt; D[&#34;미확인: 실제 9개 프롬프트 전문&#34;]
+    D --&gt; E[&#34;추정 복원 금지&#34;]
+
+    classDef infoTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+    classDef cautionTone fill:#fde8c0,stroke:#d9a441,stroke-width:1px,color:#333
+
+    class A,B,C,D infoTone
+    class E cautionTone</pre>
+<p>그래서 진짜 질문은 &ldquo;그 9개가 무엇이냐&quot;보다, <strong>Gemini가 실제 투자 리서치 과정 어디까지를 줄여 줄 수 있느냐</strong> 입니다.</p>
+<h2 id="2-gemini는-분명-강력한-리서치-도구다-특히-요약-비교-초안-작성에서">2. Gemini는 분명 강력한 리서치 도구다: 특히 요약, 비교, 초안 작성에서</h2>
+<p>Google 공식 문서를 보면 Gemini는 금융 데이터 요약, 재무제표 분석, 비율 계산, 다단계 리서치 같은 작업에 분명히 유용하게 설계돼 있습니다. Google Cloud 문서는 Gemini Enterprise가 <strong>재무제표를 빠르게 분석하고 KPI를 계산하고 초기 해석을 생성</strong> 할 수 있다고 설명합니다. 또 Deep Research Agent 문서는 Gemini가 여러 단계를 거쳐 검색·읽기·종합을 수행해 <strong>인용이 포함된 보고서</strong> 를 만들 수 있다고 소개합니다.</p>
+<p>즉 Gemini는 다음 작업에 특히 강합니다.</p>
+<ul>
+<li>회사 개요 빠른 요약</li>
+<li>분기 실적 자료의 초벌 해석</li>
+<li>재무비율 계산 요청</li>
+<li>경쟁사 비교 초안</li>
+<li>리스크 항목 체크리스트 정리</li>
+<li>여러 문서의 공통 패턴 추출</li>
+</ul>
+<pre class="mermaid">flowchart TD
+    A[&#34;Gemini 입력&#34;] --&gt; B[&#34;재무제표 / 보고서 / 질문&#34;]
+    B --&gt; C[&#34;요약&#34;]
+    B --&gt; D[&#34;비율 계산&#34;]
+    B --&gt; E[&#34;비교 초안&#34;]
+    B --&gt; F[&#34;리스크 목록화&#34;]
+
+    classDef processTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C,D,E,F processTone</pre>
+<p>따라서 &ldquo;<code>주식 분석에 Gemini를 쓸 수 있나?</code>&ldquo;라는 질문에는 분명히 <strong>그렇다</strong> 고 답할 수 있습니다. 다만 그 의미는 <code>블룸버그를 통째로 대체한다</code>가 아니라, <strong>리서치의 문서 작업과 초벌 해석을 빠르게 만든다</strong> 에 더 가깝습니다.</p>
+<h2 id="3-하지만-블룸버그-터미널과-gemini는-근본적으로-다른-도구다">3. 하지만 블룸버그 터미널과 Gemini는 근본적으로 다른 도구다</h2>
+<p>원문의 가장 과장된 부분은 바로 이 지점입니다. 블룸버그 터미널은 단순히 질문에 답하는 AI가 아닙니다. 그것은 실시간 시장 데이터, 뉴스, 가격 피드, 기업 정보, 스크리닝, 채권·외환·파생 데이터, 데이터 라이선스, 실행 워크플로우까지 포함하는 거대한 인프라입니다.</p>
+<p>반면 Gemini는 기본적으로 <strong>언어 모델 기반 분석 도구</strong> 입니다. 문서를 읽고 정리하고, 공개 웹과 연결된 정보를 요약하고, 입력된 재무 데이터를 해석하는 데 강합니다. 하지만 이 두 도구는 태생부터 역할이 다릅니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;블룸버그 터미널&#34;] --&gt; B[&#34;실시간 데이터 인프라&#34;]
+    A --&gt; C[&#34;전문 금융 데이터셋&#34;]
+    A --&gt; D[&#34;시장 실행 워크플로우&#34;]
+
+    E[&#34;Gemini&#34;] --&gt; F[&#34;문서 해석&#34;]
+    E --&gt; G[&#34;질문 응답&#34;]
+    E --&gt; H[&#34;요약 / 비교 / 보고서 초안&#34;]
+
+    classDef terminalTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+    classDef aiTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C,D terminalTone
+    class E,F,G,H aiTone</pre>
+<p>그래서 현실적인 표현은 이렇습니다.</p>
+<ul>
+<li>Gemini는 <strong>애널리스트의 문서 작업 일부를 줄여 준다</strong></li>
+<li>하지만 Gemini가 <strong>시장 데이터 인프라 전체를 대체하지는 않는다</strong></li>
+</ul>
+<p>즉 AI는 <code>터미널 대체재</code> 라기보다, <strong>리서치 보조 엔진</strong> 에 더 가깝습니다.</p>
+<h2 id="4-gemini를-투자에-쓸-때-진짜-강한-프롬프트는-예측보다-구조화에-있다">4. Gemini를 투자에 쓸 때 진짜 강한 프롬프트는 &ldquo;예측&quot;보다 &ldquo;구조화&quot;에 있다</h2>
+<p>Google의 프롬프트 가이드는 좋은 프롬프트의 기본 원칙을 꽤 명확하게 제시합니다.</p>
+<ul>
+<li>구체적일 것</li>
+<li>맥락을 줄 것</li>
+<li>역할을 지정할 것</li>
+<li>출력 형식을 명시할 것</li>
+<li>반복해서 다듬을 것</li>
+</ul>
+<p>이 원칙을 투자 리서치에 옮기면, 가장 좋은 프롬프트는 &ldquo;이 주식 오를까?&rdquo; 같은 예측형 질문이 아닙니다. 더 좋은 방식은 다음과 같습니다.</p>
+<ul>
+<li>이 회사의 사업 모델을 5개 항목으로 요약해 줘</li>
+<li>최근 4개 분기의 실적 변화에서 핵심 KPI만 뽑아 줘</li>
+<li>강세/약세 논리를 각각 3개씩 정리해 줘</li>
+<li>경쟁사 2곳과 비교표를 만들어 줘</li>
+<li>이 보고서에서 확인이 필요한 숫자만 따로 표시해 줘</li>
+</ul>
+<pre class="mermaid">flowchart TD
+    A[&#34;나쁜 질문&#34;] --&gt; B[&#34;이 주식 지금 살까?&#34;]
+    B --&gt; C[&#34;예측 환상&#34;]
+
+    D[&#34;좋은 질문&#34;] --&gt; E[&#34;사업 모델 요약&#34;]
+    D --&gt; F[&#34;KPI 추출&#34;]
+    D --&gt; G[&#34;강세 / 약세 논리 분리&#34;]
+    D --&gt; H[&#34;검증 포인트 표시&#34;]
+
+    classDef badTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef goodTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C badTone
+    class D,E,F,G,H goodTone</pre>
+<p>즉 Gemini를 잘 쓰는 사람은 <code>정답을 묻는 사람</code>이 아니라, <strong>리서치 과정을 구조화해서 던지는 사람</strong> 입니다.</p>
+<h2 id="5-가장-실용적인-사용법은-초안-작성기와-검증-체크리스트-생성기로-쓰는-것이다">5. 가장 실용적인 사용법은 &ldquo;초안 작성기&quot;와 &ldquo;검증 체크리스트 생성기&quot;로 쓰는 것이다</h2>
+<p>실전에서는 Gemini를 이렇게 쓰는 편이 가장 안전합니다.</p>
+<p>첫째, <strong>초안 작성기</strong> 로 씁니다.<br>
+예를 들어 10-K, 사업보고서, 실적 발표 자료, 컨콜 메모를 넣고 초벌 요약을 받습니다.</p>
+<p>둘째, <strong>검증 체크리스트 생성기</strong> 로 씁니다.<br>
+모델이 내놓은 요약 중 어떤 숫자, 어떤 비교, 어떤 해석이 원문 대조가 필요한지 다시 묻게 만듭니다.</p>
+<p>셋째, <strong>반대 논리 생성기</strong> 로 씁니다.<br>
+내가 낙관적으로 보는 기업이라면 &ldquo;이 투자 아이디어가 틀릴 수 있는 이유 5개&quot;를 먼저 뽑게 하는 식입니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;원문 자료 입력&#34;] --&gt; B[&#34;Gemini 초벌 요약&#34;]
+    B --&gt; C[&#34;핵심 논점 정리&#34;]
+    C --&gt; D[&#34;검증 필요 숫자 표시&#34;]
+    D --&gt; E[&#34;원문 대조&#34;]
+    E --&gt; F[&#34;최종 판단은 인간이 수행&#34;]
+
+    classDef processTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+    classDef resultTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C,D,E processTone
+    class F resultTone</pre>
+<p>이렇게 쓰면 AI는 투자 결정을 대신하는 존재가 아니라, <strong>리서치 시간을 줄이고 누락을 줄이는 도구</strong> 가 됩니다.</p>
+<h2 id="6-투자에서-가장-위험한-오해는-잘-말하는-모델--잘-아는-모델이라고-믿는-것이다">6. 투자에서 가장 위험한 오해는 &ldquo;잘 말하는 모델 = 잘 아는 모델&quot;이라고 믿는 것이다</h2>
+<p>Gemini 같은 모델은 말이 매우 그럴듯합니다. 그래서 리서치 초심자는 종종 <code>이 정도로 자신 있게 설명하면 맞겠지</code>라고 착각하기 쉽습니다. 하지만 언어 모델은 기본적으로 <strong>설명 엔진</strong> 이지, 자동으로 진실을 보증하는 엔진이 아닙니다.</p>
+<p>특히 투자에서는 다음 문제가 큽니다.</p>
+<ul>
+<li>최신 데이터가 실제로 반영됐는지</li>
+<li>출처가 정확한지</li>
+<li>수치가 원문과 일치하는지</li>
+<li>해석이 과도하게 단순화되지 않았는지</li>
+</ul>
+<p>이 부분은 사람이 끝까지 확인해야 합니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;그럴듯한 AI 답변&#34;] --&gt; B[&#34;정확성 착시&#34;]
+    B --&gt; C[&#34;검증 생략&#34;]
+    C --&gt; D[&#34;잘못된 판단 위험&#34;]
+
+    E[&#34;그럴듯한 AI 답변&#34;] --&gt; F[&#34;출처 확인&#34;]
+    F --&gt; G[&#34;수치 대조&#34;]
+    G --&gt; H[&#34;반대 논리 검토&#34;]
+    H --&gt; I[&#34;판단 품질 향상&#34;]
+
+    classDef badTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef goodTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C,D badTone
+    class E,F,G,H,I goodTone</pre>
+<p>즉 AI 리서치의 진짜 리스크는 틀린 답 하나보다, <strong>너무 자연스럽게 틀린 답을 믿게 만드는 구조</strong> 에 있습니다.</p>
+<h2 id="7-sec-관점에서도-소셜-미디어-기반-투자-주장은-항상-경계-대상이다">7. SEC 관점에서도 소셜 미디어 기반 투자 주장은 항상 경계 대상이다</h2>
+<p>SEC와 Investor.gov는 투자자에게 온라인 투자 정보, 소셜 미디어 게시물, 낯선 출처의 종목 추천을 경계하라고 계속 안내합니다. 특히 특정 종목이나 투자 아이디어가 제품·서비스보다 과하게 홍보되는 경우는 위험 신호일 수 있다고 말합니다.</p>
+<p>이 원문은 특정 종목을 직접 추천하는 글은 아니지만, <code>&quot;월 4,000달러짜리 터미널을 무료 AI가 대체한다&quot;</code> 같은 문장은 <strong>도구 자체의 역량을 과대 포장해 투자 판단의 경계심을 낮출 수 있다</strong> 는 점에서 비슷한 주의가 필요합니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;소셜 미디어 투자 주장&#34;] --&gt; B[&#34;강한 문구&#34;]
+    B --&gt; C[&#34;도구에 대한 과신&#34;]
+    C --&gt; D[&#34;검증 없는 판단&#34;]
+    D --&gt; E[&#34;손실 위험&#34;]
+
+    classDef riskTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+
+    class A,B,C,D,E riskTone</pre>
+<p>결국 AI 시대에도 달라지지 않는 원칙은 같습니다. <strong>출처, 데이터, 맥락, 반대 논리</strong> 없이 내려진 투자 판단은 여전히 취약합니다.</p>
+<h2 id="핵심-요약">핵심 요약</h2>
+<ul>
+<li>X 원문에서 공개적으로 확인되는 것은 <code>Gemini가 월가 애널리스트처럼 주식을 분석한다</code>, <code>블룸버그를 대체하는 9개 프롬프트가 있다</code>는 주장까지입니다.</li>
+<li>하지만 실제 9개 프롬프트 목록은 현재 공개적으로 검증되지 않았습니다.</li>
+<li>Google 공식 문서 기준으로 Gemini는 재무제표 분석, KPI 계산, 다단계 리서치, 요약·비교 초안 작성에는 분명 강합니다.</li>
+<li>그렇다고 해서 Gemini가 실시간 금융 데이터 인프라와 전문 데이터셋까지 포함한 <strong>블룸버그 터미널 전체를 대체하는 것은 아닙니다</strong>.</li>
+<li>Gemini를 투자에 잘 쓰는 방법은 <code>예측</code>이 아니라 <strong>요약, 구조화, 체크리스트, 반대 논리 생성</strong> 에 쓰는 것입니다.</li>
+<li>최종 투자 판단의 책임은 여전히 사람에게 있으며, 소셜 미디어 기반의 과장된 투자 주장은 항상 경계해야 합니다.</li>
+</ul>
+<h2 id="결론">결론</h2>
+<p>Gemini는 분명 강력한 투자 리서치 보조 도구입니다. 하지만 그 강점은 <code>정답 제시</code>가 아니라 <strong>문서를 빨리 읽고, 구조를 정리하고, 검증할 포인트를 드러내는 데</strong> 있습니다. 그래서 <code>&quot;블룸버그를 대체한다&quot;</code>는 말보다는, <strong>리서치 생산성을 크게 높여 주지만 데이터 인프라와 판단 책임은 대체하지 못한다</strong> 는 쪽이 훨씬 정확합니다.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/toc.js'></script>
+<link rel="stylesheet" href='https://life-log.gyuha.com/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://life-log.gyuha.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://life-log.gyuha.com/js/github-style.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/search.js'></script>
+
+
+
+<script type="module" src='https://life-log.gyuha.com/js/mermaid.js'></script>
+
+
+
+</html>
