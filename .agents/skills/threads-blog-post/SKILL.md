@@ -41,8 +41,9 @@ author: threads-glm
 
 **담당**: Threads URL에서 원본 콘텐츠 추출
 
-- **agent-browser** 스킬을 사용하여 브라우저 자동화로 페이지 접근
-- 실패 시 **playwright-cli**로 대체 시도
+- 먼저 **insane-search** 스킬을 사용하여 차단/403/봇 방어를 우회하며 원문 접근 시도
+- insane-search로 텍스트/메타데이터 확보가 충분하지 않을 때만 **agent-browser** 스킬로 브라우저 자동화 접근
+- agent-browser도 부족하거나 실패하면 **playwright-cli**로 대체 시도
 - Threads.net 페이지를 크롤링하여 포스트 내용 수집
 - 텍스트, 이미지, 작성자 정보, 작성일 추출
 - Open Graph 메타데이터 및 JSON-LD 데이터 추출
@@ -152,15 +153,36 @@ threads 블로그로 변환해줘: https://threads.net/@username/post/...
 ## Agent Coordination
 
 1. **Skill Lead** → Fetcher에게 URL 전달
-2. **Fetcher** → 원본 데이터 반환
-3. **Skill Lead** → Content, Media에게 데이터 병렬 전달
-4. **Content** → 마크다운 포스트 생성
-5. **Media** → 이미지 처리 완료
-6. **Skill Lead** → 최종 파일 병합 및 저장
+2. **Fetcher** → `insane-search` 우선 실행
+3. **Fetcher** → 필요 시 `agent-browser`, 그다음 `playwright-cli` 순으로 보강
+4. **Fetcher** → 원본 데이터 반환
+5. **Skill Lead** → Content, Media에게 데이터 병렬 전달
+6. **Content** → 마크다운 포스트 생성
+7. **Media** → 이미지 처리 완료
+8. **Skill Lead** → 최종 파일 병합 및 저장
+
+## Fetch Priority Rule
+
+Threads URL을 처리할 때는 항상 다음 우선순위를 따릅니다.
+
+1. **insane-search 먼저**
+   - Threads는 차단, 봇 방어, 로그인 벽, 렌더링 이슈가 잦으므로 먼저 insane-search로 접근합니다.
+   - 텍스트, OG 메타데이터, JSON-LD, 공개 응답 경로를 최대한 확보합니다.
+2. **브라우저 자동화는 보강 수단**
+   - insane-search 결과만으로 본문/작성자/작성일/이미지 정보가 충분하지 않을 때만 `agent-browser`를 씁니다.
+3. **마지막 폴백으로 playwright-cli**
+   - agent-browser가 실패하거나 렌더링 안정성이 더 필요할 때만 사용합니다.
+
+요약하면 기본 원칙은 다음과 같습니다.
+
+- `insane-search` → `agent-browser` → `playwright-cli`
+- 브라우저 자동화보다 **insane-search를 먼저** 쓴다
+- 차단 우회, 메타데이터 확보, 공개 응답 탐색은 insane-search가 1순위다
 
 ## Error Handling
 
 - **비공개 포스트**: 접근 권한 없음 알림
 - **삭제된 포스트**: 404 처리 및 사용자 안내
+- **차단/403/WAF**: 즉시 insane-search를 먼저 재시도하고, 그 결과를 바탕으로 browser 계열 도구 사용 여부 결정
 - **이미지 다운로드 실패**: 대체 텍스트로 대체
 - **파싱 오류**: 원본 HTML 보존 및 수동 편집 요청
