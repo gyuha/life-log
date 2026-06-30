@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko-kr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <script type="application/javascript" src='https://life-log.gyuha.com/js/theme-mode.js'></script>
-    <link rel="stylesheet" href='https://life-log.gyuha.com/css/frameworks.min.css' />
-    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github.min.css' />
-    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github-style.css' />
-    <link rel="stylesheet" href='https://life-log.gyuha.com/css/light.css' />
-    <link rel="stylesheet" href='https://life-log.gyuha.com/css/dark.css' />
-    <link rel="stylesheet" href='https://life-log.gyuha.com/css/syntax.css' />
+    <script type="application/javascript" src='http://localhost:1313/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='http://localhost:1313/css/frameworks.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/github.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/github-style.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
     <title>VIDMUSE AI로 음악에서 뮤직비디오까지 - 레퍼런스 이미지, 에이전트형 제작 흐름, 크레딧 운영법 - Life Log</title>
     
     <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
@@ -27,7 +27,7 @@
 <meta name="keywords"
   content='' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://life-log.gyuha.com/post/2026/2026-03-17-vidmuse-ai-music-video-agent-workflow/" />
+<link rel="canonical" href="http://localhost:1313/post/2026/2026-03-17-vidmuse-ai-music-video-agent-workflow/" />
 
 
 <meta name="twitter:card" content="summary" />
@@ -36,10 +36,10 @@
   content="이 영상이 흥미로운 이유는 단순히 &ldquo;뮤직비디오를 만들어 주는 AI&quot;를 소개해서가 아닙니다. 발표자가 강조하는 핵심은, VidMuse가 텍스트 한 줄을 던지고 결과물을 기다리는 도구라기보다 음악 분석 -&gt; 스타일 정리 -&gt; 장면 설계 -&gt; 이미지 생성 -&gt; 영상 생성을 순서대로 끌고 가는 에이전트형 제작 동반자 에 가깝다는 점입니다. 그래서 이 툴의 가치는 결과물 한 장면보다도, 제작 과정을 얼마나 세분화해 안내해 주느냐에서 드러납니다. (0:10), (0:44), (5:40)
 다만 영상을 그대로 따라 적으면 &ldquo;무료 크레딧을 주는 새 툴 소개&rdquo; 정도로 끝나기 쉽습니다. 이 글에서는 내용을 사전 준비물, VidMuse 내부 워크플로우, 품질과 비용의 교환관계, 실전 적용 순서로 다시 묶어서, 왜 이런 방식이 기존 이미지/영상 생성기와 다르게 느껴지는지를 중심으로 정리해 보겠습니다. (0:24), (1:42), (7:17)
 " />
-<meta name="twitter:site" content="https://life-log.gyuha.com/" />
+<meta name="twitter:site" content="http://localhost:1313/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
-  content="https://life-log.gyuha.com/">
+  content="http://localhost:1313/">
 
 
 <meta property="og:type" content="article" />
@@ -48,10 +48,10 @@
   content="이 영상이 흥미로운 이유는 단순히 &ldquo;뮤직비디오를 만들어 주는 AI&quot;를 소개해서가 아닙니다. 발표자가 강조하는 핵심은, VidMuse가 텍스트 한 줄을 던지고 결과물을 기다리는 도구라기보다 음악 분석 -&gt; 스타일 정리 -&gt; 장면 설계 -&gt; 이미지 생성 -&gt; 영상 생성을 순서대로 끌고 가는 에이전트형 제작 동반자 에 가깝다는 점입니다. 그래서 이 툴의 가치는 결과물 한 장면보다도, 제작 과정을 얼마나 세분화해 안내해 주느냐에서 드러납니다. (0:10), (0:44), (5:40)
 다만 영상을 그대로 따라 적으면 &ldquo;무료 크레딧을 주는 새 툴 소개&rdquo; 정도로 끝나기 쉽습니다. 이 글에서는 내용을 사전 준비물, VidMuse 내부 워크플로우, 품질과 비용의 교환관계, 실전 적용 순서로 다시 묶어서, 왜 이런 방식이 기존 이미지/영상 생성기와 다르게 느껴지는지를 중심으로 정리해 보겠습니다. (0:24), (1:42), (7:17)
 " />
-<meta property="og:url" content="https://life-log.gyuha.com/post/2026/2026-03-17-vidmuse-ai-music-video-agent-workflow/" />
+<meta property="og:url" content="http://localhost:1313/post/2026/2026-03-17-vidmuse-ai-music-video-agent-workflow/" />
 <meta property="og:site_name" content="VIDMUSE AI로 음악에서 뮤직비디오까지 - 레퍼런스 이미지, 에이전트형 제작 흐름, 크레딧 운영법" />
 <meta property="og:image"
-  content="https://life-log.gyuha.com/">
+  content="http://localhost:1313/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
@@ -74,7 +74,7 @@
   <div style="position: relative">
   <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
     <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
-      <a class="Header-link" href="https://life-log.gyuha.com/">
+      <a class="Header-link" href="http://localhost:1313/">
         <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
           <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
           </path>
@@ -111,7 +111,7 @@
     </div>
 
     <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
-      <a class="Header-link " href="https://life-log.gyuha.com/">
+      <a class="Header-link " href="http://localhost:1313/">
         <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
           <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
           </path>
@@ -144,19 +144,19 @@
           <div class="flex-auto min-width-0 width-fit mr-3">
             <div class="d-flex">
               <div class="d-none d-md-block">
-                <a class="avatar mr-2 flex-shrink-0" href="https://life-log.gyuha.com/">
+                <a class="avatar mr-2 flex-shrink-0" href="http://localhost:1313/">
                   <img class=" avatar-user"
-                    src="https://life-log.gyuha.com/images/avatar.png"
+                    src="http://localhost:1313/images/avatar.png"
                     width="32" height="32"></a>
               </div>
               <div class="d-flex flex-column">
                 <h1 class="break-word f3 text-normal mb-md-0 mb-1">
                   <span class="author">
-                    <a href="https://life-log.gyuha.com/">Gyuha</a>
+                    <a href="http://localhost:1313/">Gyuha</a>
                   </span>
                   <span class="path-divider">/</span>
                   <strong class="mr-1 break-word">
-                    <a href="https://life-log.gyuha.com/post/2026/2026-03-17-vidmuse-ai-music-video-agent-workflow/">VIDMUSE AI로 음악에서 뮤직비디오까지 - 레퍼런스 이미지, 에이전트형 제작 흐름, 크레딧 운영법</a>
+                    <a href="http://localhost:1313/post/2026/2026-03-17-vidmuse-ai-music-video-agent-workflow/">VIDMUSE AI로 음악에서 뮤직비디오까지 - 레퍼런스 이미지, 에이전트형 제작 흐름, 크레딧 운영법</a>
                   </strong>
                 </h1>
                 <div class="note m-0">
@@ -331,8 +331,8 @@
     </div>
   </main>
 </div>
-<script type="application/javascript" src='https://life-log.gyuha.com/js/toc.js'></script>
-<link rel="stylesheet" href='https://life-log.gyuha.com/css/toc.css' />
+<script type="application/javascript" src='http://localhost:1313/js/toc.js'></script>
+<link rel="stylesheet" href='http://localhost:1313/css/toc.css' />
 
   
 </div>
@@ -340,7 +340,7 @@
   <div class="footer container-xl width-full p-responsive">
   <div
     class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
-    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://life-log.gyuha.com/">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="http://localhost:1313/">
       <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
         <path fill-rule="evenodd"
           d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
@@ -363,18 +363,18 @@
 
 </body>
 
-<script type="application/javascript" src="https://life-log.gyuha.com/js/github-style.js"></script>
+<script type="application/javascript" src="http://localhost:1313/js/github-style.js"></script>
 
 
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
-<script type="application/javascript" src='https://life-log.gyuha.com/js/search.js'></script>
+<script type="application/javascript" src='http://localhost:1313/js/search.js'></script>
 
 
 
-<script type="module" src='https://life-log.gyuha.com/js/mermaid.js'></script>
+<script type="module" src='http://localhost:1313/js/mermaid.js'></script>
 
 
 

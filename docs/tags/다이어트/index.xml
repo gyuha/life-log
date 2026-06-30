@@ -2,73 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>다이어트 on Life Log</title>
-    <link>https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</link>
+    <link>http://localhost:1313/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/</link>
     <description>Recent content in 다이어트 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 02 Jun 2026 00:49:20 +0900</lastBuildDate>
-    <atom:link href="https://life-log.gyuha.com/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jun 2026 11:55:38 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2주 만에 지방을 없앤다는 말의 진짜 뜻: 인슐린 저항성, 스트레스, 운동을 같이 봐야 하는 이유</title>
+      <link>http://localhost:1313/post/2026/2026-06-30-insulin-resistance-stress-exercise-fat-loss-guide/</link>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/post/2026/2026-06-30-insulin-resistance-stress-exercise-fat-loss-guide/</guid>
+      <description>&lt;p&gt;이 영상은 비만을 단순히 &amp;ldquo;&lt;code&gt;먹어서 찐 살&lt;/code&gt;&amp;rdquo; 정도로 보지 않습니다. &lt;a href=&#34;https://youtu.be/7OkwcMrV0bY?t=0&#34;&gt;고지혈증, 고혈압, 당뇨, 비만을 결국 하나의 혈관·대사 문제로 연결해서 보자&lt;/a&gt;는 메시지가 중심입니다. 그리고 그 가운데에 &lt;strong&gt;인슐린 저항성&lt;/strong&gt;, &lt;strong&gt;지속적인 스트레스&lt;/strong&gt;, &lt;strong&gt;움직이지 않는 생활 방식&lt;/strong&gt; 이 놓여 있다고 설명합니다.&lt;/p&gt;&#xA;&lt;p&gt;이런 설명은 직관적이어서 설득력이 있지만, 그대로 받아들이기보다 무엇이 근거 있는 핵심인지, 무엇은 조금 단순화된 표현인지 구분해서 보는 편이 좋습니다. 지방은 단순히 &amp;ldquo;독을 대신 받아 주는 창고&amp;quot;로만 설명할 수 없고, 스트레스가 곧바로 모든 질환의 직접 원인이라고 말하는 것도 과합니다. 다만 큰 방향은 분명합니다. &lt;strong&gt;살이 찌고 대사 건강이 무너지는 과정은 식사, 활동량, 스트레스, 수면, 체중 변화가 얽혀 있는 흐름&lt;/strong&gt; 이라는 점입니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>뱃살은 복근운동보다 먼저 식후 습관에서 갈린다: 인슐린·근육·포만감의 순서</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-02-belly-fat-walking-insulin-muscle-volume-eating/</link>
+      <link>http://localhost:1313/post/2026/2026-06-02-belly-fat-walking-insulin-muscle-volume-eating/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-02-belly-fat-walking-insulin-muscle-volume-eating/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-02-belly-fat-walking-insulin-muscle-volume-eating/</guid>
       <description>&lt;p&gt;이 영상의 가장 중요한 메시지는 단순합니다. &lt;strong&gt;뱃살은 복근운동 횟수보다 식후 대사 반응과 생활 습관의 구조에서 더 크게 갈린다&lt;/strong&gt; 는 것입니다. 크런치나 플랭크를 아무리 많이 해도 식사 패턴, 활동량, 근육량, 수면, 극단적 다이어트 습관이 그대로면 복부 지방은 잘 안 바뀔 수 있습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GPT로 다이어트 자동화하기: 칼로리 계산보다 중요한 것</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-14-ai-diet-automation-weight-loss/</link>
+      <link>http://localhost:1313/post/2026/2026-05-14-ai-diet-automation-weight-loss/</link>
       <pubDate>Thu, 14 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-14-ai-diet-automation-weight-loss/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-14-ai-diet-automation-weight-loss/</guid>
       <description>&lt;p&gt;이 영상의 핵심은 “AI가 체중을 대신 빼 준다”가 아닙니다. 핵심은 &lt;strong&gt;다이어트를 망치는 반복 의사결정을 AI가 줄여 준다&lt;/strong&gt; 는 데 있습니다. 무엇을 먹을지, 오늘 얼마나 먹어도 되는지, 좋아하는 음식을 어떻게 감량 버전으로 바꿀지, 지금 감량 속도가 맞는지 같은 결정을 자동화하면 다이어트 난이도는 확실히 내려갑니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>살 빼고 싶으면 의지부터 버려야 하는 이유: 비만, 세트포인트, GLP-1 치료</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-set-point-glp1-treatment/</link>
+      <link>http://localhost:1313/post/2026/2026-05-12-obesity-set-point-glp1-treatment/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-set-point-glp1-treatment/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-12-obesity-set-point-glp1-treatment/</guid>
       <description>&lt;p&gt;영상의 핵심은 강하다. 고도비만은 의지 부족이 아니라 몸의 조절 시스템이 높은 체중을 방어하는 질병이라는 것이다. 장형우 교수는 흉부외과 의사이자 고도비만을 겪은 환자로서, 수면무호흡·부정맥·당뇨 전단계·비만대사수술·GLP-1 계열 약물 경험을 이야기한다. 이 글의 결론도 비슷하다. 살을 빼려면 “더 독하게 참아라”보다 “내 몸이 왜 다시 찌려고 하는지 이해하고, 필요한 경우 전문 치료를 받아라”가 먼저다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>살찐 사람이 더 오래 산다는 말은 얼마나 맞을까: 비만의 역설과 혈관 건강</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</link>
+      <link>http://localhost:1313/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</guid>
       <description>&lt;p&gt;“살찐 사람이 더 오래 산다”는 말은 자극적이지만, 완전히 허무맹랑한 말은 아니다. 일부 대규모 관찰연구와 특정 질환군 연구에서 BMI 기준 과체중 또는 경도 비만 집단의 사망률이 정상 체중 집단보다 낮게 나타난 적이 있다. 이를 &lt;code&gt;비만의 역설&lt;/code&gt;이라고 부른다. 다만 이 말은 “살을 찌우면 건강해진다”는 뜻이 아니다. BMI의 한계, 흡연·질병으로 인한 체중 감소, 근육량, 나이, 만성질환 상태가 뒤섞이면 이런 역설적 결과가 나타날 수 있다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>30-30-30 다이어트 공식은 정말 지방을 빨리 빼줄까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-11-30-30-30-method-fasted-cardio/</link>
+      <link>http://localhost:1313/post/2026/2026-05-11-30-30-30-method-fasted-cardio/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-11-30-30-30-method-fasted-cardio/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-11-30-30-30-method-fasted-cardio/</guid>
       <description>&lt;p&gt;Shorts 영상은 “굶고 뛰어야 살이 잘 빠진다”는 믿음이 틀렸다고 말하며, 대신 &lt;code&gt;30-30-30&lt;/code&gt; 방법을 제안한다. 기상 후 30분 안에 단백질 30g을 먹고, 이어서 30분 동안 낮은 강도의 유산소 운동을 하라는 공식이다. 이 방식은 아침 식사와 운동을 자동화한다는 점에서 꽤 실용적이다. 다만 영상 속 “공복 운동을 하면 몸이 근육을 소화한다”거나 “지방은 에너지로 바꾸는 데 5시간이 걸린다”는 설명은 과학적으로 지나치게 단순하고 과장되어 있다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>복부 지방을 줄이고 싶다면 걷는 시간대부터 다시 봐야 할까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-30-fasted-walking-belly-fat-timing/</link>
+      <link>http://localhost:1313/post/2026/2026-04-30-fasted-walking-belly-fat-timing/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-30-fasted-walking-belly-fat-timing/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-30-fasted-walking-belly-fat-timing/</guid>
       <description>&lt;p&gt;이 영상의 핵심 메시지는 단순하다. &lt;strong&gt;만 보를 걷는지보다 언제 걷는지가 복부 지방에는 더 중요하다&lt;/strong&gt; 는 것이다. 영상은 특히 아침 공복 걷기를 복부 지방 연소에 가장 유리한 시간대로 강조하고, 식후 걷기는 혈당 관리에는 좋지만 목적이 다르다고 구분한다. 다만 이런 설명은 이해를 돕기 위해 대사를 꽤 단순화한 표현도 섞여 있다. 그래서 이 글에서는 영상의 주장을 그대로 옮기기보다, 어떤 부분은 영상의 해석으로 읽어야 하고 어떤 부분은 공식 자료로도 비교적 넓게 뒷받침되는지 나눠서 보려고 한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>저녁을 바꾸면 잠자는 동안 지방이 타기 시작할까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</link>
+      <link>http://localhost:1313/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</guid>
       <description>&lt;p&gt;이 영상은 다이어트의 승부가 아침이나 점심이 아니라 &lt;strong&gt;저녁 이후 몇 시간을 어떻게 보내느냐&lt;/strong&gt; 에서 갈린다고 주장한다. 낮에 식단과 운동을 잘해도, 밤에 인슐린이 높은 상태로 잠들면 지방을 꺼내 쓰는 시간이 줄어든다는 것이다. 그래서 제안하는 해법도 단순한 저녁 소식이 아니다. 고탄수화물을 줄이고, 식이섬유와 단백질을 충분히 먹고, 식후에 가볍게 움직이고, 잠들기 전 빛과 실내 온도까지 조정하는 &lt;code&gt;저녁 대사 루틴&lt;/code&gt;으로 설명한다. 다만 일부 수치와 효과 표현은 단일 영상의 실전 주장인 만큼, 여기서는 &lt;strong&gt;영상이 어떤 논리로 연결하는지&lt;/strong&gt; 에 초점을 맞춰 읽는 편이 적절하다. &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=17&#34;&gt;(0:17)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=87&#34;&gt;(1:27)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=127&#34;&gt;(2:07)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=961&#34;&gt;(16:01)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>운동 없이 2주 만에 7kg? 영상이 말하는 간헐적 단식의 실제 논리</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-07-intermittent-fasting-insulin-reset/</link>
+      <link>http://localhost:1313/post/2026/2026-04-07-intermittent-fasting-insulin-reset/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-07-intermittent-fasting-insulin-reset/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-07-intermittent-fasting-insulin-reset/</guid>
       <description>&lt;p&gt;이 영상의 제목은 강하지만, 실제 본문에서 반복하는 핵심은 꽤 명확하다. 간헐적 단식의 목적은 단순히 &lt;code&gt;오래 굶는 것&lt;/code&gt;이 아니라, &lt;strong&gt;인슐린을 낮추고 몸을 지방 대사 상태로 전환시키는 것&lt;/strong&gt; 이다. 여기에 GLP-1, 장내 유익균, 오토파지, 갑상선 대사, 전해질 같은 개념을 덧붙이면서 왜 단식이 위고비·마운자로 같은 약물과 &amp;ldquo;같은 방향&amp;quot;으로 작동한다고 보는지 설명한다. 다만 영상 후반의 보충제·영양제 제안은 단일 영상의 주장이라는 점을 분리해서 읽는 편이 안전하다. &lt;a href=&#34;https://youtu.be/U5wuuHwI7w4?t=4&#34;&gt;(0:04)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/U5wuuHwI7w4?t=122&#34;&gt;(2:02)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/U5wuuHwI7w4?t=289&#34;&gt;(4:49)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/U5wuuHwI7w4?t=378&#34;&gt;(6:18)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>간식이 안 끊기는 사람을 위한 식욕 리셋 가이드</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-06-snacking-appetite-system-reset/</link>
+      <link>http://localhost:1313/post/2026/2026-04-06-snacking-appetite-system-reset/</link>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-06-snacking-appetite-system-reset/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-06-snacking-appetite-system-reset/</guid>
       <description>&lt;p&gt;이 영상은 &lt;code&gt;식욕을 참는 법&lt;/code&gt;보다 &lt;code&gt;식욕이 덜 올라오게 만드는 몸의 조건&lt;/code&gt;에 초점을 둔다. 간식, 군것질, 야식이 반복되는 이유를 의지 부족이 아니라 &lt;code&gt;물리적 만족감&lt;/code&gt;, &lt;code&gt;화학적 만족감&lt;/code&gt;, &lt;code&gt;심리적 만족감&lt;/code&gt;이 어긋난 상태로 설명하고, 여기에 혈당 급등락, 장내 환경, 도파민 보상, 코르티솔 스트레스, 수면 부족까지 연결한다. 그래서 해결책도 단순 칼로리 절제가 아니라 &lt;code&gt;혈당을 완만하게 만들고&lt;/code&gt;, &lt;code&gt;장내 환경을 바꾸고&lt;/code&gt;, &lt;code&gt;도파민 경로를 음식 밖으로 넓히고&lt;/code&gt;, &lt;code&gt;충분히 자고&lt;/code&gt;, &lt;code&gt;식이섬유·단백질·좋은 지방으로 배고픔 레벨을 운영하라&lt;/code&gt;는 쪽으로 나온다. &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=8&#34;&gt;(0:08)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=99&#34;&gt;(1:39)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=305&#34;&gt;(5:05)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=620&#34;&gt;(10:20)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=1439&#34;&gt;(23:59)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>수면 on Life Log</title>
-    <link>https://life-log.gyuha.com/tags/%EC%88%98%EB%A9%B4/</link>
+    <link>http://localhost:1313/tags/%EC%88%98%EB%A9%B4/</link>
     <description>Recent content in 수면 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
     <lastBuildDate>Tue, 02 Jun 2026 07:08:15 +0900</lastBuildDate>
-    <atom:link href="https://life-log.gyuha.com/tags/%EC%88%98%EB%A9%B4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%EC%88%98%EB%A9%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>새벽 1시를 자주 넘겨 자면 왜 더 피곤할까: 수면 시간보다 수면 타이밍이 중요한 이유</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-02-sleep-timing-late-bedtime-health-risk/</link>
+      <link>http://localhost:1313/post/2026/2026-06-02-sleep-timing-late-bedtime-health-risk/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-02-sleep-timing-late-bedtime-health-risk/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-02-sleep-timing-late-bedtime-health-risk/</guid>
       <description>&lt;p&gt;이 영상의 핵심 메시지는 분명합니다. &lt;strong&gt;건강은 몇 시간 잤느냐만으로 결정되지 않고, 몇 시에 잠들었는가에도 크게 영향을 받는다&lt;/strong&gt; 는 것입니다. 특히 새벽 1시 이후 취침을 하나의 &amp;ldquo;경계선&amp;quot;처럼 설명하지만, 실제로 더 정확한 표현은 &lt;strong&gt;늦은 취침이 반복될수록 생체시계와 회복 구조가 더 쉽게 어긋난다&lt;/strong&gt; 에 가깝습니다. 영상의 문제의식은 타당하지만, 숫자와 기전을 그대로 절대화하기보다는 연구가 어디까지 말해 주는지 함께 보는 편이 좋습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>3일 만에 뇌가 30배 빨라질까: 신경가소성 루틴을 과장 없이 해석하기</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-11-three-day-brain-speed-neuroplasticity-routine/</link>
+      <link>http://localhost:1313/post/2026/2026-05-11-three-day-brain-speed-neuroplasticity-routine/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-11-three-day-brain-speed-neuroplasticity-routine/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-11-three-day-brain-speed-neuroplasticity-routine/</guid>
       <description>&lt;p&gt;영상은 “3일 만에 뇌의 처리 속도를 30배까지 끌어올릴 수 있다”고 말한다. 방법은 아침 햇빛, 90분 집중 세션, 낮잠, 적당히 어려운 과제, 고강도 인터벌 운동, 아무것도 하지 않는 무자극 시간, 카페인 지연이다. 구성 자체는 꽤 쓸 만하다. 다만 &lt;code&gt;모든 뇌 능력이 30배 빨라진다&lt;/code&gt;는 식으로 받아들이면 과장이다. 실제로 근거가 있는 것은 “집중과 휴식, 수면과 운동, 적절한 난이도, 방해 자극 제거가 학습과 수행을 개선할 수 있다”는 훨씬 차분한 결론이다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>수명을 결정한다는 네 가지 변수: 수면, 공복, 악력, 관계를 과장 없이 보기</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-11-healthspan-sleep-fasting-grip-relationships/</link>
+      <link>http://localhost:1313/post/2026/2026-05-11-healthspan-sleep-fasting-grip-relationships/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-11-healthspan-sleep-fasting-grip-relationships/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-11-healthspan-sleep-fasting-grip-relationships/</guid>
       <description>&lt;p&gt;영상은 평균수명보다 &lt;code&gt;건강수명&lt;/code&gt;이 중요하다고 말하면서, 오래 살기보다 오래 움직이고 오래 독립적으로 사는 것이 핵심이라고 주장한다. 이를 위해 수면, 식사 시간, 악력과 저강도 유산소, 사회적 관계라는 네 가지 변수를 제시한다. 방향은 설득력 있다. 다만 영상은 메시지를 강하게 전달하기 위해 붉은 고기, 아침식사, 자가포식, 러닝의 위험을 다소 과장해서 말한다. 그래서 이 글에서는 영상의 핵심을 살리되, 근거가 있는 부분과 조심해서 해석해야 할 부분을 나눠 정리한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>잠을 줄이면 정말 뇌가 망가질까: 수면 부족, 글림프 시스템, 브레인포그</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-11-sleep-deprivation-brain-glymphatic-system/</link>
+      <link>http://localhost:1313/post/2026/2026-05-11-sleep-deprivation-brain-glymphatic-system/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-11-sleep-deprivation-brain-glymphatic-system/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-11-sleep-deprivation-brain-glymphatic-system/</guid>
       <description>&lt;p&gt;영상은 한국 사회의 수면 부족 문화를 강하게 비판한다. “잠은 죽어서 자는 것”처럼 말하는 문화가 실제로는 뇌와 몸을 갉아먹는 습관일 수 있다는 메시지다. 특히 글림프 시스템, 브레인포그, 수면 부족으로 인한 뇌 신경망 손상 가능성을 강조한다. 방향은 매우 중요하다. 다만 “뇌가 썩는다”거나 “수면 부족이 곧바로 알츠하이머의 씨앗이 된다”는 식의 표현은 경고로는 효과적이지만, 과학적으로는 조금 더 차분하게 해석해야 한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>공부 시간을 줄이는 핵심은 오래 앉아 있기보다 뇌가 일하게 만드는 것</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-16-fast-study-brain-method/</link>
+      <link>http://localhost:1313/post/2026/2026-04-16-fast-study-brain-method/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-16-fast-study-brain-method/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-16-fast-study-brain-method/</guid>
       <description>&lt;p&gt;이 영상은 &lt;code&gt;10시간 공부를 2시간으로 압축한다&lt;/code&gt;는 강한 표현을 쓰지만, 핵심은 단순하다. 공부 시간을 늘리는 것보다 &lt;strong&gt;뇌가 실제로 정보를 처리하게 만드는 방식&lt;/strong&gt; 이 중요하다는 것이다. 영상은 밑줄 긋기, 예쁜 노트 정리, 오래 앉아 있기처럼 공부한 느낌은 강하지만 실제 인출이 약한 방식을 비판하고, 대신 시간 압박, 출제 우선순위, 설명하기, 백지 인출, 수면과 걷기를 제안한다. 일부 신경과학 표현과 수치 주장은 영상 내 설명으로만 받아들이되, 공부법의 큰 방향은 &lt;code&gt;입력보다 인출&lt;/code&gt;, &lt;code&gt;양보다 우선순위&lt;/code&gt;, &lt;code&gt;밤샘보다 회복&lt;/code&gt;으로 정리할 수 있다. &lt;a href=&#34;https://youtu.be/uCueqDriw8s?t=0&#34;&gt;(0:00)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/uCueqDriw8s?t=34&#34;&gt;(0:34)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/uCueqDriw8s?t=420&#34;&gt;(7:00)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/uCueqDriw8s?t=623&#34;&gt;(10:23)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>저녁을 바꾸면 잠자는 동안 지방이 타기 시작할까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</link>
+      <link>http://localhost:1313/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</guid>
       <description>&lt;p&gt;이 영상은 다이어트의 승부가 아침이나 점심이 아니라 &lt;strong&gt;저녁 이후 몇 시간을 어떻게 보내느냐&lt;/strong&gt; 에서 갈린다고 주장한다. 낮에 식단과 운동을 잘해도, 밤에 인슐린이 높은 상태로 잠들면 지방을 꺼내 쓰는 시간이 줄어든다는 것이다. 그래서 제안하는 해법도 단순한 저녁 소식이 아니다. 고탄수화물을 줄이고, 식이섬유와 단백질을 충분히 먹고, 식후에 가볍게 움직이고, 잠들기 전 빛과 실내 온도까지 조정하는 &lt;code&gt;저녁 대사 루틴&lt;/code&gt;으로 설명한다. 다만 일부 수치와 효과 표현은 단일 영상의 실전 주장인 만큼, 여기서는 &lt;strong&gt;영상이 어떤 논리로 연결하는지&lt;/strong&gt; 에 초점을 맞춰 읽는 편이 적절하다. &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=17&#34;&gt;(0:17)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=87&#34;&gt;(1:27)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=127&#34;&gt;(2:07)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=961&#34;&gt;(16:01)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

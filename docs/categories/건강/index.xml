@@ -2,360 +2,367 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>건강 on Life Log</title>
-    <link>https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/</link>
+    <link>http://localhost:1313/categories/%EA%B1%B4%EA%B0%95/</link>
     <description>Recent content in 건강 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 18 Jun 2026 07:11:07 +0900</lastBuildDate>
-    <atom:link href="https://life-log.gyuha.com/categories/%EA%B1%B4%EA%B0%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jun 2026 11:55:38 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%EA%B1%B4%EA%B0%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2주 만에 지방을 없앤다는 말의 진짜 뜻: 인슐린 저항성, 스트레스, 운동을 같이 봐야 하는 이유</title>
+      <link>http://localhost:1313/post/2026/2026-06-30-insulin-resistance-stress-exercise-fat-loss-guide/</link>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/post/2026/2026-06-30-insulin-resistance-stress-exercise-fat-loss-guide/</guid>
+      <description>&lt;p&gt;이 영상은 비만을 단순히 &amp;ldquo;&lt;code&gt;먹어서 찐 살&lt;/code&gt;&amp;rdquo; 정도로 보지 않습니다. &lt;a href=&#34;https://youtu.be/7OkwcMrV0bY?t=0&#34;&gt;고지혈증, 고혈압, 당뇨, 비만을 결국 하나의 혈관·대사 문제로 연결해서 보자&lt;/a&gt;는 메시지가 중심입니다. 그리고 그 가운데에 &lt;strong&gt;인슐린 저항성&lt;/strong&gt;, &lt;strong&gt;지속적인 스트레스&lt;/strong&gt;, &lt;strong&gt;움직이지 않는 생활 방식&lt;/strong&gt; 이 놓여 있다고 설명합니다.&lt;/p&gt;&#xA;&lt;p&gt;이런 설명은 직관적이어서 설득력이 있지만, 그대로 받아들이기보다 무엇이 근거 있는 핵심인지, 무엇은 조금 단순화된 표현인지 구분해서 보는 편이 좋습니다. 지방은 단순히 &amp;ldquo;독을 대신 받아 주는 창고&amp;quot;로만 설명할 수 없고, 스트레스가 곧바로 모든 질환의 직접 원인이라고 말하는 것도 과합니다. 다만 큰 방향은 분명합니다. &lt;strong&gt;살이 찌고 대사 건강이 무너지는 과정은 식사, 활동량, 스트레스, 수면, 체중 변화가 얽혀 있는 흐름&lt;/strong&gt; 이라는 점입니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>통통한 사람이 더 오래 산다는 말의 함정: 위고비·마운자로 오남용보다 먼저 봐야 할 것</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-18-obesity-paradox-glp1-overuse-underweight-risk/</link>
+      <link>http://localhost:1313/post/2026/2026-06-18-obesity-paradox-glp1-overuse-underweight-risk/</link>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-18-obesity-paradox-glp1-overuse-underweight-risk/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-18-obesity-paradox-glp1-overuse-underweight-risk/</guid>
       <description>&lt;p&gt;이 영상의 문제의식은 분명합니다. 한국에서 진짜 문제는 고도비만 환자가 치료를 적극적으로 받는 것이 아니라, &lt;strong&gt;치료가 꼭 필요하지 않은 상대적으로 마른 사람이 비급여 비만치료제를 미용 목적으로 과하게 찾는 상황&lt;/strong&gt; 이라는 것입니다. 그리고 이 맥락에서 &lt;code&gt;통통한 사람이 제일 오래 산다&lt;/code&gt;는 표현도 나오는데, 이 문장은 사실 그대로 받아들이면 오해를 부르기 쉽습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>오토파지는 만능 항노화 버튼이 아니다: 단식보다 먼저 알아야 할 현실적인 순서</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-16-autophagy-fasting-exercise-realistic-guide/</link>
+      <link>http://localhost:1313/post/2026/2026-06-16-autophagy-fasting-exercise-realistic-guide/</link>
       <pubDate>Tue, 16 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-16-autophagy-fasting-exercise-realistic-guide/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-16-autophagy-fasting-exercise-realistic-guide/</guid>
       <description>&lt;p&gt;이 영상의 핵심은 오토파지를 &lt;code&gt;내 몸이 나를 파먹는 과정&lt;/code&gt; 이 아니라, &lt;strong&gt;손상된 부품을 정리하고 재활용하는 생존 시스템&lt;/strong&gt; 으로 설명하는 데 있습니다. 그리고 더 중요한 메시지는 따로 있습니다. 오토파지는 분명 흥미로운 항노화 기전이지만, 그것을 이유로 아무나 오래 굶거나 극단적인 단식을 따라 하는 건 위험할 수 있고, 실제 생활에서는 &lt;strong&gt;운동과 기본 식사 구조 조정이 더 현실적인 오토파지 전략&lt;/strong&gt; 일 수 있다는 점입니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>간헐적 단식은 만능이 아니다: 오토파지보다 먼저 봐야 할 현실적인 기준</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-15-intermittent-fasting-practical-rules-autophagy-limitations/</link>
+      <link>http://localhost:1313/post/2026/2026-06-15-intermittent-fasting-practical-rules-autophagy-limitations/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-15-intermittent-fasting-practical-rules-autophagy-limitations/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-15-intermittent-fasting-practical-rules-autophagy-limitations/</guid>
       <description>&lt;p&gt;이 영상은 간헐적 단식을 매우 체계적으로 설명하려고 합니다. 12:12, 16:8, 5:2, 격일단식, 오마드, 그리고 FMD까지 한 프레임에서 비교하면서 무엇이 더 쉽고, 무엇이 더 강하고, 무엇이 더 위험한지를 나눠 말합니다. 다만 메시지를 한 줄로 요약하면 이렇습니다. &lt;strong&gt;간헐적 단식은 분명 유용할 수 있지만, 누구에게나 좋은 만능 항노화 전략은 아니고, 실제로는 적용 대상·나이·체중·질환 유무에 따라 판단이 크게 달라진다&lt;/strong&gt; 는 것입니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>비만은 왜 의지로만 안 풀릴까: 세트포인트, 위수술, GLP-1을 함께 봐야 하는 이유</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-15-obesity-set-point-surgery-glp1-chronic-disease/</link>
+      <link>http://localhost:1313/post/2026/2026-06-15-obesity-set-point-surgery-glp1-chronic-disease/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-15-obesity-set-point-surgery-glp1-chronic-disease/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-15-obesity-set-point-surgery-glp1-chronic-disease/</guid>
       <description>&lt;p&gt;이 영상의 핵심은 아주 선명합니다. 비만은 &lt;code&gt;조금만 덜 먹고 더 움직이면 해결되는 상태&lt;/code&gt; 가 아니라, &lt;strong&gt;몸이 기존 체중을 되찾으려고 강하게 방어하는 생물학적 조건&lt;/strong&gt; 이라는 것입니다. 그래서 단순한 의지나 단기 다이어트만으로는 반복적으로 실패하기 쉽고, 어떤 사람에게는 약물이나 수술까지 포함한 치료가 현실적인 선택지가 될 수 있다는 메시지로 이어집니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>전신 맨몸운동 루틴의 진짜 장점은 따로 있다: 짧은 시간에 심폐와 하체를 동시에 쓰는 법</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-15-bodyweight-hiit-routine-strength-cardio-limitations/</link>
+      <link>http://localhost:1313/post/2026/2026-06-15-bodyweight-hiit-routine-strength-cardio-limitations/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-15-bodyweight-hiit-routine-strength-cardio-limitations/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-15-bodyweight-hiit-routine-strength-cardio-limitations/</guid>
       <description>&lt;p&gt;이 쇼츠는 주 3회, 한 번 40분이면 전신을 털어낼 수 있는 맨몸운동 루틴이 있다고 말합니다. 점프 스쿼트, 마운틴 클라이머, 푸시업, 슈퍼맨 로우를 인터벌처럼 묶어서 3~4라운드 돌리는 방식인데, 짧은 시간에 심폐와 근력을 동시에 몰아붙일 수 있다는 점에서 분명 매력적입니다. 다만 &lt;code&gt;&amp;quot;이걸로 평생 운동 걱정 끝&amp;quot;&lt;/code&gt; 같은 표현은 과장이고, &lt;strong&gt;무엇에 강하고 무엇은 부족한 루틴인지 구분해서 보는 편이 정확합니다.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>선크림에서 진짜 중요한 건 성분 논쟁이 아니라 양과 습관이다</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-14-sunscreen-quantity-cleansing-indoor-myths/</link>
+      <link>http://localhost:1313/post/2026/2026-06-14-sunscreen-quantity-cleansing-indoor-myths/</link>
       <pubDate>Sun, 14 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-14-sunscreen-quantity-cleansing-indoor-myths/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-14-sunscreen-quantity-cleansing-indoor-myths/</guid>
       <description>&lt;p&gt;이 영상의 핵심은 의외로 단순합니다. 사람들은 선크림을 고를 때 유기자차냐 무기자차냐, SPF 30이냐 50이냐, 순하냐 독하냐 같은 문제에 지나치게 집중하는데, 실제로 더 큰 차이를 만드는 것은 &lt;strong&gt;얼마나 충분히 바르는지, 얼마나 과하게 씻지 않는지, 어떤 상황에서 다시 바르는지 같은 사용 습관&lt;/strong&gt; 이라는 것입니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>발기부전에 좋은 비타민 9가지보다 먼저 봐야 할 것: D3 한 알로 해결되지 않는 이유</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-02-ed-vitamins-d3-supplement-reality/</link>
+      <link>http://localhost:1313/post/2026/2026-06-02-ed-vitamins-d3-supplement-reality/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-02-ed-vitamins-d3-supplement-reality/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-02-ed-vitamins-d3-supplement-reality/</guid>
       <description>&lt;p&gt;이 X 포스트는 &amp;ldquo;발기부전에 좋은 비타민 9가지&amp;quot;를 소개하면서 첫 항목으로 &lt;strong&gt;비타민 D3&lt;/strong&gt; 를 제시합니다. 하지만 공개적으로 확인되는 본문은 제목과 &lt;code&gt;1. Vitamin D3&lt;/code&gt; 정도까지이며, 나머지 8개 항목은 현재 확보한 공개 데이터만으로는 검증할 수 없었습니다. 그래서 이 글은 &lt;strong&gt;확인된 원문을 그대로 과장해서 재전달하지 않고&lt;/strong&gt;, 실제 근거가 비교적 있는 부분과 과장이 쉬운 부분을 분리해 설명합니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>뱃살은 복근운동보다 먼저 식후 습관에서 갈린다: 인슐린·근육·포만감의 순서</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-02-belly-fat-walking-insulin-muscle-volume-eating/</link>
+      <link>http://localhost:1313/post/2026/2026-06-02-belly-fat-walking-insulin-muscle-volume-eating/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-02-belly-fat-walking-insulin-muscle-volume-eating/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-02-belly-fat-walking-insulin-muscle-volume-eating/</guid>
       <description>&lt;p&gt;이 영상의 가장 중요한 메시지는 단순합니다. &lt;strong&gt;뱃살은 복근운동 횟수보다 식후 대사 반응과 생활 습관의 구조에서 더 크게 갈린다&lt;/strong&gt; 는 것입니다. 크런치나 플랭크를 아무리 많이 해도 식사 패턴, 활동량, 근육량, 수면, 극단적 다이어트 습관이 그대로면 복부 지방은 잘 안 바뀔 수 있습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>새벽 1시를 자주 넘겨 자면 왜 더 피곤할까: 수면 시간보다 수면 타이밍이 중요한 이유</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-06-02-sleep-timing-late-bedtime-health-risk/</link>
+      <link>http://localhost:1313/post/2026/2026-06-02-sleep-timing-late-bedtime-health-risk/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-06-02-sleep-timing-late-bedtime-health-risk/</guid>
+      <guid>http://localhost:1313/post/2026/2026-06-02-sleep-timing-late-bedtime-health-risk/</guid>
       <description>&lt;p&gt;이 영상의 핵심 메시지는 분명합니다. &lt;strong&gt;건강은 몇 시간 잤느냐만으로 결정되지 않고, 몇 시에 잠들었는가에도 크게 영향을 받는다&lt;/strong&gt; 는 것입니다. 특히 새벽 1시 이후 취침을 하나의 &amp;ldquo;경계선&amp;quot;처럼 설명하지만, 실제로 더 정확한 표현은 &lt;strong&gt;늦은 취침이 반복될수록 생체시계와 회복 구조가 더 쉽게 어긋난다&lt;/strong&gt; 에 가깝습니다. 영상의 문제의식은 타당하지만, 숫자와 기전을 그대로 절대화하기보다는 연구가 어디까지 말해 주는지 함께 보는 편이 좋습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>먹는 비만약 파운다요는 왜 중요한가: 위고비·마운자로 다음 판이 바뀌는 이유</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-27-foundayo-orforglipron-oral-obesity-pill/</link>
+      <link>http://localhost:1313/post/2026/2026-05-27-foundayo-orforglipron-oral-obesity-pill/</link>
       <pubDate>Wed, 27 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-27-foundayo-orforglipron-oral-obesity-pill/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-27-foundayo-orforglipron-oral-obesity-pill/</guid>
       <description>&lt;p&gt;먹는 비만치료제 &lt;code&gt;파운다요(Foundayo, 성분명 orforglipron)&lt;/code&gt;의 핵심은 단순히 “알약으로도 살이 빠진다”가 아닙니다. 진짜 중요한 변화는 &lt;strong&gt;주사제 중심이던 비만치료제 시장의 진입 장벽을 낮춘다&lt;/strong&gt; 는 점입니다. 위고비와 마운자로가 효과는 좋지만 주사라는 형식 때문에 망설이던 사람들에게, 완전히 다른 선택지가 생긴 것이죠.&lt;/p&gt;</description>
     </item>
     <item>
       <title>치매는 음식 하나로 막을 수 있을까: 계란·생선·블루베리보다 더 중요한 것들</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-20-dementia-risk-food-sleep-exercise-alcohol/</link>
+      <link>http://localhost:1313/post/2026/2026-05-20-dementia-risk-food-sleep-exercise-alcohol/</link>
       <pubDate>Wed, 20 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-20-dementia-risk-food-sleep-exercise-alcohol/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-20-dementia-risk-food-sleep-exercise-alcohol/</guid>
       <description>&lt;p&gt;이 영상은 치매 위험을 낮추는 음식과 생활습관을 한 번에 정리합니다. 핵심 메시지는 나쁘지 않습니다. &lt;strong&gt;치매는 단순히 나이 탓으로만 생기는 것이 아니라, 혈관 건강·수면·운동·음주·식습관과 깊게 연결될 수 있다&lt;/strong&gt; 는 것이죠. 다만 “계란을 먹으면 치매를 막는다”처럼 단일 음식 중심으로 이해하면 과장되기 쉽습니다. 실제로는 생활습관 전체가 훨씬 중요합니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>노화를 늦추는 진짜 핵심은 미토콘드리아일까: 단식·사우나·냉수·보충제의 현실</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-19-mitochondria-aging-fasting-heat-cold/</link>
+      <link>http://localhost:1313/post/2026/2026-05-19-mitochondria-aging-fasting-heat-cold/</link>
       <pubDate>Tue, 19 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-19-mitochondria-aging-fasting-heat-cold/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-19-mitochondria-aging-fasting-heat-cold/</guid>
       <description>&lt;p&gt;이 영상은 노화의 원인을 미토콘드리아 기능 저하로 묶고, 해결책으로 단식, 사우나, 냉수 노출, 일부 보충제를 제안합니다. 방향 자체는 흥미롭습니다. &lt;strong&gt;미토콘드리아가 세포 에너지 생산과 대사 건강에 중요한 것은 사실&lt;/strong&gt; 이기 때문입니다. 다만 영상은 일부 메커니즘을 매우 강하게 단순화합니다. 실제로는 “미토콘드리아가 중요하다”와 “특정 음식이나 습관이 미토콘드리아를 독살한다” 사이에는 꽤 큰 간격이 있습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1년 만에 2.5살 어려졌다는 실험의 의미: 노화 역전 연구는 어디까지 왔나</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-17-biological-age-reversal-triim-senolytics/</link>
+      <link>http://localhost:1313/post/2026/2026-05-17-biological-age-reversal-triim-senolytics/</link>
       <pubDate>Sun, 17 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-17-biological-age-reversal-triim-senolytics/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-17-biological-age-reversal-triim-senolytics/</guid>
       <description>&lt;p&gt;노화 역전 연구는 늘 과장과 희망이 섞여 있습니다. 어떤 뉴스는 인간이 곧 140세까지 살 것처럼 말하고, 어떤 연구는 1년 만에 생물학적 나이를 되돌렸다고 주장합니다. 중요한 것은 흥분하거나 비웃는 것이 아니라, &lt;strong&gt;무엇이 세포 수준의 가능성인지, 무엇이 초기 인간 연구인지, 무엇이 아직 논쟁 중인지 구분하는 것&lt;/strong&gt; 입니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>오메가3보다 먼저 봐야 할 것: LDL, 스타틴, 그리고 크릴오일의 현실</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-15-ldl-omega3-krill-oil-guidelines/</link>
+      <link>http://localhost:1313/post/2026/2026-05-15-ldl-omega3-krill-oil-guidelines/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-15-ldl-omega3-krill-oil-guidelines/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-15-ldl-omega3-krill-oil-guidelines/</guid>
       <description>&lt;p&gt;건강검진에서 총콜레스테롤, HDL, LDL, 중성지방 숫자가 한꺼번에 나오면 무엇이 진짜 중요한지 헷갈리기 쉽습니다. 이 영상의 핵심은 단순합니다. &lt;strong&gt;모든 지질 수치를 똑같이 보지 말고, 우선 LDL을 중심으로 위험을 읽으라&lt;/strong&gt; 는 것입니다. 그리고 많은 사람이 당연하게 먹는 오메가3·크릴오일 보충제가 정말 필요한지도 다시 묻습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>좀비 세포와 라파마이신: 노화 연구는 왜 우리에게 늦게 오는가</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-15-zombie-cells-rapamycin-aging-economics/</link>
+      <link>http://localhost:1313/post/2026/2026-05-15-zombie-cells-rapamycin-aging-economics/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-15-zombie-cells-rapamycin-aging-economics/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-15-zombie-cells-rapamycin-aging-economics/</guid>
       <description>&lt;p&gt;노화 연구가 흥미로운 이유는 단순히 “오래 사는 법”을 찾기 때문이 아닙니다. 더 중요한 질문은 &lt;strong&gt;왜 어떤 장기는 더 빨리 늙고, 왜 어떤 약은 동물에서 유망해도 사람에게는 늦게 오는가&lt;/strong&gt; 입니다. 이 영상은 좀비 세포, 젊은 피, 장기별 노화 시계, 라파마이신 같은 주제를 한 번에 묶어 보여 줍니다. 다만 이런 주제는 과장이 많기 때문에, 동물 실험·초기 임상·확립된 인간 근거를 나눠서 보는 것이 중요합니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GPT로 다이어트 자동화하기: 칼로리 계산보다 중요한 것</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-14-ai-diet-automation-weight-loss/</link>
+      <link>http://localhost:1313/post/2026/2026-05-14-ai-diet-automation-weight-loss/</link>
       <pubDate>Thu, 14 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-14-ai-diet-automation-weight-loss/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-14-ai-diet-automation-weight-loss/</guid>
       <description>&lt;p&gt;이 영상의 핵심은 “AI가 체중을 대신 빼 준다”가 아닙니다. 핵심은 &lt;strong&gt;다이어트를 망치는 반복 의사결정을 AI가 줄여 준다&lt;/strong&gt; 는 데 있습니다. 무엇을 먹을지, 오늘 얼마나 먹어도 되는지, 좋아하는 음식을 어떻게 감량 버전으로 바꿀지, 지금 감량 속도가 맞는지 같은 결정을 자동화하면 다이어트 난이도는 확실히 내려갑니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>글루타치온·알부민·콜라겐 영양제는 왜 기대만큼 안 먹힐까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-14-useless-supplements-protein-digestion/</link>
+      <link>http://localhost:1313/post/2026/2026-05-14-useless-supplements-protein-digestion/</link>
       <pubDate>Thu, 14 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-14-useless-supplements-protein-digestion/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-14-useless-supplements-protein-digestion/</guid>
       <description>&lt;p&gt;짧은 영상의 핵심은 단순합니다. &lt;strong&gt;우리는 단백질 이름을 그대로 흡수하는 것이 아니라, 대부분 잘게 분해된 성분으로 흡수합니다.&lt;/strong&gt; 그래서 글루타치온, 알부민, 콜라겐처럼 이름이 좋아 보이는 단백질성 영양제를 먹는다고 해서 그 이름 그대로 피부·간·혈관·근육에 꽂히는 것은 아닙니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>살 빼고 싶으면 의지부터 버려야 하는 이유: 비만, 세트포인트, GLP-1 치료</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-set-point-glp1-treatment/</link>
+      <link>http://localhost:1313/post/2026/2026-05-12-obesity-set-point-glp1-treatment/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-set-point-glp1-treatment/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-12-obesity-set-point-glp1-treatment/</guid>
       <description>&lt;p&gt;영상의 핵심은 강하다. 고도비만은 의지 부족이 아니라 몸의 조절 시스템이 높은 체중을 방어하는 질병이라는 것이다. 장형우 교수는 흉부외과 의사이자 고도비만을 겪은 환자로서, 수면무호흡·부정맥·당뇨 전단계·비만대사수술·GLP-1 계열 약물 경험을 이야기한다. 이 글의 결론도 비슷하다. 살을 빼려면 “더 독하게 참아라”보다 “내 몸이 왜 다시 찌려고 하는지 이해하고, 필요한 경우 전문 치료를 받아라”가 먼저다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>살찐 사람이 더 오래 산다는 말은 얼마나 맞을까: 비만의 역설과 혈관 건강</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</link>
+      <link>http://localhost:1313/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-12-obesity-paradox-fructose-stroke-prevention/</guid>
       <description>&lt;p&gt;“살찐 사람이 더 오래 산다”는 말은 자극적이지만, 완전히 허무맹랑한 말은 아니다. 일부 대규모 관찰연구와 특정 질환군 연구에서 BMI 기준 과체중 또는 경도 비만 집단의 사망률이 정상 체중 집단보다 낮게 나타난 적이 있다. 이를 &lt;code&gt;비만의 역설&lt;/code&gt;이라고 부른다. 다만 이 말은 “살을 찌우면 건강해진다”는 뜻이 아니다. BMI의 한계, 흡연·질병으로 인한 체중 감소, 근육량, 나이, 만성질환 상태가 뒤섞이면 이런 역설적 결과가 나타날 수 있다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>30-30-30 다이어트 공식은 정말 지방을 빨리 빼줄까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-11-30-30-30-method-fasted-cardio/</link>
+      <link>http://localhost:1313/post/2026/2026-05-11-30-30-30-method-fasted-cardio/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-11-30-30-30-method-fasted-cardio/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-11-30-30-30-method-fasted-cardio/</guid>
       <description>&lt;p&gt;Shorts 영상은 “굶고 뛰어야 살이 잘 빠진다”는 믿음이 틀렸다고 말하며, 대신 &lt;code&gt;30-30-30&lt;/code&gt; 방법을 제안한다. 기상 후 30분 안에 단백질 30g을 먹고, 이어서 30분 동안 낮은 강도의 유산소 운동을 하라는 공식이다. 이 방식은 아침 식사와 운동을 자동화한다는 점에서 꽤 실용적이다. 다만 영상 속 “공복 운동을 하면 몸이 근육을 소화한다”거나 “지방은 에너지로 바꾸는 데 5시간이 걸린다”는 설명은 과학적으로 지나치게 단순하고 과장되어 있다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>수명을 결정한다는 네 가지 변수: 수면, 공복, 악력, 관계를 과장 없이 보기</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-11-healthspan-sleep-fasting-grip-relationships/</link>
+      <link>http://localhost:1313/post/2026/2026-05-11-healthspan-sleep-fasting-grip-relationships/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-11-healthspan-sleep-fasting-grip-relationships/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-11-healthspan-sleep-fasting-grip-relationships/</guid>
       <description>&lt;p&gt;영상은 평균수명보다 &lt;code&gt;건강수명&lt;/code&gt;이 중요하다고 말하면서, 오래 살기보다 오래 움직이고 오래 독립적으로 사는 것이 핵심이라고 주장한다. 이를 위해 수면, 식사 시간, 악력과 저강도 유산소, 사회적 관계라는 네 가지 변수를 제시한다. 방향은 설득력 있다. 다만 영상은 메시지를 강하게 전달하기 위해 붉은 고기, 아침식사, 자가포식, 러닝의 위험을 다소 과장해서 말한다. 그래서 이 글에서는 영상의 핵심을 살리되, 근거가 있는 부분과 조심해서 해석해야 할 부분을 나눠 정리한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>유전자 치료로 젊어지는 시대가 올까: 세포 리프로그래밍과 역노화 불평등</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-11-rejuvenation-gene-therapy-longevity-inequality/</link>
+      <link>http://localhost:1313/post/2026/2026-05-11-rejuvenation-gene-therapy-longevity-inequality/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-11-rejuvenation-gene-therapy-longevity-inequality/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-11-rejuvenation-gene-therapy-longevity-inequality/</guid>
       <description>&lt;p&gt;영상은 제프 베이조스, 샘 알트만, 브라이언 암스트롱 같은 실리콘밸리 거물들이 노화 연구에 큰돈을 넣는 이유를 다룬다. 핵심은 단순한 건강관리나 보충제가 아니라, 세포의 후성유전적 상태를 되돌리는 &lt;code&gt;부분 리프로그래밍&lt;/code&gt; 기술이다. 특히 2026년 1월 Life Biosciences의 ER-100이 미국 FDA로부터 임상시험 진입을 위한 IND clearance를 받으면서, 이 분야는 더 이상 실험실 안의 상상만은 아니게 되었다. 다만 “사람이 이미 젊어졌다”가 아니라 “사람에게 처음 안전성과 가능성을 시험하는 단계에 들어갔다”가 정확한 표현이다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>잠을 줄이면 정말 뇌가 망가질까: 수면 부족, 글림프 시스템, 브레인포그</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-11-sleep-deprivation-brain-glymphatic-system/</link>
+      <link>http://localhost:1313/post/2026/2026-05-11-sleep-deprivation-brain-glymphatic-system/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-11-sleep-deprivation-brain-glymphatic-system/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-11-sleep-deprivation-brain-glymphatic-system/</guid>
       <description>&lt;p&gt;영상은 한국 사회의 수면 부족 문화를 강하게 비판한다. “잠은 죽어서 자는 것”처럼 말하는 문화가 실제로는 뇌와 몸을 갉아먹는 습관일 수 있다는 메시지다. 특히 글림프 시스템, 브레인포그, 수면 부족으로 인한 뇌 신경망 손상 가능성을 강조한다. 방향은 매우 중요하다. 다만 “뇌가 썩는다”거나 “수면 부족이 곧바로 알츠하이머의 씨앗이 된다”는 식의 표현은 경고로는 효과적이지만, 과학적으로는 조금 더 차분하게 해석해야 한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>12시간 공복은 정말 노화를 늦출까: 간헐적 단식, 자가포식, 인슐린을 차분히 해석하기</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-10-12-hour-fasting-aging-autophagy/</link>
+      <link>http://localhost:1313/post/2026/2026-05-10-12-hour-fasting-aging-autophagy/</link>
       <pubDate>Sun, 10 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-10-12-hour-fasting-aging-autophagy/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-10-12-hour-fasting-aging-autophagy/</guid>
       <description>&lt;p&gt;영상은 50대 이후의 건강 관리에서 핵심은 무작정 적게 먹는 것이 아니라, 매일 일정 시간 위장을 비워 세포 정화와 대사 회복의 시간을 주는 것이라고 말한다. 특히 &lt;code&gt;12시간 공복&lt;/code&gt;을 강조하면서, 자가포식과 인슐린 분비 감소가 노화·염증·피부·혈관 건강에 영향을 줄 수 있다고 설명한다. 다만 이 주장은 방향성은 참고할 만하지만, “노화 시계를 완벽히 거꾸로 돌린다”거나 “치매·암·통증을 확실히 예방한다”처럼 들리는 표현은 과학적으로 훨씬 조심해서 받아들여야 한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>건강수명을 가르는 건 수면·식사 시간·근력·관계라는 주장, 어디까지 맞을까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-08-healthspan-sleep-meal-strength-connection/</link>
+      <link>http://localhost:1313/post/2026/2026-05-08-healthspan-sleep-meal-strength-connection/</link>
       <pubDate>Fri, 08 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-08-healthspan-sleep-meal-strength-connection/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-08-healthspan-sleep-meal-strength-connection/</guid>
       <description>&lt;p&gt;이 영상의 핵심은 단순하다. 오래 사는 것보다 &lt;strong&gt;마지막 10~20년을 얼마나 덜 아프고 덜 의존적으로 보내느냐&lt;/strong&gt;, 즉 건강수명이 더 중요하다는 것이다. 그리고 그 건강수명을 가르는 진짜 변수로 영상은 수면, 식사 시점, 근력과 저강도 유산소, 마지막으로 사회적 관계를 꼽는다. 다만 제목처럼 &lt;code&gt;달리기·채식은 거짓말&lt;/code&gt;이라고 밀어붙이면 과장이 된다. 실제 공식 자료를 같이 보면, 영상은 &lt;strong&gt;우선순위를 다시 보자&lt;/strong&gt;는 문제제기에서는 유효하지만, &lt;strong&gt;식단 질이나 일반 운동 권고가 쓸모없다&lt;/strong&gt;는 뜻으로 읽으면 곤란하다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>췌장암 mRNA 백신 87.5% 생존이라는 숫자는 어떻게 읽어야 할까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-04-pancreatic-cancer-mrna-vaccine-trial/</link>
+      <link>http://localhost:1313/post/2026/2026-05-04-pancreatic-cancer-mrna-vaccine-trial/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-04-pancreatic-cancer-mrna-vaccine-trial/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-04-pancreatic-cancer-mrna-vaccine-trial/</guid>
       <description>&lt;p&gt;이 영상은 매우 강한 제목을 쓴다. &lt;code&gt;암세포가 전멸했다&lt;/code&gt;, &lt;code&gt;주사 한 방에 87.5%가 6년 생존했다&lt;/code&gt;, &lt;code&gt;의학계 상식이 박살났다&lt;/code&gt; 같은 문장은 누구라도 클릭하게 만든다. 하지만 실제 연구를 보면 이야기는 훨씬 더 섬세하다. 맞춤형 mRNA 백신이 췌장암 재발을 막는 데 정말 중요한 신호를 보인 것은 맞지만, 그것은 &lt;strong&gt;아주 작은 1상 임상&lt;/strong&gt;, &lt;strong&gt;수술 가능한 환자&lt;/strong&gt;, &lt;strong&gt;수술 후 면역항암제와 화학요법까지 함께 받은 조합 치료&lt;/strong&gt;, &lt;strong&gt;그중에서도 면역 반응이 생긴 절반 정도의 환자&lt;/strong&gt; 에서 나온 결과다. 이 글은 그 숫자를 부풀리지도, 반대로 의미를 깎아내리지도 않고 정확한 위치에 놓아 보려는 시도다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>비만주사 가격이 싸져도 끝이 아닌 이유</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-03-obesity-drug-price-oral-wegovy/</link>
+      <link>http://localhost:1313/post/2026/2026-05-03-obesity-drug-price-oral-wegovy/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-03-obesity-drug-price-oral-wegovy/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-03-obesity-drug-price-oral-wegovy/</guid>
       <description>&lt;p&gt;이 영상은 단순히 &lt;code&gt;비만주사가 잘 빠진다&lt;/code&gt;는 수준에서 멈추지 않는다. 실제로 맞아 본 사람이 느낀 식욕 변화, 멀미 같은 부작용, 약을 끊은 뒤를 어떻게 준비해야 하는지, 그리고 결국 사람들의 눈길을 가장 강하게 끄는 &lt;code&gt;한 달 3천 원&lt;/code&gt; 같은 가격 전망까지 한 번에 묶는다. 중요한 건 이 모든 이야기가 같은 층위가 아니라는 점이다. 어떤 부분은 실제 복용 경험이고, 어떤 부분은 현재 허가된 약의 공식 정보이며, 어떤 부분은 특허 만료 뒤 제네릭 생산원가를 추정한 연구 가설에 가깝다. 이 글은 그 층위를 나눠서 읽기 쉽게 정리해 보려는 시도다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>집에서도 굵은 팔을 만들고 싶다면 결국 삼두근과 이두근을 따로 공략해야 한다</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-05-02-bodyweight-thick-arms-home/</link>
+      <link>http://localhost:1313/post/2026/2026-05-02-bodyweight-thick-arms-home/</link>
       <pubDate>Sat, 02 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-05-02-bodyweight-thick-arms-home/</guid>
+      <guid>http://localhost:1313/post/2026/2026-05-02-bodyweight-thick-arms-home/</guid>
       <description>&lt;p&gt;이 영상은 &lt;code&gt;집에서는 팔 굵기 만들기 어렵다&lt;/code&gt;는 인식을 정면으로 뒤집는다. 핵심은 장비 부족이 아니라 &lt;strong&gt;팔을 그냥 통째로 보지 말고 삼두근과 이두근으로 나눠 자극하라&lt;/strong&gt; 는 데 있다. 영상은 맨몸 운동이라고 해서 턱걸이와 푸시업만 떠올리면 팔 성장 기회를 놓치기 쉽다고 말하고, 특히 팔 둘레를 좌우하는 큰 근육인 삼두근과 이두근을 겨냥하는 운동을 따로 정리한다. 다만 영상 속 &lt;code&gt;근전도 1위&lt;/code&gt;, &lt;code&gt;가장 효과적&lt;/code&gt; 같은 표현은 맥락을 조금 단순화한 면도 있다. 그래서 이 글에서는 영상의 운동 선택 논리를 따라가되, 최신 운동과학 자료와 함께 어디까지를 강한 힌트로 보고 어디서부터는 개인 적용이 필요한지 같이 정리해 보겠다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>복부 지방을 줄이고 싶다면 걷는 시간대부터 다시 봐야 할까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-30-fasted-walking-belly-fat-timing/</link>
+      <link>http://localhost:1313/post/2026/2026-04-30-fasted-walking-belly-fat-timing/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-30-fasted-walking-belly-fat-timing/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-30-fasted-walking-belly-fat-timing/</guid>
       <description>&lt;p&gt;이 영상의 핵심 메시지는 단순하다. &lt;strong&gt;만 보를 걷는지보다 언제 걷는지가 복부 지방에는 더 중요하다&lt;/strong&gt; 는 것이다. 영상은 특히 아침 공복 걷기를 복부 지방 연소에 가장 유리한 시간대로 강조하고, 식후 걷기는 혈당 관리에는 좋지만 목적이 다르다고 구분한다. 다만 이런 설명은 이해를 돕기 위해 대사를 꽤 단순화한 표현도 섞여 있다. 그래서 이 글에서는 영상의 주장을 그대로 옮기기보다, 어떤 부분은 영상의 해석으로 읽어야 하고 어떤 부분은 공식 자료로도 비교적 넓게 뒷받침되는지 나눠서 보려고 한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>뒷처리 문제의 핵심은 더 세게 닦는 게 아니라 변 상태를 바꾸는 것이다</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-26-bowel-wiping-anus-health-guide/</link>
+      <link>http://localhost:1313/post/2026/2026-04-26-bowel-wiping-anus-health-guide/</link>
       <pubDate>Sun, 26 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-26-bowel-wiping-anus-health-guide/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-26-bowel-wiping-anus-health-guide/</guid>
       <description>&lt;p&gt;이 영상의 제목은 매우 자극적이지만, 실제 본문에서 반복하는 메시지는 꽤 선명하다. 문제의 핵심은 &lt;code&gt;휴지로 얼마나 세게 닦느냐&lt;/code&gt; 하나가 아니라, &lt;strong&gt;변이 너무 단단하거나 너무 묽어서 항문 주변을 계속 자극하는 상태&lt;/strong&gt; 자체에 있다는 것이다. 여기에 세게 닦는 습관, 거친 휴지, 잦은 물티슈와 알코올 사용이 더해지면 가려움, 화끈거림, 습함, 출혈 같은 불편이 심해질 수 있다고 설명한다. 다만 제목에 들어간 &lt;code&gt;대장암&lt;/code&gt;이라는 표현은 영상 본문에서 직접적인 원인-결과로 촘촘히 설명되지는 않는다. 그래서 이 글에서는 영상의 실전 팁을 정리하되, 공식 자료 기준으로 항문 가려움·치질·혈변·대장암 위험 신호의 경계도 함께 분리해서 본다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>35세 전 남성 건강, 40가지 리스트보다 먼저 잡아야 할 축</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-21-mens-health-before-35-checklist/</link>
+      <link>http://localhost:1313/post/2026/2026-04-21-mens-health-before-35-checklist/</link>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-21-mens-health-before-35-checklist/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-21-mens-health-before-35-checklist/</guid>
       <description>&lt;p&gt;X에서 자주 보이는 건강 포스트 중 하나는 &lt;code&gt;모든 남성이 35세 전에 알아야 할 40가지&lt;/code&gt; 같은 형식이다. 이런 글은 압축적이고 강해서 저장하기 좋지만, 실제 건강 관리는 항목 수가 많다고 좋아지는 것이 아니라 &lt;strong&gt;우선순위가 선명해야&lt;/strong&gt; 도움이 된다. 이번에 확인 가능한 원문 본문은 &lt;code&gt;남성 건강의 완전한 바이블&lt;/code&gt;, &lt;code&gt;35세 전 알아야 할 40가지&lt;/code&gt;라는 첫 문장까지였고, 카드형 이미지 속 세부 40항목은 X의 로그인·미디어 제한 때문에 전부 복원되지는 않았다. 그래서 이 글에서는 보이지 않는 40개를 억지로 추정하지 않고, 그 제목이 던지는 문제의식을 실제 예방 건강 관리의 큰 축으로 다시 정리한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>잇몸병 해결 글은 왜 늘 비슷한 구조를 가질까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-09-gum-disease-marketing-post-analysis/</link>
+      <link>http://localhost:1313/post/2026/2026-04-09-gum-disease-marketing-post-analysis/</link>
       <pubDate>Thu, 09 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-09-gum-disease-marketing-post-analysis/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-09-gum-disease-marketing-post-analysis/</guid>
       <description>&lt;p&gt;이 네이버 글은 겉으로는 &lt;code&gt;가족을 도운 실제 경험담&lt;/code&gt;처럼 시작하지만, 읽다 보면 상당히 정교한 건강 마케팅 글의 구조를 갖고 있다. 초반에는 잇몸약 광고에 속은 어머니 이야기로 분노를 만들고, 중반에는 핀란드 치과의사라는 권위를 끌어오며, 후반에는 구강유산균·콜라겐·자일리톨이라는 세 가지 축으로 해결책을 정리한 뒤 제품 링크로 연결한다. 문제는 이런 글이 완전히 허구라는 뜻이 아니라, &lt;strong&gt;일반적인 구강 건강 상식과 제품 판매 논리가 한 덩어리로 섞여 있다는 점&lt;/strong&gt; 이다. 잇몸 출혈과 통증은 실제 질환 신호일 수 있어서, 어디까지가 널리 받아들여진 원칙이고 어디서부터 단일 출처 주장인지 분리해 읽는 것이 중요하다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>저녁을 바꾸면 잠자는 동안 지방이 타기 시작할까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</link>
+      <link>http://localhost:1313/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-08-evening-routine-fat-burning-sleep/</guid>
       <description>&lt;p&gt;이 영상은 다이어트의 승부가 아침이나 점심이 아니라 &lt;strong&gt;저녁 이후 몇 시간을 어떻게 보내느냐&lt;/strong&gt; 에서 갈린다고 주장한다. 낮에 식단과 운동을 잘해도, 밤에 인슐린이 높은 상태로 잠들면 지방을 꺼내 쓰는 시간이 줄어든다는 것이다. 그래서 제안하는 해법도 단순한 저녁 소식이 아니다. 고탄수화물을 줄이고, 식이섬유와 단백질을 충분히 먹고, 식후에 가볍게 움직이고, 잠들기 전 빛과 실내 온도까지 조정하는 &lt;code&gt;저녁 대사 루틴&lt;/code&gt;으로 설명한다. 다만 일부 수치와 효과 표현은 단일 영상의 실전 주장인 만큼, 여기서는 &lt;strong&gt;영상이 어떤 논리로 연결하는지&lt;/strong&gt; 에 초점을 맞춰 읽는 편이 적절하다. &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=17&#34;&gt;(0:17)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=87&#34;&gt;(1:27)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=127&#34;&gt;(2:07)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/J4uiqOqunO4?t=961&#34;&gt;(16:01)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>운동 없이 2주 만에 7kg? 영상이 말하는 간헐적 단식의 실제 논리</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-07-intermittent-fasting-insulin-reset/</link>
+      <link>http://localhost:1313/post/2026/2026-04-07-intermittent-fasting-insulin-reset/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-07-intermittent-fasting-insulin-reset/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-07-intermittent-fasting-insulin-reset/</guid>
       <description>&lt;p&gt;이 영상의 제목은 강하지만, 실제 본문에서 반복하는 핵심은 꽤 명확하다. 간헐적 단식의 목적은 단순히 &lt;code&gt;오래 굶는 것&lt;/code&gt;이 아니라, &lt;strong&gt;인슐린을 낮추고 몸을 지방 대사 상태로 전환시키는 것&lt;/strong&gt; 이다. 여기에 GLP-1, 장내 유익균, 오토파지, 갑상선 대사, 전해질 같은 개념을 덧붙이면서 왜 단식이 위고비·마운자로 같은 약물과 &amp;ldquo;같은 방향&amp;quot;으로 작동한다고 보는지 설명한다. 다만 영상 후반의 보충제·영양제 제안은 단일 영상의 주장이라는 점을 분리해서 읽는 편이 안전하다. &lt;a href=&#34;https://youtu.be/U5wuuHwI7w4?t=4&#34;&gt;(0:04)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/U5wuuHwI7w4?t=122&#34;&gt;(2:02)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/U5wuuHwI7w4?t=289&#34;&gt;(4:49)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/U5wuuHwI7w4?t=378&#34;&gt;(6:18)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>간식이 안 끊기는 사람을 위한 식욕 리셋 가이드</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-06-snacking-appetite-system-reset/</link>
+      <link>http://localhost:1313/post/2026/2026-04-06-snacking-appetite-system-reset/</link>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-06-snacking-appetite-system-reset/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-06-snacking-appetite-system-reset/</guid>
       <description>&lt;p&gt;이 영상은 &lt;code&gt;식욕을 참는 법&lt;/code&gt;보다 &lt;code&gt;식욕이 덜 올라오게 만드는 몸의 조건&lt;/code&gt;에 초점을 둔다. 간식, 군것질, 야식이 반복되는 이유를 의지 부족이 아니라 &lt;code&gt;물리적 만족감&lt;/code&gt;, &lt;code&gt;화학적 만족감&lt;/code&gt;, &lt;code&gt;심리적 만족감&lt;/code&gt;이 어긋난 상태로 설명하고, 여기에 혈당 급등락, 장내 환경, 도파민 보상, 코르티솔 스트레스, 수면 부족까지 연결한다. 그래서 해결책도 단순 칼로리 절제가 아니라 &lt;code&gt;혈당을 완만하게 만들고&lt;/code&gt;, &lt;code&gt;장내 환경을 바꾸고&lt;/code&gt;, &lt;code&gt;도파민 경로를 음식 밖으로 넓히고&lt;/code&gt;, &lt;code&gt;충분히 자고&lt;/code&gt;, &lt;code&gt;식이섬유·단백질·좋은 지방으로 배고픔 레벨을 운영하라&lt;/code&gt;는 쪽으로 나온다. &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=8&#34;&gt;(0:08)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=99&#34;&gt;(1:39)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=305&#34;&gt;(5:05)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=620&#34;&gt;(10:20)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/KEsCIx2lzls?t=1439&#34;&gt;(23:59)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>첫인상은 왜 그렇게 빨리 결정될까 — 피부, 직감, 노화 습관을 함께 보는 대외비 EP.10 정리</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-05-first-impression-skin-aging-patterns/</link>
+      <link>http://localhost:1313/post/2026/2026-04-05-first-impression-skin-aging-patterns/</link>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-05-first-impression-skin-aging-patterns/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-05-first-impression-skin-aging-patterns/</guid>
       <description>&lt;p&gt;이 영상은 겉보기엔 &lt;code&gt;본능적으로 피하게 되는 사람&lt;/code&gt;을 다루는 토크처럼 보이지만, 실제 내용을 따라가 보면 핵심은 꽤 구체적이다. 사람은 아주 짧은 시간 안에 상대를 &lt;code&gt;안전한 사람인지&lt;/code&gt;, &lt;code&gt;건강해 보이는지&lt;/code&gt;, &lt;code&gt;관리된 인상인지&lt;/code&gt; 판단하려 하고, 그 과정에서 피부 톤, 안색, 자세, 표정, 긴장 신호 같은 요소를 빠르게 읽어낸다는 것이다. 동시에 출연진은 피부과 관점에서 &lt;code&gt;노화를 빠르게 만들 수 있는 습관&lt;/code&gt;, &lt;code&gt;홍조와 피부 장벽&lt;/code&gt;, &lt;code&gt;자외선 차단&lt;/code&gt;까지 연결해 설명한다. 이 글은 그 흐름을 &lt;code&gt;첫인상 형성 -&amp;gt; 피부가 주는 신호 -&amp;gt; 피해야 할 행동 -&amp;gt; 실전 관리 포인트&lt;/code&gt; 순서로 다시 정리한 것이다. &lt;a href=&#34;https://youtu.be/A8xWJVnpg-w?t=0&#34;&gt;(0:00)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/A8xWJVnpg-w?t=317&#34;&gt;(5:17)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/A8xWJVnpg-w?t=699&#34;&gt;(11:39)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/A8xWJVnpg-w?t=1402&#34;&gt;(23:22)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ADHD 아이에게 &#39;공부 좀 해&#39;가 왜 역효과가 되기 쉬운가</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-04-adhd-study-habit-routine-guide/</link>
+      <link>http://localhost:1313/post/2026/2026-04-04-adhd-study-habit-routine-guide/</link>
       <pubDate>Sat, 04 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-04-adhd-study-habit-routine-guide/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-04-adhd-study-habit-routine-guide/</guid>
       <description>&lt;p&gt;이 Threads 포스트의 첫 문장은 매우 강합니다. &amp;ldquo;공부 좀 해! 왜 맨날 딴짓이야!&amp;ldquo;라고 다그치는 방식이 산만한 ADHD 아이에게는 절대 도움이 되지 않는다고 말합니다. 동시에 포스트는 작성자가 &lt;code&gt;50평생 중증 ADHD로 살았고&lt;/code&gt;, &lt;code&gt;나를 닮아 산만했던 딸을 스스로 공부하는 습관으로 특목고에 보냈다&lt;/code&gt;는 개인 경험을 전면에 내세웁니다. 다만 공개 상태에서 추출 가능한 원문은 티저 문구와 카드 이미지 일부뿐이라, 이 글은 스레드의 세부 비법을 그대로 복원하는 글이 아니라 &lt;strong&gt;그 문제의식을 공신력 있는 ADHD 가이드와 연결해 실제로 무엇이 도움이 되는지 정리하는 글&lt;/strong&gt; 입니다. &lt;a href=&#34;https://www.threads.com/@ftj.kr/post/DWsbKhoEXmo?xmt=AQF0jNu2-K6-PrjuUcC4cbmJKo4sE91w3f9ZeTdroec6Pma_TqVlgJKjmBiZ246B4X2Hmi4&amp;amp;slof=1&#34;&gt;Threads 원문&lt;/a&gt;, &lt;a href=&#34;https://www.cdc.gov/adhd/treatment/index.html&#34;&gt;CDC ADHD Treatment&lt;/a&gt;, &lt;a href=&#34;https://chadd.org/for-parents/overview/&#34;&gt;CHADD Parenting a Child with ADHD&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;핵심만 먼저 말하면, ADHD 아이의 공부 문제를 &lt;code&gt;의지 부족&lt;/code&gt;이나 &lt;code&gt;버릇 문제&lt;/code&gt;로만 해석하면 개입 방식이 거의 항상 scolding 중심으로 흘러갑니다. 그런데 CDC와 CHADD는 오히려 루틴 만들기, 산만 요소 관리, 짧고 구체적인 지시, 과제 쪼개기, 칭찬과 보상, 부모 행동관리 훈련 같은 구조적 개입을 강조합니다. 즉 이 스레드가 직감적으로 던진 문제의식은 꽤 타당하고, 실제로 중요한 것은 &lt;code&gt;더 세게 혼내기&lt;/code&gt;가 아니라 &lt;code&gt;아이가 실행할 수 있는 환경을 설계하는 것&lt;/code&gt;에 가깝습니다. &lt;a href=&#34;https://www.cdc.gov/adhd/treatment/index.html&#34;&gt;CDC ADHD Treatment&lt;/a&gt;, &lt;a href=&#34;https://chadd.org/for-parents/overview/&#34;&gt;CHADD Parenting a Child with ADHD&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>위고비(세마글루타이드)의 놀라운 비만 외 효과와 나눠맞기의 위험성</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-01-wegovy-semaglutide-glp1-effects-nanocheating/</link>
+      <link>http://localhost:1313/post/2026/2026-04-01-wegovy-semaglutide-glp1-effects-nanocheating/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-01-wegovy-semaglutide-glp1-effects-nanocheating/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-01-wegovy-semaglutide-glp1-effects-nanocheating/</guid>
       <description>&lt;p&gt;비만 치료제로 알려진 위고비(세마글루타이드)가 최근 다양한 의학 연구에서 예상치 못한 영역에서도 주목받고 있습니다. 알코올 갈망 감소, 흡연 빈도 감소, 내장지방 선택적 소실, 심혈관 보호, 심지어 생체 나이 역행까지 — 이 주사 하나가 어떻게 이런 다양한 효과를 내는 것인지, 그리고 최근 유행하는 &amp;lsquo;나눠맞기(나노바퀴)&amp;lsquo;가 왜 위험한지를 의사(네카스닥터)의 시각에서 정리합니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>위고비는 왜 식욕 말고 갈망까지 건드린다고 말할까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-01-wegovy-semaglutide-benefits-risks-guide/</link>
+      <link>http://localhost:1313/post/2026/2026-04-01-wegovy-semaglutide-benefits-risks-guide/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-01-wegovy-semaglutide-benefits-risks-guide/</guid>
+      <guid>http://localhost:1313/post/2026/2026-04-01-wegovy-semaglutide-benefits-risks-guide/</guid>
       <description>&lt;p&gt;이 영상은 위고비를 단순히 &lt;code&gt;살 빼는 주사&lt;/code&gt;로 소개하지 않습니다. 닥터딩요는 세마글루티드가 왜 식욕 억제에 강하게 작동하는지, 왜 술·담배 갈망 같은 영역까지 연구가 붙는지, 그리고 왜 반대로 &lt;code&gt;나눠 맞기&lt;/code&gt; 같은 오남용이 위험한지까지 한 흐름으로 설명합니다. &lt;a href=&#34;https://youtu.be/4wzTIf0AlSk?t=24&#34;&gt;(0:24)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/4wzTIf0AlSk?t=28&#34;&gt;(0:28)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/4wzTIf0AlSk?t=647&#34;&gt;(10:47)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;좋은 점은 효능만 말하고 끝나지 않는다는 데 있습니다. 이 영상은 &lt;code&gt;작동 원리&lt;/code&gt;, &lt;code&gt;흥미로운 추가 연구&lt;/code&gt;, &lt;code&gt;부작용과 프로토콜&lt;/code&gt;, &lt;code&gt;끊으면 어떻게 되는가&lt;/code&gt;를 묶어서, 결국 비만치료제를 &lt;code&gt;만성질환 관리 도구&lt;/code&gt;로 봐야 한다는 쪽으로 결론을 냅니다. 이 글도 같은 구조를 따라, 영상을 그대로 받아적기보다 영상이 실제로 무엇을 강조하는지 중심으로 다시 정리하겠습니다. &lt;a href=&#34;https://youtu.be/4wzTIf0AlSk?t=69&#34;&gt;(1:09)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/4wzTIf0AlSk?t=864&#34;&gt;(14:24)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/4wzTIf0AlSk?t=1039&#34;&gt;(17:19)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>살 빠지는 루트, 어디서 막히는가 — 지방 연소 지도를 단계별로 읽는 법</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-29-fat-burning-route-bottleneck-guide/</link>
+      <link>http://localhost:1313/post/2026/2026-03-29-fat-burning-route-bottleneck-guide/</link>
       <pubDate>Sun, 29 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-29-fat-burning-route-bottleneck-guide/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-29-fat-burning-route-bottleneck-guide/</guid>
       <description>&lt;p&gt;이 영상의 핵심은 &lt;code&gt;덜 먹었는데 왜 안 빠지지?&lt;/code&gt;라는 질문을 &lt;code&gt;내 지방 연소 경로는 어디서 막혔지?&lt;/code&gt;라는 질문으로 바꾸는 데 있습니다. 발표자는 지방이 빠지는 과정을 &lt;code&gt;지방세포에서 지방산이 분리되는 출발 단계&lt;/code&gt;, &lt;code&gt;미토콘드리아 안으로 들어가는 단계&lt;/code&gt;, 그리고 &lt;code&gt;1단계·2단계·3단계 공정&lt;/code&gt;으로 쪼개서 보여 주며, 각 단계마다 막히는 이유와 해결 힌트를 붙여 설명합니다. &lt;a href=&#34;https://youtu.be/yqsasZxB0IM?t=21&#34;&gt;(0:21)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/yqsasZxB0IM?t=29&#34;&gt;(0:29)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/yqsasZxB0IM?t=124&#34;&gt;(2:04)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/yqsasZxB0IM?t=159&#34;&gt;(2:39)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;좋은 점은 &lt;code&gt;무조건 적게 먹어라&lt;/code&gt;가 아니라 &lt;code&gt;출발-진입-연소&lt;/code&gt; 중 어디가 병목인지 보게 만든다는 데 있습니다. 동시에 이 설명은 복잡한 생리학을 아주 단순한 지도 형태로 압축한 것이기도 하므로, 이 글도 영상을 그대로 받아쓰기보다 &lt;code&gt;영상은 무엇을 핵심 축으로 잡는가&lt;/code&gt;에 초점을 맞춰 다시 정리하겠습니다. &lt;a href=&#34;https://youtu.be/yqsasZxB0IM?t=98&#34;&gt;(1:38)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/yqsasZxB0IM?t=129&#34;&gt;(2:09)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/yqsasZxB0IM?t=479&#34;&gt;(7:59)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>1도 애쓰지 않고 살 빼는 법 — 한의사 김희준 원장의 무노력 다이어트</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-27-no-effort-diet-korean-medicine/</link>
+      <link>http://localhost:1313/post/2026/2026-03-27-no-effort-diet-korean-medicine/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-27-no-effort-diet-korean-medicine/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-27-no-effort-diet-korean-medicine/</guid>
       <description>&lt;p&gt;&amp;ldquo;노력해서 하는 다이어트는 결국 유지가 안 됩니다.&amp;rdquo; 봄온담한의원 대표원장이자 유튜브 채널 &amp;lsquo;살빼남&amp;rsquo;을 운영하는 김희준 한의사가 신사임당 채널에 출연해 57분에 걸쳐 다이어트의 모든 것을 풀었다. 의지력에 기대는 다이어트 대신 호르몬과 생활 시스템을 정비해 자동으로 살이 빠지는 구조를 만드는 것이 핵심이다. 저서 『감량혁명』의 내용이기도 하다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>단식 14일 후 노화가 거꾸로 간다? 영상이 말한 것과 실제로 읽어야 할 포인트</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-27-14-day-fasting-autophagy-aging-video-review/</link>
+      <link>http://localhost:1313/post/2026/2026-03-27-14-day-fasting-autophagy-aging-video-review/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-27-14-day-fasting-autophagy-aging-video-review/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-27-14-day-fasting-autophagy-aging-video-review/</guid>
       <description>&lt;p&gt;이 영상의 핵심 메시지는 단순하다. 저녁 6시 이후부터 다음 날 아침까지 16시간 공복을 14일간 반복하면, 지방 연소와 오토파지가 켜지고 결국 노화 시계까지 거꾸로 돌릴 수 있다는 주장이다. 영상은 매우 강한 확신으로 말하지만, 실제로는 세 층으로 나눠 읽는 편이 정확하다. 첫째, &lt;strong&gt;16시간 공복 자체는 널리 알려진 시간제한식사(time-restricted eating)&lt;/strong&gt; 의 한 형태다. 둘째, &lt;strong&gt;지방 산화 증가, 케톤 생성, 일부 대사 지표 개선 가능성&lt;/strong&gt; 은 비교적 설명 가능한 영역이다. 셋째, &lt;strong&gt;&amp;ldquo;4일 차부터 오토파지 폭발&amp;rdquo;, &amp;ldquo;14일 후 노화 역행&amp;rdquo;, &amp;ldquo;피부와 뇌세포가 다시 젊어진다&amp;rdquo;&lt;/strong&gt; 같은 문장은 사람 대상 근거보다 훨씬 앞서 나간 표현이다. &lt;a href=&#34;https://youtu.be/494TRV2F0Cw?t=74&#34;&gt;(영상 01:14)&lt;/a&gt; &lt;a href=&#34;https://youtu.be/494TRV2F0Cw?t=246&#34;&gt;(영상 04:06)&lt;/a&gt; &lt;a href=&#34;https://youtu.be/494TRV2F0Cw?t=1638&#34;&gt;(영상 27:18)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;이 글은 영상을 반박하거나 옹호하려는 글이 아니라, 영상이 실제로 무엇을 말했고 그중 무엇을 실전적으로 받아들일 수 있는지를 정리하는 해설에 가깝다. 의료 조언이 아니라는 점도 분명히 해둔다. 임신·수유 중이거나, 당뇨 관리 중이거나, 섭식장애 병력이 있거나, 위장 질환이 있으면 공복 전략은 스스로 실험할 주제가 아니라 의료진과 먼저 상의할 주제다. &lt;a href=&#34;https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/intermittent-fasting/faq-20441303&#34;&gt;Mayo Clinic&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>얼굴 살은 정말 빨리 빠질까 — Titan Mode 영상으로 정리한 붓기·체지방·턱선 관리 프레임</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-27-face-fat-fast-guide/</link>
+      <link>http://localhost:1313/post/2026/2026-03-27-face-fat-fast-guide/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-27-face-fat-fast-guide/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-27-face-fat-fast-guide/</guid>
       <description>&lt;p&gt;같은 체지방률이어도 어떤 사람은 턱선이 더 또렷해 보이고, 어떤 사람은 얼굴이 더 붓고 둔해 보인다. Titan Mode 영상은 그 차이를 단순 유전으로 보지 않고, &lt;code&gt;붓기&lt;/code&gt;, &lt;code&gt;전신 체지방&lt;/code&gt;, &lt;code&gt;턱 주변 근육과 자세&lt;/code&gt;, &lt;code&gt;그루밍&lt;/code&gt;, &lt;code&gt;수면과 스트레스&lt;/code&gt; 같은 일상 습관의 조합으로 설명한다. 다만 영상은 동기부여형 표현이 강하고 일부 구간은 근거를 자세히 제시하지 않기 때문에, 이 글에서는 과장된 문장은 걷어내고 실제로 무엇을 바꾸라는 이야기인지 구조적으로 다시 정리해 본다. &lt;a href=&#34;https://youtu.be/MUFGLmuzC64?t=0&#34;&gt;(0:00)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/MUFGLmuzC64?t=219&#34;&gt;(3:39)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/MUFGLmuzC64?t=472&#34;&gt;(7:52)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>칼로리보다 인슐린이 먼저라는 주장, 어떻게 읽어야 할까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-27-insulin-diet-hormone-guide/</link>
+      <link>http://localhost:1313/post/2026/2026-03-27-insulin-diet-hormone-guide/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-27-insulin-diet-hormone-guide/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-27-insulin-diet-hormone-guide/</guid>
       <description>&lt;p&gt;이 영상의 메시지는 분명하다. 살을 빼는 문제를 &lt;code&gt;칼로리 계산&lt;/code&gt; 중심으로만 보면 반복적인 요요에 갇히기 쉽고, 실제로 더 중요한 축은 &lt;code&gt;호르몬&lt;/code&gt;, 그중에서도 &lt;strong&gt;인슐린&lt;/strong&gt; 이라는 주장이다. 영상은 미국 리얼리티 쇼 &lt;code&gt;The Biggest Loser&lt;/code&gt; 사례를 출발점으로, 왜 극단적인 저칼로리 + 고운동량 방식이 오래 유지되지 못하는지 설명하고, 그 대안으로 &lt;code&gt;식사 간격&lt;/code&gt;, &lt;code&gt;인슐린 자극 줄이기&lt;/code&gt;, &lt;code&gt;단식&lt;/code&gt;, &lt;code&gt;단백질 확보&lt;/code&gt;를 제시한다. 다만 이 글은 영상을 그대로 받아적기보다, 영상이 실제로 무엇을 연결하고 있는지를 흐름 중심으로 다시 정리한다. &lt;a href=&#34;https://youtu.be/uFCepBVn9eA?t=25&#34;&gt;(0:25)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/uFCepBVn9eA?t=99&#34;&gt;(1:39)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/uFCepBVn9eA?t=301&#34;&gt;(5:01)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/uFCepBVn9eA?t=815&#34;&gt;(13:35)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>다이어트 규칙 1단계: 왜 기초대사를 먼저 살려야 하나</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-26-diet-rule-stage-1-metabolism-recovery/</link>
+      <link>http://localhost:1313/post/2026/2026-03-26-diet-rule-stage-1-metabolism-recovery/</link>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-26-diet-rule-stage-1-metabolism-recovery/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-26-diet-rule-stage-1-metabolism-recovery/</guid>
       <description>&lt;p&gt;이 영상은 다이어트 실패의 원인을 의지 부족이 아니라 &lt;code&gt;지방을 쓰기 어려운 몸 상태&lt;/code&gt;, 더 구체적으로는 &lt;code&gt;기초대사가 떨어진 상태&lt;/code&gt;로 설명합니다. 발표자는 자신이 9개월에 14kg을 감량한 뒤 탈모, 저체온감, 생리 중단, 빠른 재증량을 겪었고, 그 뒤부터는 감량보다 먼저 대사를 회복하는 방식으로 접근해 다시 14kg을 감량한 뒤 7년째 유지하고 있다고 말합니다. &lt;a href=&#34;https://youtu.be/N0YH89iRV1E?t=12&#34;&gt;(0:12)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/N0YH89iRV1E?t=66&#34;&gt;(1:06)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;중요한 점은 이 영상이 &amp;ldquo;적게 먹고 많이 움직이면 된다&amp;quot;는 익숙한 공식과 반대로, 1단계에서는 오히려 &lt;code&gt;충분한 단백질&lt;/code&gt;, &lt;code&gt;양질의 지방&lt;/code&gt;, &lt;code&gt;칼로리 집착 중단&lt;/code&gt;을 먼저 제안한다는 것입니다. 이 글에서는 그 구조를 &lt;code&gt;무엇을 주장하는가&lt;/code&gt;, &lt;code&gt;어떤 사람에게 1단계가 필요하다고 보는가&lt;/code&gt;, &lt;code&gt;실제로 어떻게 먹으라고 하는가&lt;/code&gt;, &lt;code&gt;어떻게 받아들여야 하는가&lt;/code&gt; 순서로 다시 정리합니다. &lt;a href=&#34;https://youtu.be/N0YH89iRV1E?t=102&#34;&gt;(1:42)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/N0YH89iRV1E?t=214&#34;&gt;(3:34)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/N0YH89iRV1E?t=847&#34;&gt;(14:07)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>비뇨의학과 전문의가 알려주는 남성 성건강 완벽 가이드 — 발기부전·자위·성병까지</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-26-mens-sexual-health-urologist-guide/</link>
+      <link>http://localhost:1313/post/2026/2026-03-26-mens-sexual-health-urologist-guide/</link>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-26-mens-sexual-health-urologist-guide/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-26-mens-sexual-health-urologist-guide/</guid>
       <description>&lt;p&gt;비뇨의학과 전문의 홍성우 원장(닥터조물주 꽈추형, 서울아산병원 의과대학 박사)이 신사임당 채널에 출연해 남성 성건강과 관련된 가장 궁금하면서도 쉽게 물어보지 못했던 주제들을 28분에 걸쳐 솔직하게 다뤘다. 발기부전의 원인과 예방, 비아그라의 실제 효과, 자위에 관한 의학적 사실, 성기 크기 통계, 확대 수술의 현실, 성병 종류와 예방까지 — 인터넷에 떠도는 잘못된 정보를 바로잡는 내용이 핵심이다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>슬로우 조깅은 정말 걷기보다 나을까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-22-slow-jogging-middle-age-weight-management/</link>
+      <link>http://localhost:1313/post/2026/2026-03-22-slow-jogging-middle-age-weight-management/</link>
       <pubDate>Sun, 22 Mar 2026 23:10:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-22-slow-jogging-middle-age-weight-management/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-22-slow-jogging-middle-age-weight-management/</guid>
       <description>&lt;p&gt;이 영상은 슬로우 조깅을 &lt;code&gt;걷기보다 에너지 소모는 높고&lt;/code&gt;, &lt;code&gt;무릎 부담은 관리 가능하며&lt;/code&gt;, &lt;code&gt;중장년 체중 관리에 특히 잘 맞는 운동&lt;/code&gt;으로 소개합니다. 핵심 메시지는 단순합니다. 걷기만으로는 익숙해지기 쉬우니, 숨이 턱끝까지 차지 않는 아주 느린 조깅으로 강도를 한 단계만 올려 보라는 것입니다. &lt;a href=&#34;https://youtu.be/DoSExzi0qvQ?t=16&#34;&gt;(0:16)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/DoSExzi0qvQ?t=145&#34;&gt;(2:25)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/DoSExzi0qvQ?t=294&#34;&gt;(4:54)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다만 제목과 초반 후킹에 나오는 &lt;code&gt;113만 명&lt;/code&gt;, &lt;code&gt;걷기의 두 배&lt;/code&gt;, &lt;code&gt;걷기와 똑같은 충격&lt;/code&gt; 같은 표현은 그대로 일반화해서 받아들이기엔 무리가 있습니다. 이 글에서는 영상을 &lt;code&gt;무엇을 주장하는가&lt;/code&gt;, &lt;code&gt;그 메커니즘은 어디까지 타당한가&lt;/code&gt;, &lt;code&gt;실제로 어떻게 적용할 것인가&lt;/code&gt;, &lt;code&gt;어디서부터는 조심해야 하는가&lt;/code&gt;로 나눠 다시 정리해 보겠습니다. &lt;a href=&#34;https://youtu.be/DoSExzi0qvQ?t=13&#34;&gt;(0:13)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/DoSExzi0qvQ?t=219&#34;&gt;(3:39)&lt;/a&gt;, &lt;a href=&#34;https://www.spo.fukuoka-u.ac.jp/graduate/topics/faculty/1654/&#34;&gt;후쿠오카대 스로조깅 소개&lt;/a&gt;, &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/27848017/&#34;&gt;고령자 대상 슬로우 조깅 RCT&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>노화는 질병이다: 하버드 의대 데이비드 싱클레어의 &#39;노화 역전&#39;과 FDA 임상 승인 소식</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-21-aging-reversal-david-sinclair-fda-approval/</link>
+      <link>http://localhost:1313/post/2026/2026-03-21-aging-reversal-david-sinclair-fda-approval/</link>
       <pubDate>Sat, 21 Mar 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-21-aging-reversal-david-sinclair-fda-approval/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-21-aging-reversal-david-sinclair-fda-approval/</guid>
       <description>&lt;h2 id=&#34;요약&#34;&gt;요약&lt;/h2&gt;&#xA;&lt;p&gt;하버드 의대의 데이비드 싱클레어(David Sinclair) 교수는 2026년 두바이에서 열린 WGS(World Government Summit)를 통해 &amp;ldquo;노화는 치료 가능한 질병&amp;quot;이라는 메시지를 던졌습니다. 최근 FDA가 노화 역전 기술인 &amp;lsquo;에피제네틱 리프로그래밍(Epigenetic Reprogramming)&amp;lsquo;의 인간 대상 임상시험을 처음으로 승인하면서, 인류는 노화를 되돌리는 첫 번째 세대가 될 가능성이 열렸습니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;본문&#34;&gt;본문&lt;/h2&gt;&#xA;&lt;h3 id=&#34;암을-정복해도-수명은-25년-늘어날-뿐&#34;&gt;&amp;ldquo;암을 정복해도 수명은 2.5년 늘어날 뿐&amp;rdquo;&lt;/h3&gt;&#xA;&lt;p&gt;우리는 암, 심장병 등 개별 질병을 치료하는 데 수십조 원을 쏟아붓고 있습니다. 하지만 데이비드 싱클레어 교수는 근본적인 원인을 지목합니다. 바로 **&amp;lsquo;노화 자체&amp;rsquo;**입니다. 개별 질병을 아무리 잘 고쳐도 노화라는 근본 원인을 해결하지 못하면 기대 수명 연장은 한계가 있다는 것입니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>비만약 원가 7천원은 가능한가</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-18-glp1-obesity-drug-cost-market-expansion/</link>
+      <link>http://localhost:1313/post/2026/2026-03-18-glp1-obesity-drug-cost-market-expansion/</link>
       <pubDate>Tue, 17 Mar 2026 23:30:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-18-glp1-obesity-drug-cost-market-expansion/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-18-glp1-obesity-drug-cost-market-expansion/</guid>
       <description>&lt;p&gt;이 영상이 흥미로운 이유는 단순히 &amp;ldquo;살 빠지는 약이 있다&amp;quot;는 차원을 넘어서, 비만치료제가 &lt;code&gt;당뇨약 -&amp;gt; 비만약 -&amp;gt; 추가 적응증을 넓히는 플랫폼 약물&lt;/code&gt;로 바뀌는 흐름을 한 번에 설명하기 때문입니다. 정재훈 약사는 이 흐름을 따라가며 약효 경쟁, 가격 하락, 경구제 확산, 영양 관리, 사회적 파급효과까지 한 덩어리로 묶어 보여 줍니다. &lt;a href=&#34;https://youtu.be/YVRsiXHox1I?t=75&#34;&gt;(1:15)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/YVRsiXHox1I?t=440&#34;&gt;(7:20)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/YVRsiXHox1I?t=1020&#34;&gt;(17:00)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;다만 제목에 있는 &amp;ldquo;원가 7천원&amp;rdquo; 같은 표현은 그대로 소비자가격을 뜻하지 않습니다. 영상에서 말하는 것은 &lt;strong&gt;대량 생산과 특허 만료 이후를 가정한 공급 원가 추정&lt;/strong&gt; 에 가깝고, 실제 시장 가격은 특허, 규제, 유통, 보험, 브랜드 파워, 처방 정책이 함께 결정합니다. 그래서 이 글은 영상을 그대로 옮기기보다 &lt;code&gt;약리 구조&lt;/code&gt;, &lt;code&gt;시장 구조&lt;/code&gt;, &lt;code&gt;실사용 조건&lt;/code&gt;으로 다시 나눠서 정리해 보겠습니다. &lt;a href=&#34;https://youtu.be/YVRsiXHox1I?t=660&#34;&gt;(11:00)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/YVRsiXHox1I?t=752&#34;&gt;(12:32)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>빠른 체중 감소를 위한 3가지 필수 전략 - 요요 없이 살 빼는 과학적 방법</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-03-16-rapid-weight-loss-three-tips/</link>
+      <link>http://localhost:1313/post/2026/2026-03-16-rapid-weight-loss-three-tips/</link>
       <pubDate>Mon, 16 Mar 2026 20:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-03-16-rapid-weight-loss-three-tips/</guid>
+      <guid>http://localhost:1313/post/2026/2026-03-16-rapid-weight-loss-three-tips/</guid>
       <description>&lt;p&gt;빠른 체중 감소는 많은 사람들이 원하지만, 잘못된 방법으로 하면 결국 더 많이 살이 찌는 결과를 초래합니다. 닥터프렌즈의 의학적 조언을 바탕으로, 빠른 체중 감량을 하면서도 요요를 방지할 수 있는 3가지 핵심 전략을 정리했습니다.&lt;/p&gt;</description>
     </item>
   </channel>
