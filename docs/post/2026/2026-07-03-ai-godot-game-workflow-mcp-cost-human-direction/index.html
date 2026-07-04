@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='http://localhost:1313/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='http://localhost:1313/css/frameworks.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/github.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/github-style.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
+    <title>AI가 Godot 게임을 다 만들어 주는가: MCP, 스프라이트 생성, 그리고 사람의 기획이 남는 이유 - Life Log</title>
+    
+    <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="이 영상은 제목만 보면 &ldquo;최신 AI 모델 하나로 Godot 게임을 통째로 만들었다&ldquo;는 이야기처럼 보입니다. 실제로도 기존 Godot 프로젝트와 스프라이트 자산을 준비해 두고, AI가 플레이 가능한 어드벤처 게임을 조립하는 과정을 보여 줍니다. 하지만 영상을 끝까지 보면 핵심은 조금 다릅니다. AI가 혼자 게임을 만든다 가 아니라, 사람이 비전과 기준을 쥐고 AI에게 병렬 실행을 맡기는 워크플로가 어디까지 가능한가 를 실험한 사례에 가깝습니다.
+특히 이 영상이 흥미로운 이유는 세 가지입니다. 첫째, 게임 엔진 바깥에서 코드를 생성하는 것이 아니라 MCP를 통해 Godot 에디터와 직접 상호작용 하게 했다는 점. 둘째, SpriteCook 같은 도구로 부족한 2D 자산을 보완 했다는 점. 셋째, 최종 결과가 단순 프로토타입이 아니라 분기, 수집, 퍼즐, 여러 엔딩이 있는 실제 플레이 구조를 지향했다는 점입니다.
+" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="http://localhost:1313/post/2026/2026-07-03-ai-godot-game-workflow-mcp-cost-human-direction/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="AI가 Godot 게임을 다 만들어 주는가: MCP, 스프라이트 생성, 그리고 사람의 기획이 남는 이유 - Life Log" />
+<meta name="twitter:description"
+  content="이 영상은 제목만 보면 &ldquo;최신 AI 모델 하나로 Godot 게임을 통째로 만들었다&ldquo;는 이야기처럼 보입니다. 실제로도 기존 Godot 프로젝트와 스프라이트 자산을 준비해 두고, AI가 플레이 가능한 어드벤처 게임을 조립하는 과정을 보여 줍니다. 하지만 영상을 끝까지 보면 핵심은 조금 다릅니다. AI가 혼자 게임을 만든다 가 아니라, 사람이 비전과 기준을 쥐고 AI에게 병렬 실행을 맡기는 워크플로가 어디까지 가능한가 를 실험한 사례에 가깝습니다.
+특히 이 영상이 흥미로운 이유는 세 가지입니다. 첫째, 게임 엔진 바깥에서 코드를 생성하는 것이 아니라 MCP를 통해 Godot 에디터와 직접 상호작용 하게 했다는 점. 둘째, SpriteCook 같은 도구로 부족한 2D 자산을 보완 했다는 점. 셋째, 최종 결과가 단순 프로토타입이 아니라 분기, 수집, 퍼즐, 여러 엔딩이 있는 실제 플레이 구조를 지향했다는 점입니다.
+" />
+<meta name="twitter:site" content="http://localhost:1313/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="http://localhost:1313/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="AI가 Godot 게임을 다 만들어 주는가: MCP, 스프라이트 생성, 그리고 사람의 기획이 남는 이유 - Life Log">
+<meta property="og:description"
+  content="이 영상은 제목만 보면 &ldquo;최신 AI 모델 하나로 Godot 게임을 통째로 만들었다&ldquo;는 이야기처럼 보입니다. 실제로도 기존 Godot 프로젝트와 스프라이트 자산을 준비해 두고, AI가 플레이 가능한 어드벤처 게임을 조립하는 과정을 보여 줍니다. 하지만 영상을 끝까지 보면 핵심은 조금 다릅니다. AI가 혼자 게임을 만든다 가 아니라, 사람이 비전과 기준을 쥐고 AI에게 병렬 실행을 맡기는 워크플로가 어디까지 가능한가 를 실험한 사례에 가깝습니다.
+특히 이 영상이 흥미로운 이유는 세 가지입니다. 첫째, 게임 엔진 바깥에서 코드를 생성하는 것이 아니라 MCP를 통해 Godot 에디터와 직접 상호작용 하게 했다는 점. 둘째, SpriteCook 같은 도구로 부족한 2D 자산을 보완 했다는 점. 셋째, 최종 결과가 단순 프로토타입이 아니라 분기, 수집, 퍼즐, 여러 엔딩이 있는 실제 플레이 구조를 지향했다는 점입니다.
+" />
+<meta property="og:url" content="http://localhost:1313/post/2026/2026-07-03-ai-godot-game-workflow-mcp-cost-human-direction/" />
+<meta property="og:site_name" content="AI가 Godot 게임을 다 만들어 주는가: MCP, 스프라이트 생성, 그리고 사람의 기획이 남는 이유" />
+<meta property="og:image"
+  content="http://localhost:1313/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-07-03 00:00:00 &#43;0900 KST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="http://localhost:1313/">
+        <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="http://localhost:1313/">
+        <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="http://localhost:1313/">
+                  <img class=" avatar-user"
+                    src="http://localhost:1313/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="http://localhost:1313/">Gyuha</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="mr-1 break-word">
+                    <a href="http://localhost:1313/post/2026/2026-07-03-ai-godot-game-workflow-mcp-cost-human-direction/">AI가 Godot 게임을 다 만들어 주는가: MCP, 스프라이트 생성, 그리고 사람의 기획이 남는 이유</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Fri, 03 Jul 2026 00:00:00 &#43;0900"
+                    class="no-wrap">
+                    Fri, 03 Jul 2026 00:00:00 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Fri, 03 Jul 2026 21:31:09 &#43;0900"
+                    class="no-wrap">
+                    Fri, 03 Jul 2026 21:31:09 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      <span class="d-none d-md-inline">3799 Words</span>
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="http://localhost:1313/tags/%EC%83%9D%EC%84%B1%ED%98%95ai">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      생성형ai
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="http://localhost:1313/tags/%EC%83%9D%EC%82%B0%EC%84%B1">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      생산성
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p>이 영상은 제목만 보면 &ldquo;<code>최신 AI 모델 하나로 Godot 게임을 통째로 만들었다</code>&ldquo;는 이야기처럼 보입니다. 실제로도 <a href="https://youtu.be/RgJeJ8-gE2Q?t=15">기존 Godot 프로젝트와 스프라이트 자산을 준비해 두고, AI가 플레이 가능한 어드벤처 게임을 조립하는 과정</a>을 보여 줍니다. 하지만 영상을 끝까지 보면 핵심은 조금 다릅니다. <strong>AI가 혼자 게임을 만든다</strong> 가 아니라, <strong>사람이 비전과 기준을 쥐고 AI에게 병렬 실행을 맡기는 워크플로가 어디까지 가능한가</strong> 를 실험한 사례에 가깝습니다.</p>
+<p>특히 이 영상이 흥미로운 이유는 세 가지입니다. 첫째, 게임 엔진 바깥에서 코드를 생성하는 것이 아니라 <strong>MCP를 통해 Godot 에디터와 직접 상호작용</strong> 하게 했다는 점. 둘째, SpriteCook 같은 도구로 <strong>부족한 2D 자산을 보완</strong> 했다는 점. 셋째, 최종 결과가 단순 프로토타입이 아니라 <a href="https://youtu.be/RgJeJ8-gE2Q?t=23">분기, 수집, 퍼즐, 여러 엔딩이 있는 실제 플레이 구조</a>를 지향했다는 점입니다.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://youtu.be/RgJeJ8-gE2Q">YouTube - Claude Fable 5 Is Back! And I Built an AMAZING Godot Game With It…</a></li>
+<li><a href="https://www.anthropic.com/pricing">Anthropic Pricing</a></li>
+<li><a href="https://support.anthropic.com/en/articles/11049762-choosing-a-claude-ai-plan">Claude Help Center - Choose a Claude plan</a></li>
+<li><a href="https://support.anthropic.com/en/articles/11145838-using-claude-code-with-your-pro-or-max-plan">Claude Help Center - Use Claude Code with your Pro or Max plan</a></li>
+<li><a href="https://godotengine.org/asset-library/asset/5050">Godot AI - Godot Asset Library</a></li>
+<li><a href="https://github.com/hi-godot/godot-ai">hi-godot/godot-ai - GitHub</a></li>
+<li><a href="https://www.spritecook.ai/">SpriteCook</a></li>
+</ul>
+<h2 id="1-이-영상의-진짜-주인공은-모델-하나가-아니라-조합된-파이프라인이다">1. 이 영상의 진짜 주인공은 모델 하나가 아니라 &ldquo;조합된 파이프라인&quot;이다</h2>
+<p>영상은 <a href="https://youtu.be/RgJeJ8-gE2Q?t=43">모델, Godot AI MCP, SpriteCook을 동시에 엮는 워크플로</a>를 보여 줍니다. 즉 결과물은 단일 AI의 마법이 아니라, 각 도구가 다른 역할을 맡는 <strong>도구 체인</strong> 의 산물입니다.</p>
+<p>대략 구조는 이렇게 정리할 수 있습니다.</p>
+<ul>
+<li>사람: 게임 콘셉트, 문서, 기준, 검수</li>
+<li>AI 모델: 설계, 코드 작성, 하위 작업 분할</li>
+<li>Godot AI MCP: 에디터 조작과 프로젝트 반영</li>
+<li>SpriteCook: 스프라이트와 애니메이션 자산 보강</li>
+</ul>
+<pre class="mermaid">flowchart TD
+    A[&#34;사람의 기획 문서&#34;] --&gt; B[&#34;AI 모델&#34;]
+    B --&gt; C[&#34;Godot AI MCP&#34;]
+    B --&gt; D[&#34;SpriteCook&#34;]
+    C --&gt; E[&#34;Godot 프로젝트 반영&#34;]
+    D --&gt; F[&#34;스프라이트 / 애니메이션 자산&#34;]
+    F --&gt; E
+    E --&gt; G[&#34;플레이 가능한 게임 빌드&#34;]
+
+    classDef humanTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+    classDef aiTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+    classDef outputTone fill:#fde8c0,stroke:#d9a441,stroke-width:1px,color:#333
+
+    class A humanTone
+    class B,C,D aiTone
+    class E,F,G outputTone</pre>
+<p>이 구조를 이해하면 왜 이런 실험이 단순 &ldquo;<code>프롬프트 잘 치면 끝</code>&ldquo;이 아닌지 보입니다. 핵심은 모델의 지능보다도 <strong>어떤 도구가 어떤 레이어를 담당하느냐</strong> 입니다.</p>
+<h2 id="2-사람은-여전히-무엇을-만들지를-결정해야-한다">2. 사람은 여전히 &ldquo;무엇을 만들지&quot;를 결정해야 한다</h2>
+<p>영상에서 가장 중요한 문장은 사실 <a href="https://youtu.be/RgJeJ8-gE2Q?t=177">AI에게 그냥 &lsquo;던전에서 벌어지는 내러티브 게임 만들어&rsquo;라고 말하고 손을 놓으면 표준적인 결과만 나온다</a>는 부분입니다. 창작 워크플로에서 이건 아주 중요한 포인트입니다.</p>
+<p>영상 속 제작자는 실제로 다음 일을 사람이 해야 한다고 설명합니다.</p>
+<ul>
+<li>게임 비전 정리</li>
+<li>자산 스타일 선택</li>
+<li>생성된 아트 검수</li>
+<li>게임 문서 작성</li>
+<li>필요한 에셋 프롬프트 정의</li>
+</ul>
+<pre class="mermaid">flowchart TD
+    A[&#34;사람이 해야 하는 일&#34;] --&gt; B[&#34;세계관 / 장르 결정&#34;]
+    A --&gt; C[&#34;게임 문서 작성&#34;]
+    A --&gt; D[&#34;아트 품질 검수&#34;]
+    A --&gt; E[&#34;방향 수정&#34;]
+
+    F[&#34;AI가 잘하는 일&#34;] --&gt; G[&#34;구조화&#34;]
+    F --&gt; H[&#34;병렬 구현&#34;]
+    F --&gt; I[&#34;자산 보강&#34;]
+    F --&gt; J[&#34;반복 작업 가속&#34;]
+
+    classDef humanTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+    classDef aiTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C,D,E humanTone
+    class F,G,H,I,J aiTone</pre>
+<p>즉 AI가 대체하는 것은 창의성 자체보다, <strong>사람이 정한 창의적 방향을 구현하는 데 드는 마찰과 반복</strong> 에 가깝습니다.</p>
+<h2 id="3-mcp의-핵심은-코드-생성이-아니라-에디터-접속이다">3. MCP의 핵심은 &ldquo;코드 생성&quot;이 아니라 &ldquo;에디터 접속&quot;이다</h2>
+<p>Godot AI Asset Library 설명을 보면, 이 도구는 MCP 호환 AI 어시스턴트를 <strong>실행 중인 Godot 에디터와 연결</strong> 해 씬 구성, 스크립트 작성, UI, 테스트, 에디터 데이터 읽기 같은 작업을 하게 만듭니다. 이게 왜 중요할까요?</p>
+<p>일반적인 LLM 코딩은 보통 텍스트 파일을 쓰는 데서 끝납니다. 하지만 게임 개발은 파일만 맞는다고 끝나지 않습니다. 에디터 안에서 씬 트리, 노드 연결, 리소스 경로, 애니메이션, 상호작용 상태가 맞아야 합니다. MCP는 바로 이 간극을 줄여 줍니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;일반 코드 생성&#34;] --&gt; B[&#34;텍스트 파일 출력&#34;]
+    B --&gt; C[&#34;사람이 에디터 반영&#34;]
+
+    D[&#34;MCP 연결&#34;] --&gt; E[&#34;에디터 상태 읽기&#34;]
+    E --&gt; F[&#34;씬 / 노드 / 스크립트 직접 수정&#34;]
+    F --&gt; G[&#34;실행 결과에 맞춰 다시 수정&#34;]
+
+    classDef plainTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef mcpTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C plainTone
+    class D,E,F,G mcpTone</pre>
+<p>즉 MCP의 가치는 더 똑똑한 답변이 아니라, <strong>도구 사용 가능 범위를 넓혀 실제 작업 루프 안으로 AI를 집어넣는 것</strong> 에 있습니다.</p>
+<h2 id="4-에셋-생성-도구는-게임을-완성해-주지-않지만-자산-병목을-크게-줄여-준다">4. 에셋 생성 도구는 게임을 완성해 주지 않지만, 자산 병목을 크게 줄여 준다</h2>
+<p>영상은 SpriteCook으로 <a href="https://youtu.be/RgJeJ8-gE2Q?t=90">캐릭터, 애니메이션, 타일셋, 소품까지 대량 자산을 만들고</a>, 필요하면 수정 프롬프트로 다시 손보는 방식을 보여 줍니다. SpriteCook 공식 사이트도 일관된 스타일의 캐릭터, 아이템, 애니메이션 스프라이트 시트를 생성해 엔진에 쓸 수 있다고 설명합니다.</p>
+<p>여기서 중요한 건, 에셋 도구가 게임을 대신 설계하는 것은 아니라는 점입니다. 하지만 다음 병목은 확실히 줄여 줍니다.</p>
+<ul>
+<li>임시 자산 수급</li>
+<li>스타일 맞춘 반복 생성</li>
+<li>애니메이션 초안 제작</li>
+<li>아이디어 시각화 속도</li>
+</ul>
+<pre class="mermaid">flowchart TD
+    A[&#34;기존 방식&#34;] --&gt; B[&#34;자산 부족&#34;]
+    B --&gt; C[&#34;프로토타입 지연&#34;]
+
+    D[&#34;에셋 생성 도구 사용&#34;] --&gt; E[&#34;빠른 시각화&#34;]
+    E --&gt; F[&#34;스타일 맞춤 반복&#34;]
+    F --&gt; G[&#34;프로토타입 속도 증가&#34;]
+
+    classDef oldTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef newTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C oldTone
+    class D,E,F,G newTone</pre>
+<p>그래서 AI 에셋 도구의 진짜 가치는 완성품보다도 <strong>아이디어를 버릴지 밀어붙일지 판단할 만큼 빨리 눈앞에 보여 준다</strong> 는 데 있습니다.</p>
+<h2 id="5-이-영상이-인상적인-이유는-풀-게임-구조까지-갔기-때문이다">5. 이 영상이 인상적인 이유는 &ldquo;풀 게임 구조&quot;까지 갔기 때문이다</h2>
+<p>영상 속 게임은 <a href="https://youtu.be/RgJeJ8-gE2Q?t=434">메모리 샤드 수집, 키와 상자, NPC 선택, 강아지 구출, 여러 엔딩, 미니맵, 인벤토리</a> 같은 구조를 이미 갖추고 있습니다. 이건 단순한 플레이어 이동 데모보다 훨씬 높은 단계입니다.</p>
+<p>즉 여기서 보여 준 것은 &ldquo;AI가 코드 한두 파일 썼다&quot;가 아니라, <strong>게임을 게임답게 느끼게 하는 시스템 묶음</strong> 입니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;플레이 가능한 게임&#34;] --&gt; B[&#34;이동 / 상호작용&#34;]
+    A --&gt; C[&#34;수집 시스템&#34;]
+    A --&gt; D[&#34;분기 선택&#34;]
+    A --&gt; E[&#34;여러 엔딩&#34;]
+    A --&gt; F[&#34;UI / 인벤토리 / 미니맵&#34;]
+
+    classDef systemTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C,D,E,F systemTone</pre>
+<p>이 지점이 중요한 이유는, AI 툴의 진짜 생산성은 파일 수가 아니라 <strong>사용자 경험의 단위까지 묶어 낼 수 있느냐</strong> 로 봐야 하기 때문입니다.</p>
+<h2 id="6-하지만-이-워크플로는-공짜-자동화가-아니라-비용을-많이-태우는-고속-자동화다">6. 하지만 이 워크플로는 공짜 자동화가 아니라, 비용을 많이 태우는 고속 자동화다</h2>
+<p>영상에서 제작자는 <a href="https://youtu.be/RgJeJ8-gE2Q?t=421">모델 사용량이 빠르게 늘고, 최종 비용이 400달러 가까이 갔다</a>고 보여 줍니다. 이 수치는 영상 제작자의 실제 세션 관찰값이지 제가 별도로 검증한 청구 내역은 아닙니다. 다만 <strong>비용이 크다</strong> 는 메시지 자체는 충분히 현실적입니다.</p>
+<p>공식 Anthropic 요금 페이지와 도움말을 보면, Max 20x 플랜은 월 200달러 수준이며 사용 한도 구조도 있습니다. 즉 이런 워크플로는 무료 해킹이 아니라, <strong>고비용 모델 + 병렬 작업 + 장시간 세션</strong> 의 조합입니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;더 큰 자동화&#34;] --&gt; B[&#34;더 많은 하위 에이전트&#34;]
+    B --&gt; C[&#34;더 많은 토큰 소비&#34;]
+    C --&gt; D[&#34;더 높은 비용&#34;]
+
+    E[&#34;사람 개입 감소&#34;] --&gt; F[&#34;속도 증가&#34;]
+    F --&gt; G[&#34;검수 비용은 여전히 필요&#34;]
+
+    classDef costTone fill:#ffc8c4,stroke:#d77,stroke-width:1px,color:#333
+    classDef speedTone fill:#c5dcef,stroke:#5f8fbd,stroke-width:1px,color:#333
+
+    class A,B,C,D costTone
+    class E,F,G speedTone</pre>
+<p>즉 이 워크플로는 싸고 가벼운 자동화라기보다, <strong>돈을 써서 반복 구현 시간을 압축하는 방식</strong> 에 더 가깝습니다.</p>
+<h2 id="7-이-사례가-보여-주는-현실은-ai가-게임-개발자를-대체한다보다-게임-개발-인터페이스가-바뀐다에-가깝다">7. 이 사례가 보여 주는 현실은 &ldquo;AI가 게임 개발자를 대체한다&quot;보다 &ldquo;게임 개발 인터페이스가 바뀐다&quot;에 가깝다</h2>
+<p>이 영상만 보면 AI가 곧 게임 디자이너, 프로그래머, 아티스트를 모두 대체할 것처럼 느껴질 수 있습니다. 하지만 실제론 더 정확한 해석이 있습니다.</p>
+<ul>
+<li>사람은 비전, 취향, 우선순위, 검수를 담당한다</li>
+<li>AI는 구현 속도, 탐색 속도, 반복 속도를 끌어올린다</li>
+<li>MCP는 AI를 에디터 안으로 넣는다</li>
+<li>에셋 생성기는 시각적 병목을 줄인다</li>
+</ul>
+<pre class="mermaid">flowchart TD
+    A[&#34;기존 게임 개발&#34;] --&gt; B[&#34;사람이 기획&#34;]
+    A --&gt; C[&#34;사람이 구현&#34;]
+    A --&gt; D[&#34;사람이 에디터 반영&#34;]
+
+    E[&#34;AI 보강 게임 개발&#34;] --&gt; F[&#34;사람이 기획 / 검수&#34;]
+    E --&gt; G[&#34;AI가 병렬 구현&#34;]
+    E --&gt; H[&#34;MCP가 에디터 반영&#34;]
+    E --&gt; I[&#34;자산 도구가 시각화 가속&#34;]
+
+    classDef oldTone fill:#fde8c0,stroke:#d9a441,stroke-width:1px,color:#333
+    classDef newTone fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+
+    class A,B,C,D oldTone
+    class E,F,G,H,I newTone</pre>
+<p>이건 개발자의 소멸보다, <strong>개발자가 다루는 인터페이스와 작업 단위가 바뀌는 쪽</strong> 에 더 가깝습니다.</p>
+<h2 id="핵심-요약">핵심 요약</h2>
+<ul>
+<li>이 영상의 핵심은 AI 단독 창작이 아니라 모델, MCP, 에셋 생성기를 결합한 파이프라인입니다.</li>
+<li>사람은 여전히 게임의 비전, 문서, 검수, 방향 결정을 맡아야 합니다.</li>
+<li>MCP의 가치는 텍스트 코드 생성이 아니라 Godot 에디터와 직접 연결된 실행 루프에 있습니다.</li>
+<li>SpriteCook 같은 도구는 자산 병목을 크게 줄여 프로토타입 속도를 높입니다.</li>
+<li>이 사례가 인상적인 이유는 프로토타입이 아니라 실제 플레이 구조에 가까운 시스템 묶음을 보여 줬기 때문입니다.</li>
+<li>대신 이런 자동화는 비용이 높고 토큰 소모가 매우 큽니다.</li>
+</ul>
+<h2 id="결론">결론</h2>
+<p>이 영상이 보여 주는 미래는 &ldquo;<code>프롬프트 한 줄로 게임 완성</code>&ldquo;이 아닙니다. 더 정확히는 <strong>사람이 방향을 정하고, AI가 여러 구현 레이어를 병렬로 밀어 주는 제작 환경</strong> 입니다.</p>
+<p>그래서 중요한 질문도 바뀝니다. 이제는 &ldquo;<code>AI가 코드를 잘 쓰나</code>&ldquo;보다, <strong>어떻게 문서를 준비하고, 어떤 MCP를 붙이고, 어디까지를 사람 검수 영역으로 남길지</strong> 가 더 중요한 생산성 문제가 됩니다. AI 게임 개발의 핵심은 모델 자체보다 워크플로 설계에 있습니다.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='http://localhost:1313/js/toc.js'></script>
+<link rel="stylesheet" href='http://localhost:1313/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="http://localhost:1313/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="http://localhost:1313/js/github-style.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='http://localhost:1313/js/search.js'></script>
+
+
+
+<script type="module" src='http://localhost:1313/js/mermaid.js'></script>
+
+
+
+</html>

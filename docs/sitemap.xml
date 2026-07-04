@@ -2,23 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/post/2026/2026-07-03-ai-godot-game-workflow-mcp-cost-human-direction/</loc>
+    <lastmod>2026-07-03T21:31:09+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-07-03T20:29:51+09:00</lastmod>
+    <lastmod>2026-07-03T21:31:09+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-03T20:29:51+09:00</lastmod>
+    <lastmod>2026-07-03T21:31:09+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2026-07-03T20:29:51+09:00</lastmod>
+    <lastmod>2026-07-03T21:31:09+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-07-03T20:29:51+09:00</lastmod>
+    <lastmod>2026-07-03T21:31:09+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/%EA%B1%B4%EA%B0%95/</loc>
     <lastmod>2026-07-03T20:29:51+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%EA%B1%B4%EA%B0%95/</loc>
     <lastmod>2026-07-03T20:29:51+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
+    <lastmod>2026-07-03T21:31:09+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
+    <lastmod>2026-07-03T21:31:09+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</loc>
+    <lastmod>2026-07-03T21:31:09+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/2026/2026-07-03-headache-otc-painkillers-nsaids-overuse-red-flags/</loc>
     <lastmod>2026-07-03T20:29:51+09:00</lastmod>
@@ -83,13 +95,7 @@
     <loc>http://localhost:1313/post/2026/2026-06-11-gemini-stock-analysis-not-bloomberg-replacement/</loc>
     <lastmod>2026-06-11T08:18:17+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</loc>
-    <lastmod>2026-06-11T08:18:17+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/post/2026/2026-06-09-ai-solopreneur-pain-platform-benchmark/</loc>
-    <lastmod>2026-06-09T19:10:23+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
     <lastmod>2026-06-09T19:10:23+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/%EC%9E%90%EA%B8%B0%EA%B0%9C%EB%B0%9C/</loc>
@@ -148,9 +154,6 @@
   </url><url>
     <loc>http://localhost:1313/post/2026/2026-05-19-mitochondria-aging-fasting-heat-cold/</loc>
     <lastmod>2026-05-19T07:11:06+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
-    <lastmod>2026-05-19T01:11:40+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/2026/2026-05-19-app-flipping-playbook-nondeveloper/</loc>
     <lastmod>2026-05-19T00:24:06+09:00</lastmod>

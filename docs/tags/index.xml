@@ -6,13 +6,27 @@
     <description>Recent content in Tags on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 03 Jul 2026 20:29:51 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 21:31:09 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>건강</title>
       <link>http://localhost:1313/tags/%EA%B1%B4%EA%B0%95/</link>
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0900</pubDate>
       <guid>http://localhost:1313/tags/%EA%B1%B4%EA%B0%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>생산성</title>
+      <link>http://localhost:1313/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>생성형ai</title>
+      <link>http://localhost:1313/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</guid>
       <description></description>
     </item>
     <item>
@@ -48,20 +62,6 @@
       <link>http://localhost:1313/tags/%EC%9A%B4%EB%8F%99/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0900</pubDate>
       <guid>http://localhost:1313/tags/%EC%9A%B4%EB%8F%99/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>생성형ai</title>
-      <link>http://localhost:1313/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</link>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>생산성</title>
-      <link>http://localhost:1313/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</link>
-      <pubDate>Tue, 09 Jun 2026 00:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</guid>
       <description></description>
     </item>
     <item>
