@@ -6,8 +6,15 @@
     <description>Recent content in 투자 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Jun 2026 10:05:17 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 18:39:28 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/%ED%88%AC%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>주식은 시간대별로 다르게 움직일까: 시초가, 오전 관망, 점심 눌림목, 마감 전 구간을 시장 구조로 읽기</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-07-23-stock-trading-time-slots-opening-auction-midday-close/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-07-23-stock-trading-time-slots-opening-auction-midday-close/</guid>
+      <description>&lt;p&gt;이 Threads 포스트는 아주 실전적인 문장으로 시작합니다. &lt;a href=&#34;https://www.threads.com/@lovelyswimmer0296/post/DbIWkzJk01-&#34;&gt;주식을 오래 할 거라면 특정 시간대를 뼈에 새겨야 한다&lt;/a&gt;는 것이고, 그 구간을 &lt;strong&gt;09:00&lt;del&gt;09:15, 09:15&lt;/del&gt;10:00, 12:30&lt;del&gt;13:00, 14:30&lt;/del&gt;15:20&lt;/strong&gt; 으로 나눠 각각 매수 금지, 관망, 눌림목 대기, 저가 매수 기회 같은 행동 원칙을 제시합니다.&lt;/p&gt;&#xA;&lt;p&gt;이런 시간대 규칙은 초보 투자자에게 꽤 매력적으로 들립니다. 복잡한 시장을 &amp;ldquo;&lt;code&gt;몇 시에 무엇을 할지&lt;/code&gt;&amp;ldquo;로 바꿔 주기 때문입니다. 하지만 그대로 외우기만 하면 위험합니다. 실제 시장은 매일 반복되는 패턴이 있긴 하지만, 그것이 &lt;strong&gt;항상 같은 방향의 수익 규칙&lt;/strong&gt; 으로 작동하는 것은 아니기 때문입니다.&lt;/p&gt;&#xA;&lt;p&gt;그래서 이 글은 포스트의 시간대별 조언을 단순 복붙하지 않고, &lt;strong&gt;왜 이런 시간 감각이 생기는지&lt;/strong&gt; 를 시장 미시구조와 KRX 거래 시간 기준으로 풀어보겠습니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>매수보다 어려운 건 매도다: 밸류에이션, 분할매도, 손절 원칙을 함께 써야 하는 이유</title>
       <link>https://life-log.gyuha.com/post/2026/2026-06-22-selling-discipline-valuation-scaling-stoploss-thesis/</link>
