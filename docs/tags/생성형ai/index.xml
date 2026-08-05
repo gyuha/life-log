@@ -6,8 +6,15 @@
     <description>Recent content in 생성형ai on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 19 Jul 2026 13:49:32 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 06:51:17 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>빅테크 숨은 빚 1.65조 달러의 실체: CDS, 데이터센터 금융, 한국 반도체 위험</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-08-05-big-tech-ai-debt-cds-hidden-obligations-korea-risk/</link>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-08-05-big-tech-ai-debt-cds-hidden-obligations-korea-risk/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/DdfKlOlFOIg?t=0&#34;&gt;에스오디 SOD의 이 영상&lt;/a&gt;은 빅테크의 신용부도스와프(CDS), 줄어드는 잉여현금흐름, 데이터센터 특수목적법인, 엔비디아와 OpenAI의 순환금융 논란을 하나의 경고 신호로 연결합니다. 제목에 등장하는 숫자는 무려 &lt;strong&gt;1.65조 달러&lt;/strong&gt; 입니다. 원화로 환산하면 2천조원이 넘는 규모라 &amp;ldquo;&lt;code&gt;AI 제국이 빚으로 세워졌다&lt;/code&gt;&amp;ldquo;는 인상을 줍니다.&lt;/p&gt;&#xA;&lt;p&gt;그러나 이 숫자를 전부 은행 대출이나 회사채 같은 &amp;ldquo;&lt;code&gt;숨긴 빚&lt;/code&gt;&amp;ldquo;으로 읽으면 핵심을 놓칩니다. 여기에는 아직 사용이 시작되지 않은 데이터센터의 장기 임차료와 앞으로 장비·전력·서비스를 구매하기로 한 계약상 약정이 함께 들어 있습니다. 모두 미래 현금유출을 만들 수 있는 중요한 의무지만, 이자와 원금을 갚는 &lt;strong&gt;현재의 차입금&lt;/strong&gt; 과는 회계적·경제적 성격이 다릅니다.&lt;/p&gt;&#xA;&lt;p&gt;그렇다고 위험이 사라지는 것도 아닙니다. 더 정확한 질문은 &amp;ldquo;&lt;code&gt;빅테크가 당장 부도나는가&lt;/code&gt;&amp;ldquo;가 아니라, &lt;strong&gt;AI가 약속한 현금흐름이 장기 계약과 자본비용을 감당할 만큼 빠르게 커질 수 있는가&lt;/strong&gt; 입니다. 이 글에서는 영상의 경고를 그대로 확대하지 않고, 무엇이 확인된 사실이고 무엇이 아직 시나리오인지 구분해 보겠습니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>공부할 때 GPT 성능을 끌어올리는 5가지 명령 패턴: 셀프 리파인, 쉬운 설명, 레드팀, 오토프롬프트, 다중 해답</title>
       <link>https://life-log.gyuha.com/post/2026/2026-07-19-gpt-study-prompts-self-refine-red-team/</link>

@@ -6,8 +6,29 @@
     <description>Recent content in 경제 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 23 Jul 2026 18:39:28 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 07:00:27 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/categories/%EA%B2%BD%EC%A0%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>바이럴 단타 시간표 팩트체크: 9시 관망·기관 수급·종가 매매는 통할까</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-08-06-viral-day-trading-time-rules-fact-check/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-08-06-viral-day-trading-time-rules-fact-check/</guid>
+      <description>&lt;p&gt;주식 단타 조언은 구체적일수록 믿음직하게 들립니다. “9시 30분 전에는 보지 말고, 10시부터 기관을 따라가며, 점심에는 쉬고, 2시 50분부터 다시 승부하라”는 식의 시간표는 특히 기억하기 쉽습니다. 실제로 &lt;a href=&#34;https://www.threads.com/share/BAHCTjjcwF/&#34;&gt;Threads에서 확산된 한 게시물&lt;/a&gt;은 이 규칙을 10년 넘는 경험에서 얻은 원칙이라고 소개합니다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 &lt;strong&gt;구체적인 규칙&lt;/strong&gt; 과 &lt;strong&gt;검증된 규칙&lt;/strong&gt; 은 같은 말이 아닙니다. 게시물에는 “9시 30분 전 고점 형성 종목이 80%를 넘는다”, “점심 매매로 돈 번 날이 열에 하나도 안 된다”, “오전 매매가 일일 수익의 60%를 만든다”는 수치가 등장하지만, 표본과 기간·거래비용·전체 거래 기록은 제시되지 않습니다. 성공 사례로 든 2018년 삼성SDI 매매도 정확한 날짜와 주문 내역이 없어 재현할 수 없습니다.&lt;/p&gt;&#xA;&lt;p&gt;더 중요한 문제도 있습니다. 한국거래소의 장 마감 10분은 일반적인 연속매매가 아니라 &lt;strong&gt;종가 단일가 매매&lt;/strong&gt; 구간입니다. 장중 HTS에 보이는 투자자별 수급 역시 장 마감 뒤 확정되는 KRX 데이터와 구분해야 합니다. 이 글에서는 바이럴 게시물의 시간표를 그대로 따라 하는 대신, 거래소 제도와 데이터의 성격을 기준으로 하나씩 검증해 보겠습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>빅테크 숨은 빚 1.65조 달러의 실체: CDS, 데이터센터 금융, 한국 반도체 위험</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-08-05-big-tech-ai-debt-cds-hidden-obligations-korea-risk/</link>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-08-05-big-tech-ai-debt-cds-hidden-obligations-korea-risk/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/DdfKlOlFOIg?t=0&#34;&gt;에스오디 SOD의 이 영상&lt;/a&gt;은 빅테크의 신용부도스와프(CDS), 줄어드는 잉여현금흐름, 데이터센터 특수목적법인, 엔비디아와 OpenAI의 순환금융 논란을 하나의 경고 신호로 연결합니다. 제목에 등장하는 숫자는 무려 &lt;strong&gt;1.65조 달러&lt;/strong&gt; 입니다. 원화로 환산하면 2천조원이 넘는 규모라 &amp;ldquo;&lt;code&gt;AI 제국이 빚으로 세워졌다&lt;/code&gt;&amp;ldquo;는 인상을 줍니다.&lt;/p&gt;&#xA;&lt;p&gt;그러나 이 숫자를 전부 은행 대출이나 회사채 같은 &amp;ldquo;&lt;code&gt;숨긴 빚&lt;/code&gt;&amp;ldquo;으로 읽으면 핵심을 놓칩니다. 여기에는 아직 사용이 시작되지 않은 데이터센터의 장기 임차료와 앞으로 장비·전력·서비스를 구매하기로 한 계약상 약정이 함께 들어 있습니다. 모두 미래 현금유출을 만들 수 있는 중요한 의무지만, 이자와 원금을 갚는 &lt;strong&gt;현재의 차입금&lt;/strong&gt; 과는 회계적·경제적 성격이 다릅니다.&lt;/p&gt;&#xA;&lt;p&gt;그렇다고 위험이 사라지는 것도 아닙니다. 더 정확한 질문은 &amp;ldquo;&lt;code&gt;빅테크가 당장 부도나는가&lt;/code&gt;&amp;ldquo;가 아니라, &lt;strong&gt;AI가 약속한 현금흐름이 장기 계약과 자본비용을 감당할 만큼 빠르게 커질 수 있는가&lt;/strong&gt; 입니다. 이 글에서는 영상의 경고를 그대로 확대하지 않고, 무엇이 확인된 사실이고 무엇이 아직 시나리오인지 구분해 보겠습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>한국은 왜 자영업자가 많을까: 사장님 숫자보다 노동시장의 구조를 봐야 한다</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-08-05-why-korea-has-many-self-employed-workers/</link>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-08-05-why-korea-has-many-self-employed-workers/</guid>
+      <description>&lt;p&gt;한국의 골목에는 식당, 카페, 편의점, 미용실, 부동산처럼 작은 사업장이 촘촘하게 이어집니다. &lt;a href=&#34;https://youtu.be/7-8qF4y5Glc?t=0&#34;&gt;지식 브런치의 영상&lt;/a&gt;은 이 풍경에서 출발해 한국 취업자 다섯 명 중 한 명 이상이 자영업자이고, 미국·독일·일본보다 그 비중이 훨씬 높다고 설명합니다.&lt;/p&gt;&#xA;&lt;p&gt;이 차이를 &amp;ldquo;한국인은 유난히 장사를 좋아한다&amp;quot;는 기질로 설명하기는 어렵습니다. 자영업은 더 큰 기회를 찾아 선택한 창업일 수도 있지만, 괜찮은 임금 일자리와 재취업 기회가 부족해 생계를 위해 고른 마지막 선택지일 수도 있기 때문입니다. &lt;a href=&#34;https://youtu.be/7-8qF4y5Glc?t=75&#34;&gt;영상도 기회형과 생계형 자영업을 먼저 구분&lt;/a&gt;한 뒤, 중요한 것은 사장님의 숫자보다 &lt;strong&gt;왜 임금근로자가 아닌 자영업자가 되었는가&lt;/strong&gt; 라고 질문합니다.&lt;/p&gt;&#xA;&lt;p&gt;2025년 국제 통계를 대입해도 영상의 출발점은 대체로 맞습니다. 다만 자영업률의 정의와 분모를 확인하지 않으면 숫자를 잘못 읽기 쉽습니다. 이 글에서는 최신 공식 자료로 수치를 교차 검증하고, 한국의 높은 자영업 비중을 노동시장·기업 생산성·은퇴소득의 연결 구조로 풀어보겠습니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>주식은 시간대별로 다르게 움직일까: 시초가, 오전 관망, 점심 눌림목, 마감 전 구간을 시장 구조로 읽기</title>
       <link>https://life-log.gyuha.com/post/2026/2026-07-23-stock-trading-time-slots-opening-auction-midday-close/</link>
