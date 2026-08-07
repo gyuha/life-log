@@ -2,44 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://life-log.gyuha.com/categories/ai/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
-  </url><url>
     <loc>https://life-log.gyuha.com/categories/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/freellmapi/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/post/2026/2026-08-08-freellmapi-28-free-llm-providers-proxy-analysis/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/categories/it/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
+    <lastmod>2026-08-08T00:34:28+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/llm/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/openai/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
+    <lastmod>2026-08-08T00:34:28+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/post/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
+    <lastmod>2026-08-08T00:34:28+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/tags/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
+    <lastmod>2026-08-08T00:34:28+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/categories/%EA%B2%BD%EC%A0%9C/</loc>
     <lastmod>2026-08-08T00:34:28+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-08-08-20-year-trader-8-rules-fact-check/</loc>
     <lastmod>2026-08-08T00:34:28+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/tags/%EC%A3%BC%EC%8B%9D/</loc>
     <lastmod>2026-08-08T00:34:28+09:00</lastmod>
@@ -49,9 +28,6 @@
   </url><url>
     <loc>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</loc>
     <lastmod>2026-08-08T00:34:28+09:00</lastmod>
-  </url><url>
-    <loc>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%9D%EC%8B%9C/</loc>
-    <lastmod>2026-08-08T06:57:42+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/post/2026/2026-08-06-three-hour-140-million-ai-native-business-launch/</loc>
     <lastmod>2026-08-06T07:29:45+09:00</lastmod>
@@ -442,6 +418,9 @@
   </url><url>
     <loc>https://life-log.gyuha.com/categories/%EC%B0%BD%EC%97%85/</loc>
     <lastmod>2026-04-07T08:16:48+09:00</lastmod>
+  </url><url>
+    <loc>https://life-log.gyuha.com/categories/ai/</loc>
+    <lastmod>2026-04-06T20:43:37+09:00</lastmod>
   </url><url>
     <loc>https://life-log.gyuha.com/tags/chatgpt/</loc>
     <lastmod>2026-04-06T20:43:37+09:00</lastmod>
