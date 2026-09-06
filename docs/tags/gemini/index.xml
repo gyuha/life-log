@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gemini on Life Log</title>
+    <link>https://life-log.gyuha.com/tags/gemini/</link>
+    <description>Recent content in Gemini on Life Log</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 06 Sep 2026 14:11:55 +0900</lastBuildDate>
+    <atom:link href="https://life-log.gyuha.com/tags/gemini/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI로 혼자서도 압도적인 실력을 쌓는 독학법: &#39;상자 속의 개인 대학&#39; ALTER 프레임워크 팩트체크</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-09-06-ai-self-directed-learning-alter-framework-fact-check/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-09-06-ai-self-directed-learning-alter-framework-fact-check/</guid>
+      <description>&lt;p&gt;인터넷에는 하버드, MIT, 스탠퍼드 등 세계 최고 명문대의 명강의들이 무료로 널려 있습니다. 하지만 이 무료 강의(MOOC)에 등록한 수강생 중 끝까지 완강하는 비율은 고작 12%에 불과하며, &lt;strong&gt;무려 88%가 중도에 포기&lt;/strong&gt;합니다. 지식이 부족해서가 아니라, 능동적인 피드백과 나에게 맞춘 상호작용이 없기 때문입니다.&lt;/p&gt;&#xA;&lt;p&gt;최근 &lt;a href=&#34;https://youtu.be/lF8_DX2NxjI&#34;&gt;유튜브 테크 채널 &amp;lsquo;Tech Bridge&amp;rsquo;에서 공개된 영상(&amp;quot;[한글자막] AI로 혼자서도 압도적인 실력을 쌓는 독학 방법&amp;quot;)&lt;/a&gt;은 생성형 AI(ChatGPT, Gemini, Google NotebookLM 등)를 활용해 누구나 자신만의 **&amp;lsquo;상자 속 개인 대학(University in a Box)&amp;rsquo;**을 구축할 수 있는 &lt;strong&gt;ALTER 프레임워크&lt;/strong&gt;를 제시해 전 세계 학습자들에게 큰 영감을 주었습니다.&lt;/p&gt;&#xA;&lt;p&gt;이 글에서는 해당 영상이 소개한 ALTER 프레임워크의 5대 역할과 실전 실행 프로토콜을 교육 심리학(벤자민 블룸의 2시그마 문제), 인지 과학 및 최신 AI 도구의 특성에 기반하여 정밀하게 팩트체크해보겠습니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
