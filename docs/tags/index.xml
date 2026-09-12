@@ -6,8 +6,64 @@
     <description>Recent content in Tags on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 08 Sep 2026 18:40:41 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 13:50:44 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>거시경제</title>
+      <link>https://life-log.gyuha.com/tags/%EA%B1%B0%EC%8B%9C%EA%B2%BD%EC%A0%9C/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EA%B1%B0%EC%8B%9C%EA%B2%BD%EC%A0%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>기술적분석</title>
+      <link>https://life-log.gyuha.com/tags/%EA%B8%B0%EC%88%A0%EC%A0%81%EB%B6%84%EC%84%9D/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EA%B8%B0%EC%88%A0%EC%A0%81%EB%B6%84%EC%84%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>유튜브추천</title>
+      <link>https://life-log.gyuha.com/tags/%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%B6%94%EC%B2%9C/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%B6%94%EC%B2%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>주식</title>
+      <link>https://life-log.gyuha.com/tags/%EC%A3%BC%EC%8B%9D/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%A3%BC%EC%8B%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>코인</title>
+      <link>https://life-log.gyuha.com/tags/%EC%BD%94%EC%9D%B8/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%BD%94%EC%9D%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>트레이딩</title>
+      <link>https://life-log.gyuha.com/tags/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>팩트체크</title>
+      <link>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>프라이스액션</title>
+      <link>https://life-log.gyuha.com/tags/%ED%94%84%EB%9D%BC%EC%9D%B4%EC%8A%A4%EC%95%A1%EC%85%98/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%94%84%EB%9D%BC%EC%9D%B4%EC%8A%A4%EC%95%A1%EC%85%98/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>https://life-log.gyuha.com/tags/ai/</link>
@@ -58,13 +114,6 @@
       <description></description>
     </item>
     <item>
-      <title>팩트체크</title>
-      <link>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</link>
-      <pubDate>Tue, 08 Sep 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>ALTER프레임워크</title>
       <link>https://life-log.gyuha.com/tags/alter%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/</link>
       <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
@@ -100,7 +149,7 @@
       <description></description>
     </item>
     <item>
-      <title>생성형ai</title>
+      <title>생성형AI</title>
       <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</link>
       <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</guid>
@@ -132,13 +181,6 @@
       <link>https://life-log.gyuha.com/tags/%EC%86%90%EC%A0%88/</link>
       <pubDate>Sat, 29 Aug 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%86%90%EC%A0%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>주식</title>
-      <link>https://life-log.gyuha.com/tags/%EC%A3%BC%EC%8B%9D/</link>
-      <pubDate>Sat, 29 Aug 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%EC%A3%BC%EC%8B%9D/</guid>
       <description></description>
     </item>
     <item>
