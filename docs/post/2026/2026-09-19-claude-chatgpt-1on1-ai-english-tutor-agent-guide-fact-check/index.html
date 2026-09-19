@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://life-log.gyuha.com/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github-style.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/light.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/dark.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/syntax.css' />
+    <title>99%가 모르는 AI 영어 공부법: 클로드(Claude)·ChatGPT로 만드는 나만의 1:1 전담 과외 에이전트 구축 가이드 팩트체크 - Life Log</title>
+    
+    <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="많은 사람들이 영어 회화를 잘하고 싶어서 ChatGPT나 Claude를 켜고 &ldquo;나랑 영어로 프리토킹하자&quot;라며 몇 번 대화를 시도해 봅니다. 하지만 며칠 지나지 않아 대화는 시들해지고, 내가 어제 무엇을 틀렸는지조차 기억하지 못하는 일회성 번역기 수준으로 전락하고 맙니다.
+최근 유튜브 교육 채널에서 공개된 영상(&ldquo;99%가 모르는 AI 영어 공부법, 이 영상 하나로 끝내세요&rdquo;)은 단순히 인공지능에 질문을 던지는 수준을 넘어, **Claude의 프로젝트(Projects) 기능이나 ChatGPT의 맞춤형 설정(Custom GPTs)**을 활용해 어제 배운 내용을 자동으로 복습시키고, 나의 취약한 문법·어휘 패턴만 집요하게 파고드는 &lsquo;평생 무료 1:1 전담 과외 에이전트&rsquo;를 세팅하는 법을 공개해 폭발적인 반응을 얻었습니다.
+이 글에서는 해당 영상이 제시한 AI 전담 과외 에이전트 구축 프롬프트, 인지과학적 간격 반복(Spaced Repetition) 메커니즘, 그리고 하루 30분 실전 영어 학습 루틴을 정밀하게 팩트체크해보겠습니다.
+" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://life-log.gyuha.com/post/2026/2026-09-19-claude-chatgpt-1on1-ai-english-tutor-agent-guide-fact-check/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="99%가 모르는 AI 영어 공부법: 클로드(Claude)·ChatGPT로 만드는 나만의 1:1 전담 과외 에이전트 구축 가이드 팩트체크 - Life Log" />
+<meta name="twitter:description"
+  content="많은 사람들이 영어 회화를 잘하고 싶어서 ChatGPT나 Claude를 켜고 &ldquo;나랑 영어로 프리토킹하자&quot;라며 몇 번 대화를 시도해 봅니다. 하지만 며칠 지나지 않아 대화는 시들해지고, 내가 어제 무엇을 틀렸는지조차 기억하지 못하는 일회성 번역기 수준으로 전락하고 맙니다.
+최근 유튜브 교육 채널에서 공개된 영상(&ldquo;99%가 모르는 AI 영어 공부법, 이 영상 하나로 끝내세요&rdquo;)은 단순히 인공지능에 질문을 던지는 수준을 넘어, **Claude의 프로젝트(Projects) 기능이나 ChatGPT의 맞춤형 설정(Custom GPTs)**을 활용해 어제 배운 내용을 자동으로 복습시키고, 나의 취약한 문법·어휘 패턴만 집요하게 파고드는 &lsquo;평생 무료 1:1 전담 과외 에이전트&rsquo;를 세팅하는 법을 공개해 폭발적인 반응을 얻었습니다.
+이 글에서는 해당 영상이 제시한 AI 전담 과외 에이전트 구축 프롬프트, 인지과학적 간격 반복(Spaced Repetition) 메커니즘, 그리고 하루 30분 실전 영어 학습 루틴을 정밀하게 팩트체크해보겠습니다.
+" />
+<meta name="twitter:site" content="https://life-log.gyuha.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://life-log.gyuha.com/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="99%가 모르는 AI 영어 공부법: 클로드(Claude)·ChatGPT로 만드는 나만의 1:1 전담 과외 에이전트 구축 가이드 팩트체크 - Life Log">
+<meta property="og:description"
+  content="많은 사람들이 영어 회화를 잘하고 싶어서 ChatGPT나 Claude를 켜고 &ldquo;나랑 영어로 프리토킹하자&quot;라며 몇 번 대화를 시도해 봅니다. 하지만 며칠 지나지 않아 대화는 시들해지고, 내가 어제 무엇을 틀렸는지조차 기억하지 못하는 일회성 번역기 수준으로 전락하고 맙니다.
+최근 유튜브 교육 채널에서 공개된 영상(&ldquo;99%가 모르는 AI 영어 공부법, 이 영상 하나로 끝내세요&rdquo;)은 단순히 인공지능에 질문을 던지는 수준을 넘어, **Claude의 프로젝트(Projects) 기능이나 ChatGPT의 맞춤형 설정(Custom GPTs)**을 활용해 어제 배운 내용을 자동으로 복습시키고, 나의 취약한 문법·어휘 패턴만 집요하게 파고드는 &lsquo;평생 무료 1:1 전담 과외 에이전트&rsquo;를 세팅하는 법을 공개해 폭발적인 반응을 얻었습니다.
+이 글에서는 해당 영상이 제시한 AI 전담 과외 에이전트 구축 프롬프트, 인지과학적 간격 반복(Spaced Repetition) 메커니즘, 그리고 하루 30분 실전 영어 학습 루틴을 정밀하게 팩트체크해보겠습니다.
+" />
+<meta property="og:url" content="https://life-log.gyuha.com/post/2026/2026-09-19-claude-chatgpt-1on1-ai-english-tutor-agent-guide-fact-check/" />
+<meta property="og:site_name" content="99%가 모르는 AI 영어 공부법: 클로드(Claude)·ChatGPT로 만드는 나만의 1:1 전담 과외 에이전트 구축 가이드 팩트체크" />
+<meta property="og:image"
+  content="https://life-log.gyuha.com/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-09-19 00:00:00 &#43;0900 KST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://life-log.gyuha.com/">
+        <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://life-log.gyuha.com/">
+        <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://life-log.gyuha.com/">
+                  <img class=" avatar-user"
+                    src="https://life-log.gyuha.com/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://life-log.gyuha.com/">Gyuha</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="mr-1 break-word">
+                    <a href="https://life-log.gyuha.com/post/2026/2026-09-19-claude-chatgpt-1on1-ai-english-tutor-agent-guide-fact-check/">99%가 모르는 AI 영어 공부법: 클로드(Claude)·ChatGPT로 만드는 나만의 1:1 전담 과외 에이전트 구축 가이드 팩트체크</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Sat, 19 Sep 2026 00:00:00 &#43;0900"
+                    class="no-wrap">
+                    Sat, 19 Sep 2026 00:00:00 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Sat, 19 Sep 2026 12:26:17 &#43;0900"
+                    class="no-wrap">
+                    Sat, 19 Sep 2026 12:26:17 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      <span class="d-none d-md-inline">3017 Words</span>
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/ai%EC%98%81%EC%96%B4">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      AI영어
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%81%B4%EB%A1%9C%EB%93%9C">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      클로드
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/chatgpt">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      ChatGPT
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      영어회화
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EB%8F%85%ED%95%99">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      독학
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      프롬프트
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      팩트체크
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      에이전트
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p>많은 사람들이 영어 회화를 잘하고 싶어서 ChatGPT나 Claude를 켜고 &ldquo;나랑 영어로 프리토킹하자&quot;라며 몇 번 대화를 시도해 봅니다. 하지만 며칠 지나지 않아 대화는 시들해지고, 내가 어제 무엇을 틀렸는지조차 기억하지 못하는 일회성 번역기 수준으로 전락하고 맙니다.</p>
+<p>최근 <a href="https://youtu.be/jeMIRXw-OT8">유튜브 교육 채널에서 공개된 영상(&ldquo;99%가 모르는 AI 영어 공부법, 이 영상 하나로 끝내세요&rdquo;)</a>은 단순히 인공지능에 질문을 던지는 수준을 넘어, **Claude의 프로젝트(Projects) 기능이나 ChatGPT의 맞춤형 설정(Custom GPTs)**을 활용해 <strong>어제 배운 내용을 자동으로 복습시키고, 나의 취약한 문법·어휘 패턴만 집요하게 파고드는 &lsquo;평생 무료 1:1 전담 과외 에이전트&rsquo;를 세팅하는 법</strong>을 공개해 폭발적인 반응을 얻었습니다.</p>
+<p>이 글에서는 해당 영상이 제시한 AI 전담 과외 에이전트 구축 프롬프트, 인지과학적 간격 반복(Spaced Repetition) 메커니즘, 그리고 하루 30분 실전 영어 학습 루틴을 정밀하게 팩트체크해보겠습니다.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://youtu.be/jeMIRXw-OT8">유튜브 영상 - 99%가 모르는 AI 영어 공부법, 이 영상 하나로 끝내세요</a></li>
+<li><a href="https://psychclassics.yorku.ca/Ebbinghaus/">Ebbinghaus, H. - Memory: A Contribution to Experimental Psychology (망각곡선과 간격 반복 이론)</a></li>
+<li><a href="https://support.anthropic.com/">Anthropic - Claude Projects &amp; Custom Instructions System Documentation</a></li>
+<li><a href="https://openai.com/">OpenAI - Custom GPTs &amp; Instruction Engineering Guide</a></li>
+<li><a href="https://www.springer.com/">Sweller, J. - Cognitive Load Theory and Instructional Design (인지 부하 최소화 이론)</a></li>
+</ul>
+<blockquote>
+<p>이 글은 특정 유료 AI 서비스를 홍보하기 위한 글이 아니며, 최신 거대언어모델(LLM)을 활용한 개인화 학습 설계와 메타인지 훈련법을 객관적으로 검증한 교육용 가이드입니다.</p>
+</blockquote>
+<hr>
+<h2 id="1-일회성-챗봇과-전담-과외-에이전트의-결정적-차이">1. 일회성 챗봇과 &lsquo;전담 과외 에이전트&rsquo;의 결정적 차이</h2>
+<p>일반적인 AI 채팅창에 &ldquo;영어 과외해 줘&quot;라고 말하는 것과, &lsquo;프로젝트(Projects)&rsquo; 기반의 전담 에이전트를 구축하는 것은 완전히 다른 차원의 학습 경험을 제공합니다.</p>
+<ul>
+<li><strong>일회성 챗봇의 한계 (기억상실증):</strong> 매번 새 대화창을 열 때마다 AI는 학습자의 영어 실력, 목표, 어제 틀렸던 문법 실수를 전혀 기억하지 못합니다. 결국 매번 자기소개만 반복하다 끝납니다.</li>
+<li><strong>전담 에이전트의 강점 (지속적 맥락 누적):</strong> 고정된 시스템 지침(System Instructions)과 독립된 프로젝트 공간 안에서 대화하면, AI는 학생의 고유한 오류 패턴(예: 전치사 실수, 관계대명사 오남용)을 누적 학습하여 3일 차부터는 <strong>학습자의 약점만 정밀 타격하는 맞춤형 문제</strong>를 스스로 출제합니다.</li>
+</ul>
+<hr>
+<h2 id="2-11-ai-영어-과외-에이전트-시스템-지시문-instructions">2. 1:1 AI 영어 과외 에이전트 시스템 지시문 (Instructions)</h2>
+<p>Claude의 <code>Projects</code> 생성 후 <code>Instructions(지침)</code> 탭에, 혹은 ChatGPT의 <code>Custom GPTs</code>의 <code>Instructions</code>에 입력하는 검증된 프롬프트 템플릿입니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">너는 나의 1:1 영어 과외 선생님이야. 아래 규칙을 항상 엄격히 지켜.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[학생 정보]
+</span></span><span class="line"><span class="cl">- 현재 레벨: 중급 (수능 3등급, 토익 700점 수준 / 본인 실력에 맞게 수정)
+</span></span><span class="line"><span class="cl">- 학습 목표: 3개월 뒤 해외여행 시 식당 주문 및 현지인과 자연스러운 일상 대화
+</span></span><span class="line"><span class="cl">- 하루 공부 가능 시간: 30분
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[수업 규칙]
+</span></span><span class="line"><span class="cl">1. 매 대화 시작 시, 어제 배운 내용에 대한 복습 퀴즈 3문제를 먼저 출제한다.
+</span></span><span class="line"><span class="cl">2. 내가 영어 문장을 쓰면 틀린 부분만 간결히 고쳐주고, 왜 틀렸는지 한국어로 딱 한 줄로 설명한다.
+</span></span><span class="line"><span class="cl">3. 설명 시 문법 전문 용어는 최소화하고, 실생활 예문 2개 이상을 반드시 제시한다.
+</span></span><span class="line"><span class="cl">4. 내가 자주 틀리는 문법/어휘 패턴을 기억해 두었다가 유사한 문제를 반복 출제한다.
+</span></span><span class="line"><span class="cl">5. 세션 종료 시에는 오늘 배운 핵심 표현 요약과 내일 할 숙제 1개를 명확히 내준다.
+</span></span><span class="line"><span class="cl">6. 칭찬은 구체적으로, 지적은 짧고 명확하게 한다.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="지침-설정-시-핵심-디테일">지침 설정 시 핵심 디테일</h3>
+<ul>
+<li><strong>학생 정보 3줄의 진실성:</strong> 자존심 때문에 모의고사 5등급인데 3등급이라고 적거나, 토익 500점인데 700점이라고 쓰면 AI가 난이도를 잘못 잡아 포기하게 됩니다. 솔직한 현재 실력과 구체적인 상황 목표를 기재해야 합니다.</li>
+<li><strong>교재/단어장 파일 업로드 (킬러 기능):</strong> Claude 프로젝트 화면의 <code>Add Content</code>를 통해 현재 공부 중인 영어책 목차나 단어장 PDF를 업로드하면, *&ldquo;내 교재 3단원 범위 안에서만 퀴즈 내줘&rdquo;*와 같이 시중 교재와 완벽히 연동된 무한 문제 은행이 완성됩니다.</li>
+</ul>
+<hr>
+<h2 id="3-에빙하우스-망각곡선을-부수는-하루-30분-실전-루틴">3. 에빙하우스 망각곡선을 부수는 하루 30분 실전 루틴</h2>
+<pre class="mermaid">flowchart TD
+    subgraph 하루 30분 AI 영어 학습 사이클
+        A[&#34;아침 5분 (출근길)&lt;br&gt;채팅창에 &#39;수업 시작하자&#39; 입력&#34;] --&gt; B[&#34;어제 배운 표현 기반&lt;br&gt;자동 복습 퀴즈 3문제 풀이&#34;]
+        B --&gt; C[&#34;낮 10분 (자투리 시간)&lt;br&gt;일상/업무에서 마주친 영어 표현 질문&#34;]
+        C --&gt; D[&#34;저녁 15분 (메인 훈련)&lt;br&gt;오늘 일과 영어 3문장 작성 &amp; 전송&#34;]
+        D --&gt; E[&#34;AI의 1줄 한국어 문법 교정 &amp;&lt;br&gt;핵심 요약 및 내일 숙제 수령&#34;]
+    end
+
+    E -.-&gt;|오답 데이터 축적 및 기억 앵커링| A
+
+    classDef routine fill:#c0ecd3,stroke:#5dbb7a,stroke-width:1px,color:#333
+    class A,B,C,D,E routine</pre>
+<h3 id="1-아침-5분-출근등교길-기억의-인출-훈련">1) 아침 5분 (출근·등교길): 기억의 인출 훈련</h3>
+<ul>
+<li>채팅창에 <strong>&ldquo;수업 시작하자&rdquo;</strong> 딱 다섯 글자만 입력합니다.</li>
+<li>AI가 지침 1번에 따라 어제 틀렸거나 배운 표현으로 복습 퀴즈 3개를 던집니다. 뇌에 망각되려던 시냅스를 아침부터 강제로 깨웁니다.</li>
+</ul>
+<h3 id="2-낮-10분-자투리-시간-살아있는-표현-수집">2) 낮 10분 (자투리 시간): 살아있는 표현 수집</h3>
+<ul>
+<li>유튜브 쇼츠, 넷플릭스, 업무 이메일 등에서 마주친 낯선 표현을 그대로 AI에게 던집니다.</li>
+<li><em>&ldquo;이 표현 무슨 뜻이야? 내가 실생활에서 써먹을 수 있는 상황 2가지만 알려줘.&rdquo;</em></li>
+</ul>
+<h3 id="3-저녁-15분-메인-훈련-일기-쓰기와-교정">3) 저녁 15분 (메인 훈련): 일기 쓰기와 교정</h3>
+<ul>
+<li>오늘 있었던 일이나 떠오른 생각을 영어로 3문장 작성해 보냅니다.</li>
+<li>AI가 잘못된 어순이나 어색한 표현을 교정해 주고 한국어로 1줄 원리를 설명합니다.</li>
+<li>마지막에 *&ldquo;오늘 세션 요약해 줘&rdquo;*를 입력하여 핵심 정리를 받고 내일의 숙제를 받습니다.</li>
+</ul>
+<hr>
+<h2 id="4-상위-10가-되기-위해-피해야-할-3대-치명적-실수">4. 상위 10%가 되기 위해 피해야 할 3대 치명적 실수</h2>
+<ul>
+<li><strong>실수 1: 교정받은 문장을 눈으로만 읽고 넘어가기</strong><br>
+AI가 바르게 고쳐준 문장을 눈으로 보면 &ldquo;아, 나도 알던 건데 실수했네&quot;라며 착각합니다. 틀린 문장은 <strong>반드시 손으로 직접 타이핑해서 AI에게 다시 보내봐야</strong> 운동 신경과 뇌에 온전히 각인됩니다.</li>
+<li><strong>실수 2: 매일 새로운 채팅방을 열기 (기억 포맷)</strong><br>
+매일 새 채팅을 열면 AI의 메모리가 초기화되어 어제 무엇을 틀렸는지 다 까먹습니다. <strong>반드시 생성해 둔 동일한 프로젝트 방 안에서 계속 대화를 이어가야</strong> 나만의 맞춤형 데이터베이스가 형성됩니다.</li>
+<li><strong>실수 3: 3일을 못 채우고 일찍 그만두기</strong><br>
+AI 에이전트의 진가는 3일 차부터 나타납니다. 내가 반복해서 틀리는 전치사, 시제 불일치 패턴이 누적된 후 3일째에 AI가 내 약점을 콕 집어 문제를 낼 때 비로소 1:1 과외의 강력함을 체감하게 됩니다.</li>
+</ul>
+<hr>
+<h2 id="5-실전-ai-독학-5대-체크리스트">5. 실전 AI 독학 5대 체크리스트</h2>
+<ul>
+<li><strong>1. 내 실력에 솔직한 프롬프트를 세팅했는가?</strong> (과장 없이 현재 수준과 명확한 3개월 목표 명시)</li>
+<li><strong>2. Claude 프로젝트나 Custom GPTs에 지침을 고정했는가?</strong> (매번 프롬프트를 다시 치지 않도록 자동화)</li>
+<li><strong>3. 아침에 &lsquo;수업 시작하자&rsquo;로 복습 퀴즈를 풀었는가?</strong> (망각 방지 시스템 작동)</li>
+<li><strong>4. 교정된 문장을 눈이 아닌 손가락으로 다시 쳤는가?</strong> (능동적 인출 및 근육 기억)</li>
+<li><strong>5. 동일한 대화방에서 오답 데이터를 누적하고 있는가?</strong> (AI의 개인화 고도화 유지)</li>
+</ul>
+<hr>
+<h2 id="6-결론">6. 결론</h2>
+<p>&ldquo;영어 공부에는 왕도가 없다&quot;는 말은 옛말이 되었습니다. 이제는 매달 수십만 원의 학원비를 내지 않아도, 내 수준과 목표에 완벽히 맞추어 24시간 대기하는 나만의 전담 AI 과외 교사를 누구나 가질 수 있습니다.</p>
+<p>지금 바로 Claude나 ChatGPT를 켜고 위의 프롬프트 지침을 등록해 보세요. 내일부터 당신의 아침은 지루한 단어 암기가 아닌, 나만을 위한 흥미진진한 1:1 영어 과외로 시작될 것입니다.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/toc.js'></script>
+<link rel="stylesheet" href='https://life-log.gyuha.com/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://life-log.gyuha.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://life-log.gyuha.com/js/github-style.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/search.js'></script>
+
+
+
+<script type="module" src='https://life-log.gyuha.com/js/mermaid.js'></script>
+
+
+
+</html>

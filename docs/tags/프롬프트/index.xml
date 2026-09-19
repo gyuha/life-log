@@ -6,8 +6,15 @@
     <description>Recent content in 프롬프트 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 19 Jul 2026 13:49:32 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 12:26:17 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>99%가 모르는 AI 영어 공부법: 클로드(Claude)·ChatGPT로 만드는 나만의 1:1 전담 과외 에이전트 구축 가이드 팩트체크</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-09-19-claude-chatgpt-1on1-ai-english-tutor-agent-guide-fact-check/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-09-19-claude-chatgpt-1on1-ai-english-tutor-agent-guide-fact-check/</guid>
+      <description>&lt;p&gt;많은 사람들이 영어 회화를 잘하고 싶어서 ChatGPT나 Claude를 켜고 &amp;ldquo;나랑 영어로 프리토킹하자&amp;quot;라며 몇 번 대화를 시도해 봅니다. 하지만 며칠 지나지 않아 대화는 시들해지고, 내가 어제 무엇을 틀렸는지조차 기억하지 못하는 일회성 번역기 수준으로 전락하고 맙니다.&lt;/p&gt;&#xA;&lt;p&gt;최근 &lt;a href=&#34;https://youtu.be/jeMIRXw-OT8&#34;&gt;유튜브 교육 채널에서 공개된 영상(&amp;ldquo;99%가 모르는 AI 영어 공부법, 이 영상 하나로 끝내세요&amp;rdquo;)&lt;/a&gt;은 단순히 인공지능에 질문을 던지는 수준을 넘어, **Claude의 프로젝트(Projects) 기능이나 ChatGPT의 맞춤형 설정(Custom GPTs)**을 활용해 &lt;strong&gt;어제 배운 내용을 자동으로 복습시키고, 나의 취약한 문법·어휘 패턴만 집요하게 파고드는 &amp;lsquo;평생 무료 1:1 전담 과외 에이전트&amp;rsquo;를 세팅하는 법&lt;/strong&gt;을 공개해 폭발적인 반응을 얻었습니다.&lt;/p&gt;&#xA;&lt;p&gt;이 글에서는 해당 영상이 제시한 AI 전담 과외 에이전트 구축 프롬프트, 인지과학적 간격 반복(Spaced Repetition) 메커니즘, 그리고 하루 30분 실전 영어 학습 루틴을 정밀하게 팩트체크해보겠습니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>공부할 때 GPT 성능을 끌어올리는 5가지 명령 패턴: 셀프 리파인, 쉬운 설명, 레드팀, 오토프롬프트, 다중 해답</title>
       <link>https://life-log.gyuha.com/post/2026/2026-07-19-gpt-study-prompts-self-refine-red-team/</link>

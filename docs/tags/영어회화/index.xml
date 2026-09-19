@@ -6,14 +6,14 @@
     <description>Recent content in 영어회화 on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 04 Apr 2026 09:42:05 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 12:26:17 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>영어책 한 권 외우라는 말은, 진짜로 책 한 권을 통째로 외우라는 뜻일까</title>
-      <link>https://life-log.gyuha.com/post/2026/2026-04-02-english-conversation-book-memorization-guide/</link>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/post/2026/2026-04-02-english-conversation-book-memorization-guide/</guid>
-      <description>&lt;p&gt;이 영상의 제목은 자극적이지만, 실제 메시지는 단순한 암기 예찬이 아닙니다. 김민식 PD는 &lt;code&gt;영어책 한 권 외워봤니?&lt;/code&gt;라는 말을 &lt;code&gt;어려운 영어책을 통째로 암기하라&lt;/code&gt;는 뜻이 아니라, &lt;strong&gt;쉬운 회화 패턴을 반복해서 입에 붙이는 방식으로 내 문장을 만들어 보라&lt;/strong&gt;는 뜻으로 풀어냅니다. 그래서 이 대화의 핵심은 &lt;code&gt;얼마나 많이 입력하느냐&lt;/code&gt;가 아니라 &lt;code&gt;얼마나 적은 양을 반복 출력하느냐&lt;/code&gt;로 이동합니다. &lt;a href=&#34;https://youtu.be/kEwjrl-BHdA?t=143&#34;&gt;(2:23)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/kEwjrl-BHdA?t=271&#34;&gt;(4:31)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/kEwjrl-BHdA?t=731&#34;&gt;(12:11)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;이 영상이 재밌는 이유는 영어 학습법을 &lt;code&gt;좋은 선생님&lt;/code&gt;, &lt;code&gt;원어민 환경&lt;/code&gt;, &lt;code&gt;미국 체류&lt;/code&gt;, &lt;code&gt;리스닝 많이 하기&lt;/code&gt; 같은 상식과 정면으로 비교하기 때문입니다. 김민식 PD는 그런 것들이 아예 소용없다는 말이 아니라, 그것만으로는 내 문장이 생기지 않는다고 말합니다. 그리고 그 대안으로 &lt;code&gt;기초 회화 10문장&lt;/code&gt;, &lt;code&gt;소리 내기&lt;/code&gt;, &lt;code&gt;통근 중 반복&lt;/code&gt;, &lt;code&gt;누적 암송&lt;/code&gt;, &lt;code&gt;쉬운 문장부터 출력&lt;/code&gt;이라는 아주 구체적인 루틴을 제시합니다. &lt;a href=&#34;https://youtu.be/kEwjrl-BHdA?t=212&#34;&gt;(3:32)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/kEwjrl-BHdA?t=300&#34;&gt;(5:00)&lt;/a&gt;, &lt;a href=&#34;https://youtu.be/kEwjrl-BHdA?t=610&#34;&gt;(10:10)&lt;/a&gt;&lt;/p&gt;</description>
+      <title>99%가 모르는 AI 영어 공부법: 클로드(Claude)·ChatGPT로 만드는 나만의 1:1 전담 과외 에이전트 구축 가이드 팩트체크</title>
+      <link>https://life-log.gyuha.com/post/2026/2026-09-19-claude-chatgpt-1on1-ai-english-tutor-agent-guide-fact-check/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/post/2026/2026-09-19-claude-chatgpt-1on1-ai-english-tutor-agent-guide-fact-check/</guid>
+      <description>&lt;p&gt;많은 사람들이 영어 회화를 잘하고 싶어서 ChatGPT나 Claude를 켜고 &amp;ldquo;나랑 영어로 프리토킹하자&amp;quot;라며 몇 번 대화를 시도해 봅니다. 하지만 며칠 지나지 않아 대화는 시들해지고, 내가 어제 무엇을 틀렸는지조차 기억하지 못하는 일회성 번역기 수준으로 전락하고 맙니다.&lt;/p&gt;&#xA;&lt;p&gt;최근 &lt;a href=&#34;https://youtu.be/jeMIRXw-OT8&#34;&gt;유튜브 교육 채널에서 공개된 영상(&amp;ldquo;99%가 모르는 AI 영어 공부법, 이 영상 하나로 끝내세요&amp;rdquo;)&lt;/a&gt;은 단순히 인공지능에 질문을 던지는 수준을 넘어, **Claude의 프로젝트(Projects) 기능이나 ChatGPT의 맞춤형 설정(Custom GPTs)**을 활용해 &lt;strong&gt;어제 배운 내용을 자동으로 복습시키고, 나의 취약한 문법·어휘 패턴만 집요하게 파고드는 &amp;lsquo;평생 무료 1:1 전담 과외 에이전트&amp;rsquo;를 세팅하는 법&lt;/strong&gt;을 공개해 폭발적인 반응을 얻었습니다.&lt;/p&gt;&#xA;&lt;p&gt;이 글에서는 해당 영상이 제시한 AI 전담 과외 에이전트 구축 프롬프트, 인지과학적 간격 반복(Spaced Repetition) 메커니즘, 그리고 하루 30분 실전 영어 학습 루틴을 정밀하게 팩트체크해보겠습니다.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

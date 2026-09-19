@@ -6,8 +6,64 @@
     <description>Recent content in Tags on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 12 Sep 2026 13:50:44 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 12:26:17 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI영어</title>
+      <link>https://life-log.gyuha.com/tags/ai%EC%98%81%EC%96%B4/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/ai%EC%98%81%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>https://life-log.gyuha.com/tags/chatgpt/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>독학</title>
+      <link>https://life-log.gyuha.com/tags/%EB%8F%85%ED%95%99/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EB%8F%85%ED%95%99/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>에이전트</title>
+      <link>https://life-log.gyuha.com/tags/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>영어회화</title>
+      <link>https://life-log.gyuha.com/tags/%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%98%81%EC%96%B4%ED%9A%8C%ED%99%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>클로드</title>
+      <link>https://life-log.gyuha.com/tags/%ED%81%B4%EB%A1%9C%EB%93%9C/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%81%B4%EB%A1%9C%EB%93%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>팩트체크</title>
+      <link>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>프롬프트</title>
+      <link>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</guid>
+      <description></description>
+    </item>
     <item>
       <title>거시경제</title>
       <link>https://life-log.gyuha.com/tags/%EA%B1%B0%EC%8B%9C%EA%B2%BD%EC%A0%9C/</link>
@@ -48,13 +104,6 @@
       <link>https://life-log.gyuha.com/tags/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9/</link>
       <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%94%A9/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>팩트체크</title>
-      <link>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</link>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</guid>
       <description></description>
     </item>
     <item>
@@ -121,13 +170,6 @@
       <description></description>
     </item>
     <item>
-      <title>ChatGPT</title>
-      <link>https://life-log.gyuha.com/tags/chatgpt/</link>
-      <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/chatgpt/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Gemini</title>
       <link>https://life-log.gyuha.com/tags/gemini/</link>
       <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
@@ -139,13 +181,6 @@
       <link>https://life-log.gyuha.com/tags/notebooklm/</link>
       <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/notebooklm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>독학</title>
-      <link>https://life-log.gyuha.com/tags/%EB%8F%85%ED%95%99/</link>
-      <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%EB%8F%85%ED%95%99/</guid>
       <description></description>
     </item>
     <item>
@@ -587,13 +622,6 @@
       <link>https://life-log.gyuha.com/tags/%EC%9A%B4%EB%8F%99/</link>
       <pubDate>Fri, 31 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%9A%B4%EB%8F%99/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>프롬프트</title>
-      <link>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>
