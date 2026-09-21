@@ -6,8 +6,57 @@
     <description>Recent content in Tags on Life Log</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 19 Sep 2026 12:26:17 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 21:39:19 +0900</lastBuildDate>
     <atom:link href="https://life-log.gyuha.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>가인지</title>
+      <link>https://life-log.gyuha.com/tags/%EA%B0%80%EC%9D%B8%EC%A7%80/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EA%B0%80%EC%9D%B8%EC%A7%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>리더십</title>
+      <link>https://life-log.gyuha.com/tags/%EB%A6%AC%EB%8D%94%EC%8B%AD/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EB%A6%AC%EB%8D%94%EC%8B%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>승진</title>
+      <link>https://life-log.gyuha.com/tags/%EC%8A%B9%EC%A7%84/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%8A%B9%EC%A7%84/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>인사관리</title>
+      <link>https://life-log.gyuha.com/tags/%EC%9D%B8%EC%82%AC%EA%B4%80%EB%A6%AC/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%9D%B8%EC%82%AC%EA%B4%80%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>조직문화</title>
+      <link>https://life-log.gyuha.com/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>팩트체크</title>
+      <link>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>피터의법칙</title>
+      <link>https://life-log.gyuha.com/tags/%ED%94%BC%ED%84%B0%EC%9D%98%EB%B2%95%EC%B9%99/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+      <guid>https://life-log.gyuha.com/tags/%ED%94%BC%ED%84%B0%EC%9D%98%EB%B2%95%EC%B9%99/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI영어</title>
       <link>https://life-log.gyuha.com/tags/ai%EC%98%81%EC%96%B4/</link>
@@ -48,13 +97,6 @@
       <link>https://life-log.gyuha.com/tags/%ED%81%B4%EB%A1%9C%EB%93%9C/</link>
       <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%ED%81%B4%EB%A1%9C%EB%93%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>팩트체크</title>
-      <link>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</link>
-      <pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
-      <guid>https://life-log.gyuha.com/tags/%ED%8C%A9%ED%8A%B8%EC%B2%B4%ED%81%AC/</guid>
       <description></description>
     </item>
     <item>
@@ -184,7 +226,7 @@
       <description></description>
     </item>
     <item>
-      <title>생성형AI</title>
+      <title>생성형ai</title>
       <link>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</link>
       <pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
       <guid>https://life-log.gyuha.com/tags/%EC%83%9D%EC%84%B1%ED%98%95ai/</guid>
