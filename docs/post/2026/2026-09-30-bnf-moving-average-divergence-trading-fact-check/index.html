@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://life-log.gyuha.com/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github.min.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/github-style.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/light.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/dark.css' />
+    <link rel="stylesheet" href='https://life-log.gyuha.com/css/syntax.css' />
+    <title>BNF의 이격도 역추세 매매법, 쇼츠의 ‘25일선·RSI·MACD’ 공식은 사실일까 - Life Log</title>
+    
+    <link rel="icon" type='image/x-icon' href='/images/favicon.svg'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="&ldquo;2천만 원을 4천억 원으로 만든 트레이더의 매매법&quot;이라는 제목의 쇼츠는 일본 트레이더 BNF의 역추세 전략을 25일 지수이동평균선(EMA)에서 20% 이상 이격 → RSI 과매도 → MACD 히스토그램 양전환 → 매수 라는 공식으로 제시합니다. 그러나 BNF가 이 네 조건을 실제로 한 세트로 사용했다는 근거 와 이 조합이 수익을 낸다는 검증 은 별개의 문제입니다. 영상을 출발점으로 삼되, 확인되는 사실과 현대적으로 덧붙인 규칙을 나눠 보겠습니다.
+" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://life-log.gyuha.com/post/2026/2026-09-30-bnf-moving-average-divergence-trading-fact-check/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="BNF의 이격도 역추세 매매법, 쇼츠의 ‘25일선·RSI·MACD’ 공식은 사실일까 - Life Log" />
+<meta name="twitter:description"
+  content="&ldquo;2천만 원을 4천억 원으로 만든 트레이더의 매매법&quot;이라는 제목의 쇼츠는 일본 트레이더 BNF의 역추세 전략을 25일 지수이동평균선(EMA)에서 20% 이상 이격 → RSI 과매도 → MACD 히스토그램 양전환 → 매수 라는 공식으로 제시합니다. 그러나 BNF가 이 네 조건을 실제로 한 세트로 사용했다는 근거 와 이 조합이 수익을 낸다는 검증 은 별개의 문제입니다. 영상을 출발점으로 삼되, 확인되는 사실과 현대적으로 덧붙인 규칙을 나눠 보겠습니다.
+" />
+<meta name="twitter:site" content="https://life-log.gyuha.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://life-log.gyuha.com/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="BNF의 이격도 역추세 매매법, 쇼츠의 ‘25일선·RSI·MACD’ 공식은 사실일까 - Life Log">
+<meta property="og:description"
+  content="&ldquo;2천만 원을 4천억 원으로 만든 트레이더의 매매법&quot;이라는 제목의 쇼츠는 일본 트레이더 BNF의 역추세 전략을 25일 지수이동평균선(EMA)에서 20% 이상 이격 → RSI 과매도 → MACD 히스토그램 양전환 → 매수 라는 공식으로 제시합니다. 그러나 BNF가 이 네 조건을 실제로 한 세트로 사용했다는 근거 와 이 조합이 수익을 낸다는 검증 은 별개의 문제입니다. 영상을 출발점으로 삼되, 확인되는 사실과 현대적으로 덧붙인 규칙을 나눠 보겠습니다.
+" />
+<meta property="og:url" content="https://life-log.gyuha.com/post/2026/2026-09-30-bnf-moving-average-divergence-trading-fact-check/" />
+<meta property="og:site_name" content="BNF의 이격도 역추세 매매법, 쇼츠의 ‘25일선·RSI·MACD’ 공식은 사실일까" />
+<meta property="og:image"
+  content="https://life-log.gyuha.com/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-09-30 00:00:00 &#43;0900 KST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://life-log.gyuha.com/">
+        <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://life-log.gyuha.com/">
+        <svg class="octicon octicon-mark-github v-align-middle" viewBox="0 0 16 16" version="1.1" width="32" height="32" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://life-log.gyuha.com/">
+                  <img class=" avatar-user"
+                    src="https://life-log.gyuha.com/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://life-log.gyuha.com/">Gyuha</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="mr-1 break-word">
+                    <a href="https://life-log.gyuha.com/post/2026/2026-09-30-bnf-moving-average-divergence-trading-fact-check/">BNF의 이격도 역추세 매매법, 쇼츠의 ‘25일선·RSI·MACD’ 공식은 사실일까</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Wed, 30 Sep 2026 00:00:00 &#43;0900"
+                    class="no-wrap">
+                    Wed, 30 Sep 2026 00:00:00 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Thu, 15 Oct 2026 05:17:24 &#43;0900"
+                    class="no-wrap">
+                    Thu, 15 Oct 2026 05:17:24 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      <span class="d-none d-md-inline">3377 Words</span>
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="https://life-log.gyuha.com/tags/%ED%88%AC%EC%9E%90">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      투자
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p>&ldquo;2천만 원을 4천억 원으로 만든 트레이더의 매매법&quot;이라는 제목의 쇼츠는 일본 트레이더 BNF의 역추세 전략을 <strong>25일 지수이동평균선(EMA)에서 20% 이상 이격 → RSI 과매도 → MACD 히스토그램 양전환 → 매수</strong> 라는 공식으로 제시합니다. 그러나 <strong>BNF가 이 네 조건을 실제로 한 세트로 사용했다는 근거</strong> 와 <strong>이 조합이 수익을 낸다는 검증</strong> 은 별개의 문제입니다. 영상을 출발점으로 삼되, 확인되는 사실과 현대적으로 덧붙인 규칙을 나눠 보겠습니다.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://youtube.com/shorts/ubsoA7Hb-D8?si=aVw5IHimmQifEubm">YouTube Shorts 원본 — 박한결, 「2천만원을 4천억으로 만든 일본의 천재 트레이더 BNF」</a> — 한국어 자동 생성 자막을 시간대별로 확인했습니다. 제목·작성자는 YouTube의 공개 oEmbed 메타데이터로 대조했습니다.</li>
+<li><a href="https://w.atwiki.jp/e9g92z/pages/33.html">BNF 명의 2004년 게시글을 보존한 아카이브</a> — 게시글 복제본으로, 원본 계정의 신원을 독립적으로 인증한 자료는 아닙니다.</li>
+<li><a href="https://www.tradingview.com/support/solutions/43000592270-exponential-moving-average/">TradingView: EMA의 정의와 계산</a></li>
+<li><a href="https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/RSI">Fidelity: RSI 설명</a></li>
+<li><a href="https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/">TradingView: MACD 및 히스토그램 설명</a></li>
+<li><a href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-15">SEC Investor.gov: 손절 주문의 체결 위험</a></li>
+</ul>
+<h2 id="1-쇼츠가-실제로-말하는-매매-순서">1. 쇼츠가 실제로 말하는 매매 순서</h2>
+<p>영상은 세 지표를 차트에 추가하라고 합니다. <a href="https://youtu.be/ubsoA7Hb-D8?t=11">약 11초</a>부터 25일 EMA, RSI, MACD를 설정하고, <a href="https://youtu.be/ubsoA7Hb-D8?t=24">약 24초</a>부터 급락 구간과 25일선 대비 20% 이상의 이격을 찾습니다. <a href="https://youtu.be/ubsoA7Hb-D8?t=32">약 32초</a>에는 RSI의 과매도, <a href="https://youtu.be/ubsoA7Hb-D8?t=36">약 36초</a>에는 MACD 히스토그램이 0선을 넘어 양수로 바뀌는 것을 진입 조건으로 제시합니다. 이어 <a href="https://youtu.be/ubsoA7Hb-D8?t=40">약 40초</a>에는 직전 저점 손절, 손절 거리의 세 배를 목표 수익으로 삼으라고 설명합니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;급락 종목 발견&#34;] --&gt; B[&#34;25일선 아래 큰 이격&#34;]
+    B --&gt; C[&#34;RSI 과매도 확인&#34;]
+    C --&gt; D[&#34;MACD 히스토그램 양전환&#34;]
+    D --&gt; E[&#34;진입·직전 저점 손절&#34;]
+    E --&gt; F[&#34;손절 거리의 3배 목표&#34;]
+    classDef scanTone fill:#c5dcef,stroke:#6999bd,color:#333
+    classDef filterTone fill:#fde8c0,stroke:#d4a85f,color:#333
+    classDef riskTone fill:#ffc8c4,stroke:#d57b74,color:#333
+    class A,B scanTone
+    class C,D filterTone
+    class E,F riskTone</pre>
+<p>영상은 <a href="https://youtu.be/ubsoA7Hb-D8?t=5">약 5초</a>에 &ldquo;오직 이격도 하나&quot;라는 취지로 말하지만, 실제 제시하는 진입 조건에는 RSI와 MACD가 추가됩니다. 이는 설명상의 긴장입니다. <strong>이격도를 먼저 살피는 전략</strong> 과 <strong>세 지표의 동시 충족을 기다리는 전략</strong> 은 후보 종목·진입 시점·거래 횟수가 달라질 수 있습니다. 영상만으로 어느 쪽이 BNF의 실제 기록과 일치하는지 증명할 수 없습니다.</p>
+<h2 id="2-20-이격은-무엇을-뜻하나-아래로와-평균의-종류가-중요하다">2. 20% 이격은 무엇을 뜻하나: ‘아래로’와 평균의 종류가 중요하다</h2>
+<p>이격도는 보통 <code>현재 종가 ÷ 이동평균값 − 1</code>로 계산합니다. 평균이 100이고 종가가 80이면 <strong>−20% 이격</strong> 입니다. 여기서 &ldquo;20% 이상 벌어졌다&quot;는 절댓값만 말하면 위로 20% 올라간 종목까지 섞이므로, 역추세 매수 맥락에서는 <strong>25일선보다 아래로 이격</strong> 됐는지 방향을 명시해야 합니다. 종가 80이 평균 100으로 돌아가려면 20%가 아니라 종가 기준 <strong>25% 상승</strong> 이 필요합니다. 이는 분모가 달라서 생기는 산술 차이입니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;25일 평균: 100&#34;] --&gt; B[&#34;현재 가격: 80&#34;]
+    B --&gt; C[&#34;평균 기준 이격: -20%&#34;]
+    B --&gt; D[&#34;80에서 100까지 상승: +25%&#34;]
+    classDef baseTone fill:#c5dcef,stroke:#6999bd,color:#333
+    classDef gapTone fill:#fde8c0,stroke:#d4a85f,color:#333
+    classDef returnTone fill:#c0ecd3,stroke:#70ab85,color:#333
+    class A,B baseTone
+    class C gapTone
+    class D returnTone</pre>
+<p>또 하나는 <strong>SMA와 EMA의 차이</strong> 입니다. 영상은 <a href="https://youtu.be/ubsoA7Hb-D8?t=13">약 13초</a>에 25일 <strong>지수</strong> 이동평균선 설정을 안내합니다. EMA는 최근 가격에 더 큰 가중치를 부여하므로 단순이동평균선(SMA)과 값·신호 날짜가 달라질 수 있습니다. <a href="https://www.tradingview.com/support/solutions/43000592270-exponential-moving-average/">TradingView의 EMA 설명</a>을 보면 이 차이가 분명합니다. 반면 BNF 명의 게시글 복제본은 <strong>25일 이동평균선</strong> 이라고만 적어 SMA인지 EMA인지 특정하지 않습니다. 따라서 &ldquo;BNF가 25일 EMA를 썼다&quot;고 확정할 수 없습니다. <a href="https://w.atwiki.jp/e9g92z/pages/33.html">BNF 게시글 아카이브</a></p>
+<p>더 중요한 사실은 <strong>−20%가 시대와 종목을 가리지 않는 고정 매수선이 아니라는 점</strong> 입니다. BNF 명의로 보존된 <a href="https://w.atwiki.jp/e9g92z/pages/33.html">2004년 글</a>은 2001~2002년의 심한 하락장에서는 25일선 대비 큰 음의 이격을 봤지만, 다른 장세에는 더 작은 이격에서 반등했다고 설명합니다. 같은 자료는 업종·종목군·유동성·시장 상황에 따라 기준을 다르게 잡아야 하고 <strong>이격 숫자만 보고 역추세 매수하는 것은 권하지 않는다</strong> 는 취지도 담고 있습니다. 다만 이는 제삼자가 보존한 게시글이므로 작성자 신원과 수치의 원본성에는 한계가 있습니다.</p>
+<h2 id="3-rsi와-macd는-무엇을-확인하며-무엇을-증명하지-못하나">3. RSI와 MACD는 무엇을 확인하며, 무엇을 증명하지 못하나</h2>
+<p>영상은 <a href="https://youtu.be/ubsoA7Hb-D8?t=32">약 32초</a>에 RSI가 과매도여야 한다고 말하지만 기간과 임계값은 지정하지 않습니다. 전통적으로 RSI 30 이하는 과매도로 해석되지만, 강한 하락 추세에서는 <strong>오랫동안 과매도에 머물 수 있습니다</strong>. 따라서 RSI가 낮다는 사실은 &ldquo;이미 많이 하락했다&quot;는 관찰에 가깝지, 반등이 곧 시작된다는 보장은 아닙니다. <a href="https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/RSI">Fidelity RSI 안내</a></p>
+<p>MACD 부분도 정확히 읽어야 합니다. <a href="https://youtu.be/ubsoA7Hb-D8?t=36">약 36초</a>의 &ldquo;히스토그램이 영선 위의 녹색 막대로&quot;라는 설명을 수치로 바꾸면 <code>히스토그램 = MACD선 − 신호선</code>이 음수에서 양수로 바뀌는 순간입니다. 이는 <strong>MACD선이 신호선을 위로 돌파했다</strong> 는 뜻이지, MACD선 자체가 0 위에 올라왔다는 뜻은 아닙니다. 막대의 녹색·적색은 차트 테마와 표시 설정에 따라 달라질 수 있으니 <strong>색보다 수치의 부호</strong> 를 확인해야 합니다. <a href="https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/">TradingView MACD 설명</a></p>
+<pre class="mermaid">flowchart TD
+    A[&#34;가격 급락&#34;] --&gt; B[&#34;RSI 낮아짐&#34;]
+    A --&gt; C[&#34;평균선 아래 이격 확대&#34;]
+    B --&gt; D[&#34;과매도 상태는 지속 가능&#34;]
+    C --&gt; E[&#34;이격 확대도 지속 가능&#34;]
+    F[&#34;MACD 히스토그램 양전환&#34;] --&gt; G[&#34;단기 모멘텀 변화 관찰&#34;]
+    D --&gt; H[&#34;반등 보장 아님&#34;]
+    E --&gt; H
+    G --&gt; H
+    classDef signalTone fill:#c5dcef,stroke:#6999bd,color:#333
+    classDef cautionTone fill:#ffc8c4,stroke:#d57b74,color:#333
+    classDef checkTone fill:#c0ecd3,stroke:#70ab85,color:#333
+    class A,B,C signalTone
+    class D,E,H cautionTone
+    class F,G checkTone</pre>
+<p>확인한 BNF 명의 게시글에는 이격도와 시장 상황에 관한 설명은 있으나 <strong>RSI·MACD를 동시에 사용해야 한다는 규칙은 확인되지 않았습니다</strong>. 따라서 영상의 세 지표 결합은 원래 매매법의 검증된 복원이라기보다 <strong>영상 제작자가 제안한 현대적 재구성</strong> 으로 다루는 것이 안전합니다. 이 문장은 &ldquo;BNF가 절대 RSI·MACD를 쓰지 않았다&quot;는 주장도 아닙니다. 자료에 없는 것을 확정하지 않는다는 뜻입니다. <a href="https://w.atwiki.jp/e9g92z/pages/33.html">BNF 게시글 아카이브</a></p>
+<h2 id="4-직전-저점-손절과-3배-수익의-계산은-깔끔하지만-실제-체결은-다르다">4. 직전 저점 손절과 ‘3배 수익’의 계산은 깔끔하지만 실제 체결은 다르다</h2>
+<p>영상의 <a href="https://youtu.be/ubsoA7Hb-D8?t=40">마지막 규칙</a>은 진입가와 손절가 사이의 가격 차이를 <code>1R</code>로 두고, 진입가보다 <code>3R</code> 높은 곳을 목표로 잡는 <strong>계획상 손익비 3:1</strong> 입니다. 예를 들어 80에 진입하고 직전 저점 아래인 75를 손절 가격으로 정했다면 <code>1R = 5</code>, 목표 가격은 95입니다. 이는 &ldquo;투자금이 세 배가 된다&quot;는 뜻이 아니라 <strong>가격 위험 5에 대해 목표 이익 15를 노린다</strong> 는 뜻입니다.</p>
+<pre class="mermaid">flowchart TD
+    A[&#34;예시 진입가: 80&#34;] --&gt; B[&#34;계획 손절가: 75&#34;]
+    A --&gt; C[&#34;계획 목표가: 95&#34;]
+    B --&gt; D[&#34;위험 1R = 5&#34;]
+    C --&gt; E[&#34;목표 이익 3R = 15&#34;]
+    D --&gt; F[&#34;계획 손익비 3대1&#34;]
+    E --&gt; F
+    F --&gt; G[&#34;체결·비용 반영 전&#34;]
+    classDef entryTone fill:#c5dcef,stroke:#6999bd,color:#333
+    classDef riskTone fill:#ffc8c4,stroke:#d57b74,color:#333
+    classDef rewardTone fill:#c0ecd3,stroke:#70ab85,color:#333
+    classDef caveatTone fill:#fde8c0,stroke:#d4a85f,color:#333
+    class A entryTone
+    class B,D riskTone
+    class C,E,F rewardTone
+    class G caveatTone</pre>
+<p>수수료·세금·미끄러짐을 빼고, 모든 거래가 정확히 <code>−1R</code> 또는 <code>+3R</code>로 끝난다고 가정하면 승률 25%가 손익분기점입니다. 하지만 현실에서는 목표가에 도달하지 못한 채 되돌아가거나, 손절가를 지나 낮게 체결될 수 있습니다. SEC는 손절 주문의 <strong>설정 가격이 실제 체결 가격을 보장하지 않는다</strong> 고 설명합니다. <a href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-15">SEC 손절 주문 안내</a> 따라서 3:1은 매매 계획의 형태일 뿐, 전략의 기대수익이나 성공률을 증명하지 않습니다.</p>
+<h2 id="실전-적용-포인트-이-영상을-검증하려면">실전 적용 포인트: 이 영상을 검증하려면</h2>
+<ol>
+<li><strong>규칙을 먼저 고정한다.</strong> 25일 SMA인지 EMA인지, RSI 기간·과매도 기준, MACD 설정, 종가 기준인지 장중 기준인지 명시한다.</li>
+<li><strong>시대와 시장을 나눈다.</strong> 2001년 일본 하락장에서 언급된 이격 기준을 2026년 다른 시장에 그대로 옮기지 않는다.</li>
+<li><strong>탈락한 거래도 기록한다.</strong> 후보 발견 뒤 더 떨어진 경우, RSI가 낮은 채 지속된 경우, MACD가 반복해서 양·음으로 바뀐 경우를 모두 포함한다.</li>
+<li><strong>순성과로 검증한다.</strong> 실제 체결가·거래 비용·미체결·생존자 편향을 반영한 뒤, 단순한 이격도 규칙과 영상의 세 지표 결합을 따로 비교한다.</li>
+</ol>
+<h2 id="핵심-요약">핵심 요약</h2>
+<ul>
+<li>영상은 <a href="https://youtu.be/ubsoA7Hb-D8?t=11">25일 EMA·−20% 이격·RSI 과매도·MACD 히스토그램 양전환</a>을 하나의 진입 공식으로 제시합니다.</li>
+<li>과거 BNF 명의 게시글에서 확인되는 것은 <strong>25일선 이격과 시장 상황에 따른 유동적 판단</strong> 입니다. EMA 선택과 RSI·MACD 동시 조건은 확인되지 않습니다.</li>
+<li><code>3R</code> 목표는 수익 보장이 아닙니다. 손절 체결 위험과 거래 비용을 반영해 별도 검증해야 합니다.</li>
+</ul>
+<h2 id="결론">결론</h2>
+<p>쇼츠는 <strong>이격도 기반 역추세 매매를 이해하는 입문 사례</strong> 로는 흥미롭습니다. 하지만 유명 트레이더의 이름, 큰 수익금 제목, 여러 지표의 동시 충족만으로 규칙의 진위나 재현성을 보장할 수는 없습니다. 먼저 원자료와 계산 정의를 고정하고, 실패한 거래까지 포함해 검증하세요. 이 글은 전략 분석이며 특정 종목의 매수·매도 권유가 아닙니다.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/toc.js'></script>
+<link rel="stylesheet" href='https://life-log.gyuha.com/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://life-log.gyuha.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://life-log.gyuha.com/js/github-style.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='https://life-log.gyuha.com/js/search.js'></script>
+
+
+
+<script type="module" src='https://life-log.gyuha.com/js/mermaid.js'></script>
+
+
+
+</html>
